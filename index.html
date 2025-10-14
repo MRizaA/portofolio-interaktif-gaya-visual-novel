@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fantasy Portfolio - Muhammad Riza Aditya</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        :root {
+            --primary-color: #a855f7;
+            --secondary-color: #ec4899;
+            --bg-main: linear-gradient(135deg, #0c0c2b 0%, #1a1a3e 50%, #2d1b5c 100%);
+            --bg-card: linear-gradient(135deg, rgba(0, 0, 0, 0.3), rgba(26, 26, 62, 0.3));
+            --bg-dialogue: linear-gradient(135deg, rgba(0, 0, 0, 0.9), rgba(26, 26, 62, 0.9));
+            --bg-header: rgba(0, 0, 0, 0.8);
+            --bg-modal: linear-gradient(135deg, #1a1a3e, #2d1b5c);
+            --text-color: #ffffff;
+            --animation-speed: 0.5s;
+            --dialogue-font: 16px;
+            --title-font: 24px;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: var(--bg-main);
+            overflow: hidden;
+            color: var(--text-color);
+            height: 100vh;
+        }
+
+        .game-container { position: relative; width: 100vw; height: 100vh; display: flex; flex-direction: column; }
+        
+        .particles { position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 1; }
+        .particle { position: absolute; width: 3px; height: 3px; background: var(--primary-color); border-radius: 50%; animation: float 6s infinite linear; opacity: 0.7; }
+        @keyframes float {
+            0% { transform: translateY(100vh) rotate(0deg); opacity: 0; }
+            10% { opacity: 0.7; }
+            90% { opacity: 0.7; }
+            100% { transform: translateY(-20px) rotate(360deg); opacity: 0; }
+        }
+
+        .game-ui { position: relative; z-index: 10; height: 100%; display: flex; flex-direction: column; }
+        
+        .top-bar {
+            background: var(--bg-header);
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid var(--primary-color);
+        }
+        
+        .title {
+            font-size: var(--title-font);
+            font-weight: bold;
+            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .menu-buttons { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+        
+        .menu-btn, .lang-toggle {
+            padding: 8px 16px;
+            background: rgba(168, 85, 247, 0.2);
+            border: 2px solid var(--primary-color);
+            border-radius: 20px;
+            color: white;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 14px;
+        }
+        
+        .menu-btn:hover, .lang-toggle:hover {
+            background: rgba(168, 85, 247, 0.4);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px var(--primary-color);
+        }
+        
+        .lang-toggle { 
+            background: rgba(236, 72, 153, 0.2); 
+            border-color: var(--secondary-color); 
+            padding: 8px 16px; 
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-weight: 600;
+        }
+
+        .game-screen { flex: 1; display: flex; position: relative; }
+        
+        .character-area {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .character {
+            width: 100%;
+            height: 100%;
+            max-width: 100%;
+            max-height: 100%;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center bottom;
+            transition: all var(--animation-speed) ease;
+            opacity: 0;
+            transform: translateY(50px);
+            filter: drop-shadow(0 10px 30px rgba(168, 85, 247, 0.3));
+        }
+        
+        @keyframes characterEnter {
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .character.speaking {
+            transform: scale(1.05);
+            filter: brightness(1.2) drop-shadow(0 15px 40px rgba(168, 85, 247, 0.5));
+        }
+
+        .audio-controls { 
+            position: absolute; 
+            top: 20px; 
+            right: 20px; 
+            display: flex; 
+            flex-direction: column;
+            gap: 10px;
+            z-index: 50; 
+        }
+        
+        .audio-btn {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: rgba(0, 0, 0, 0.5);
+            border: 2px solid var(--primary-color);
+            color: white;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            position: relative; 
+            z-index: 51; 
+        }
+        
+        .audio-btn:hover { background: rgba(168, 85, 247, 0.3); }
+
+        .volume-control {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.7);
+            border: 2px solid var(--primary-color);
+            border-radius: 20px;
+            min-width: 150px;
+        }
+
+        .volume-slider {
+            flex: 1;
+            -webkit-appearance: none;
+            height: 4px;
+            background: rgba(168, 85, 247, 0.3);
+            border-radius: 5px;
+            outline: none;
+        }
+
+        .volume-slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            width: 15px;
+            height: 15px;
+            background: var(--primary-color);
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        .volume-slider::-moz-range-thumb {
+            width: 15px;
+            height: 15px;
+            background: var(--primary-color);
+            border-radius: 50%;
+            cursor: pointer;
+            border: none;
+        }
+
+        .dialogue-area {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: var(--bg-dialogue);
+            border-top: 3px solid var(--primary-color);
+            padding: 20px;
+            min-height: 200px;
+        }
+        
+        .speaker-name {
+            font-size: 18px;
+            font-weight: bold;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+            text-shadow: 0 0 10px rgba(168, 85, 247, 0.5);
+        }
+        
+        .dialogue-text { 
+            font-size: var(--dialogue-font); 
+            line-height: 1.6; 
+            margin-bottom: 20px; 
+            min-height: 80px; 
+        }
+        .dialogue-choices { display: flex; flex-wrap: wrap; gap: 10px; }
+        
+        .choice-btn {
+            padding: 12px 20px;
+            background: linear-gradient(135deg, rgba(168, 85, 247, 0.2), rgba(236, 72, 153, 0.2));
+            border: 2px solid var(--primary-color);
+            border-radius: 25px;
+            color: white;
+            cursor: pointer;
+            transition: all var(--animation-speed) ease;
+            font-size: 14px;
+            flex: 1;
+            min-width: 200px;
+        }
+        
+        .choice-btn:hover {
+            background: linear-gradient(135deg, rgba(168, 85, 247, 0.4), rgba(236, 72, 153, 0.4));
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(168, 85, 247, 0.4);
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: rgba(0, 0, 0, 0.8);
+            z-index: 100;
+        }
+        
+        .modal-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: var(--bg-modal);
+            border: 3px solid var(--primary-color);
+            border-radius: 20px;
+            padding: 0;
+            width: 70vw;
+            height: 85vh;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+        }
+        
+        .modal-header {
+            background: linear-gradient(135deg, rgba(168, 85, 247, 0.3), rgba(236, 72, 153, 0.3));
+            padding: 20px 30px;
+            border-bottom: 2px solid rgba(168, 85, 247, 0.5);
+            position: relative;
+        }
+        
+        .modal-title {
+            font-size: var(--title-font);
+            font-weight: bold;
+            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin: 0;
+        }
+        
+        .close-btn {
+            position: absolute;
+            top: 20px;
+            right: 25px;
+            font-size: 28px;
+            cursor: pointer;
+            color: var(--primary-color);
+            transition: all 0.3s ease;
+            width: 35px;
+            height: 35px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+        }
+        
+        .close-btn:hover {
+            transform: rotate(90deg);
+            background: rgba(168, 85, 247, 0.2);
+            color: var(--secondary-color);
+        }
+        
+        .modal-body { padding: 30px; max-height: calc(85vh - 100px); overflow-y: auto; }
+
+        /* .profile-hero {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            margin-bottom: 30px;
+            padding: 30px;
+            background: linear-gradient(135deg, rgba(168, 85, 247, 0.1), rgba(236, 72, 153, 0.1));
+            border-radius: 20px;
+            border: 2px solid rgba(168, 85, 247, 0.3);
+        }
+        
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 48px;
+            color: white;
+            flex-shrink: 0;
+            border: 4px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 10px 30px rgba(168, 85, 247, 0.3);
+        }
+        
+        .profile-info h2 {
+            font-size: 32px;
+            margin-bottom: 10px;
+            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .profile-info .job-title {
+            font-size: 18px;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        
+        .profile-info .description {
+            font-size: 16px;
+            line-height: 1.6;
+            opacity: 0.9;
+            margin-bottom: 20px;
+        } */
+
+
+
+        .profile-hero {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            margin-bottom: 30px;
+            padding: 30px;
+            background: linear-gradient(135deg, rgba(168, 85, 247, 0.1), rgba(236, 72, 153, 0.1));
+            border-radius: 20px;
+            border: 2px solid rgba(168, 85, 247, 0.3);
+        }
+
+        .profile-content {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            
+        }
+
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 48px;
+            color: white;
+            flex-shrink: 0;
+            border: 4px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 10px 30px rgba(168, 85, 247, 0.3);
+        }
+
+        .profile-info h2 {
+            font-size: 32px;
+            margin-bottom: 10px;
+            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .profile-info h3 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-align: center;
+        }
+
+        .profile-info .job-title {
+            font-size: 18px;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .profile-info .description {
+            font-size: 16px;
+            line-height: 1.6;
+            opacity: 0.9;
+            margin-bottom: 20px;
+        }
+        
+        .contact-links { display: flex; gap: 15px; flex-wrap: wrap; }
+        
+        .contact-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 16px;
+            background: rgba(168, 85, 247, 0.2);
+            border: 2px solid rgba(168, 85, 247, 0.3);
+            border-radius: 25px;
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            transition: all 0.3s ease;
+        }
+
+        .contact-link .icon-wrapper {
+            width: 20px;
+            height: 20px;
+            background: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2px;
+        }
+
+        .contact-link .icon-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+        
+        .contact-link:hover {
+            background: rgba(168, 85, 247, 0.4);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(168, 85, 247, 0.3);
+        }
+
+        .experience-nav { display: flex; gap: 10px; margin-bottom: 25px; flex-wrap: wrap; }
+        
+        .nav-btn {
+            padding: 10px 20px;
+            border: 2px solid transparent;
+            border-radius: 25px;
+            border-color: var(--secondary-color);
+            background: rgba(55, 55, 55, 0.1);
+            color: var(--text-color);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 14px;
+        }
+        
+        .nav-btn.active { border-color: var(--primary-color); background: rgba(168, 85, 247, 0.3); }
+        .nav-btn:hover { transform: translateY(-2px); }
+
+        .experience-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        
+        .experience-card {
+            background: var(--bg-card);
+            border: 2px solid;
+            border-radius: 15px;
+            padding: 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .experience-card:hover { transform: translateY(-5px); box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); }
+        .experience-card.work { border-color: #3b82f6; }
+        .experience-card.project { border-color: #10b981; }
+        .experience-card.education { border-color: #f59e0b; }
+        .experience-card.certification { border-color: #8b5cf6; }
+        .experience-card.achievement { border-color: #ef4444; }
+
+        .card-header { display: flex; align-items: center; gap: 15px; margin-bottom: 15px; }
+        
+        .card-icon {
+            font-size: 24px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid;
+        }
+        
+        .card-title { font-size: 18px; font-weight: bold; margin: 0; }
+        .card-subtitle { font-size: 14px; opacity: 0.8; margin: 0; }
+        .card-description { font-size: 14px; line-height: 1.5; opacity: 0.9; margin-bottom: 15px; }
+        .card-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+        
+        .tag {
+            padding: 4px 12px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            font-size: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .detail-page { display: none; }
+        
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 20px;
+            background: rgba(168, 85, 247, 0.2);
+            border: 2px solid var(--primary-color);
+            border-radius: 25px;
+            color: white;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-bottom: 20px;
+        }
+        
+        .back-btn:hover { background: rgba(168, 85, 247, 0.4); transform: translateY(-2px); }
+
+        /* SETTINGS STYLES */
+        .settings-section {
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid rgba(168, 85, 247, 0.2);
+        }
+
+        .settings-section:last-child {
+            border-bottom: none;
+        }
+
+        .settings-section h3 {
+            font-size: 18px;
+            margin-bottom: 15px;
+            color: var(--primary-color);
+        }
+
+        .settings-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 12px;
+        }
+
+        .settings-option {
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 2px solid rgba(168, 85, 247, 0.3);
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .settings-option:hover {
+            background: rgba(168, 85, 247, 0.2);
+            transform: translateY(-2px);
+        }
+
+        .settings-option.active {
+            background: rgba(168, 85, 247, 0.3);
+            border-color: var(--primary-color);
+            box-shadow: 0 0 15px rgba(168, 85, 247, 0.3);
+        }
+
+        .theme-preview {
+            width: 100%;
+            height: 60px;
+            border-radius: 8px;
+            margin-bottom: 8px;
+        }
+
+        .settings-toggles {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .toggle-label {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .toggle-label:hover {
+            background: rgba(168, 85, 247, 0.1);
+        }
+
+        .toggle-label input[type="checkbox"] {
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+            accent-color: var(--primary-color);
+        }
+
+        .settings-actions {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .settings-btn {
+            padding: 12px 24px;
+            background: rgba(168, 85, 247, 0.2);
+            border: 2px solid var(--primary-color);
+            border-radius: 25px;
+            color: white;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .settings-btn:hover {
+            background: rgba(168, 85, 247, 0.4);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(168, 85, 247, 0.4);
+        }
+
+        .reset-btn {
+            background: rgba(239, 68, 68, 0.2);
+            border-color: #ef4444;
+        }
+
+        .reset-btn:hover {
+            background: rgba(239, 68, 68, 0.4);
+            box-shadow: 0 6px 20px rgba(239, 68, 68, 0.4);
+        }
+
+        @media (max-width: 768px) {
+            .character { width: 250px; height: 350px; }
+            .profile-hero { flex-direction: column; text-align: center; }
+            .experience-grid { grid-template-columns: 1fr; }
+            .choice-btn { min-width: 150px; }
+            .modal-content { margin: 10px; width: calc(100vw - 20px); height: calc(100vh - 20px); }
+            .menu-buttons { justify-content: center; }
+            .settings-grid { grid-template-columns: 1fr; }
+            .theme-preview { height: 50px; }
+        }
+
+        .typing { animation: typing 0.05s steps(1) infinite; }
+        @keyframes typing {
+            0%, 50% { opacity: 1; }
+            51%, 100% { opacity: 0.7; }
+        }
+    </style>
+</head>
+<body>
+    <div class="game-container">
+        <div class="particles" id="particles"></div>
+        <audio id="bgMusic" loop></audio>
+        
+        <div class="game-ui">
+            <div class="top-bar">
+                <div class="title" data-lang="title">Fantasy Portfolio</div>
+                <div class="menu-buttons">
+                    
+                    <!-- code sebelumnya -->
+                        <!-- <div class="volume-control" id="volumeControl" style="display: none;">
+                            <span style="font-size: 12px;">🔊</span>
+                            <input type="range" class="volume-slider" id="volumeSlider" min="0" max="100" value="30">
+                            <span id="volumeText" style="font-size: 11px; min-width: 35px;">30%</span>
+                        </div>
+                        <div class="audio-btn" onclick="toggleMusic()" id="musicBtn" style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;">🎵</div>
+                        <div class="audio-btn" onclick="toggleSFX()" id="sfxBtn" style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;">🔊</div> -->
+                    
+
+                    <!-- Di top-bar, setelah menu-buttons -->
+                    <!-- <div style="display: flex; align-items: center; gap: 10px; padding: 0 15px; border-left: 1px solid rgba(168, 85, 247, 0.3);">
+                        <span style="font-size: 12px; opacity: 0.7;">🎵</span>
+                        <input type="range" id="topVolumeSlider" min="0" max="100" value="20" 
+                            oninput="updateVolume(this.value)" 
+                            style="width: 100px; height: 4px; accent-color: var(--primary-color);">
+                        <span id="topVolumeText" style="font-size: 12px; min-width: 35px;">20%</span>
+                    </div> -->
+                    
+                    
+
+                    <div class="menu-btn" onclick="showModal('profile')" data-lang="nav-profile">📋 Profile</div>
+                    <div class="menu-btn" onclick="showModal('experience')" data-lang="nav-experience">🚀 Experience</div>
+                    <div class="menu-btn" onclick="showModal('settings')" data-lang="nav-settings">⚙️ Settings</div>
+                    <!-- <div class="lang-toggle" onclick="toggleLanguage()">
+                        <span>🌐</span>
+                        <span id="langText" data-lang="lang-toggle">ID</span>
+                    </div> -->
+                </div>
+            </div>
+
+            <div class="game-screen">
+                <div class="character-area">
+                    <!-- <div class="audio-controls">
+                        <div class="audio-btn" onclick="toggleMusic()" id="musicBtn">🎵</div>
+                        <div class="volume-control" id="volumeControl" style="display: none;">
+                            <span style="font-size: 12px;">🔊</span>
+                            <input type="range" class="volume-slider" id="volumeSlider" min="0" max="100" value="50">
+                            <span id="volumeText" style="font-size: 11px; min-width: 35px;">50%</span>
+                        </div>
+                        <div class="audio-btn" onclick="toggleSFX()" id="sfxBtn">🔊</div>
+                    </div> -->
+
+                    <!-- <div class="audio-controls">
+                        <div class="audio-btn" onclick="toggleMusic()" id="musicBtn">🎵</div>
+                        <div class="audio-btn" onclick="toggleSFX()" id="sfxBtn">🔊</div>
+                        <div class="volume-control" id="volumeControl" style="display: none;">
+                            <span style="font-size: 12px;">🔊</span>
+                            <input type="range" class="volume-slider" id="volumeSlider" min="0" max="100" value="30">
+                            <span id="volumeText" style="font-size: 11px; min-width: 35px;">30%</span>
+                        </div>
+                    </div> -->
+
+
+                    <div class="character" id="character"></div>
+                </div>
+                
+                <div class="dialogue-area">
+                    <div class="speaker-name" id="speakerName">...</div>
+                    <div class="dialogue-text" id="dialogueText">Loading...</div>
+                    <div class="dialogue-choices" id="dialogueChoices"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- PROFILE MODAL -->
+        <div class="modal" id="profileModal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title" data-lang="profile-title">Profile Card</h2>
+                    <span class="close-btn" onclick="closeModal('profile')">&times;</span>
+                </div>
+                <div class="modal-body">
+                    <!-- <div class="profile-hero">
+                        <div class="profile-image">MRA</div>
+                        <div class="profile-info">
+                            <h2>Muhammad Riza Aditya</h2>
+                            <div class="job-title">Junior Software Developer</div>
+                            <div class="description">Fresh graduate D3 Information Technology</div>
+                            <div class="contact-links"></div>
+                        </div>
+                    </div> -->
+
+
+                    <div class="profile-hero">
+                        <div class="profile-info">
+                            
+                            
+                            <div class="profile-content">
+                                <div class="profile-image">MRA</div>
+                                <div>
+                                    <h2>Muhammad Riza Aditya</h2>
+                                    <div class="job-title">Junior Software Developer</div>
+
+                                    <div class="description">Fresh graduate D3 Information Technology</div>
+                                </div>
+                            </div>
+                            <h3>Contact</h3>
+                            <div class="contact-links"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- EXPERIENCE MODAL -->
+        <div class="modal" id="experienceModal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title" data-lang="experience-title">Experience & Projects</h2>
+                    <span class="close-btn" onclick="closeModal('experience')">&times;</span>
+                </div>
+                <div class="modal-body">
+                    <div class="experience-nav">
+                        <div class="nav-btn active" onclick="filterExperience('all')" data-lang="filter-all">All</div>
+                        <div class="nav-btn" onclick="filterExperience('work')" data-lang="filter-work">Work</div>
+                        <div class="nav-btn" onclick="filterExperience('project')" data-lang="filter-project">Projects</div>
+                        <div class="nav-btn" onclick="filterExperience('education')" data-lang="filter-education">Education</div>
+                        <div class="nav-btn" onclick="filterExperience('certification')" data-lang="filter-cert">Certificates</div>
+                        <div class="nav-btn" onclick="filterExperience('achievement')" data-lang="filter-achievement">Achievements</div>
+                    </div>
+                    <div class="experience-grid" id="experienceGrid"></div>
+                    <div class="detail-page" id="detailPage">
+                        <div class="back-btn" onclick="showExperienceList()">
+                            <span>←</span> <span data-lang="back">Back</span>
+                        </div>
+                        <div id="detailContent"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="content/audio-config.js"></script>
+    <script src="content/ui-translations.js"></script>
+    <script src="content/profile.js"></script>
+    <script src="content/characters.js"></script>
+    <script src="content/dialogues.js"></script>
+    <script src="content/experiences.js"></script>
+    <script src="content/ui-settings.js"></script>
+    <script src="content/app.js"></script>
+</body>
+</html>
