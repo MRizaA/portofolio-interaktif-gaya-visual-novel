@@ -249,8 +249,8 @@ function applyLayout(layout) {
     const height = window.innerHeight;
     
     // Mobile jika width atau height tidak terlalu besar
-    const isMobilePortrait = width <= 800 && height > width;
-    const isMobileLandscape = height <= 600 && width > height;
+    const isMobilePortrait = width <= 769 && height > width;
+    const isMobileLandscape = height <= 512 && width > height;
     const isMobile = isMobilePortrait || isMobileLandscape;
     
     if (isMobile) {
