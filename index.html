@@ -302,61 +302,7 @@
         
         .modal-body { padding: 30px; max-height: calc(85vh - 100px); overflow-y: auto; }
 
-        /* .profile-hero {
-            display: flex;
-            gap: 30px;
-            align-items: center;
-            margin-bottom: 30px;
-            padding: 30px;
-            background: linear-gradient(135deg, rgba(168, 85, 247, 0.1), rgba(236, 72, 153, 0.1));
-            border-radius: 20px;
-            border: 2px solid rgba(168, 85, 247, 0.3);
-        }
-        
-        .profile-image {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 48px;
-            color: white;
-            flex-shrink: 0;
-            border: 4px solid rgba(255, 255, 255, 0.2);
-            box-shadow: 0 10px 30px rgba(168, 85, 247, 0.3);
-        }
-        
-        .profile-info h2 {
-            font-size: 32px;
-            margin-bottom: 10px;
-            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        
-        .profile-info .job-title {
-            font-size: 18px;
-            color: var(--primary-color);
-            margin-bottom: 15px;
-            font-weight: 600;
-        }
-        
-        .profile-info .description {
-            font-size: 16px;
-            line-height: 1.6;
-            opacity: 0.9;
-            margin-bottom: 20px;
-        } */
-
-
-
         .profile-hero {
-            display: flex;
-            gap: 30px;
-            align-items: center;
-            margin-bottom: 30px;
             padding: 30px;
             background: linear-gradient(135deg, rgba(168, 85, 247, 0.1), rgba(236, 72, 153, 0.1));
             border-radius: 20px;
@@ -367,7 +313,7 @@
             display: flex;
             gap: 30px;
             align-items: center;
-            
+            margin-bottom: 20px;
         }
 
         .profile-image {
@@ -396,6 +342,7 @@
         .profile-info h3 {
             font-size: 24px;
             margin-bottom: 20px;
+            margin-top: 20px;
             background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -652,15 +599,254 @@
             box-shadow: 0 6px 20px rgba(239, 68, 68, 0.4);
         }
 
+
+
+
+        /* RESPONSIVE DESIGN - TABLET & MOBILE */
         @media (max-width: 768px) {
-            .character { width: 250px; height: 350px; }
-            .profile-hero { flex-direction: column; text-align: center; }
-            .experience-grid { grid-template-columns: 1fr; }
-            .choice-btn { min-width: 150px; }
-            .modal-content { margin: 10px; width: calc(100vw - 20px); height: calc(100vh - 20px); }
-            .menu-buttons { justify-content: center; }
-            .settings-grid { grid-template-columns: 1fr; }
-            .theme-preview { height: 50px; }
+            .top-bar {
+                flex-direction: column;
+                gap: 10px;
+                padding: 10px;
+            }
+            
+            .title {
+                font-size: 20px;
+            }
+            
+            .menu-buttons {
+                width: 100%;
+                justify-content: center;
+            }
+            
+            .menu-btn {
+                font-size: 12px;
+                padding: 6px 12px;
+            }
+            
+            .character { 
+                width: 100%;
+                height: 100%;
+                background-size: contain;
+            }
+            
+            .dialogue-area {
+                /* min-height: 180px;
+                padding: 15px; */
+                height: 100%;
+                width: auto;
+            }
+            
+            .speaker-name {
+                font-size: 16px;
+            }
+            
+            .dialogue-text {
+                font-size: 14px;
+                min-height: 60px;
+            }
+            
+            .choice-btn {
+                min-width: 100%;
+                font-size: 13px;
+                padding: 10px 15px;
+            }
+            
+            .modal-content { 
+                margin: 5px; 
+                width: calc(100vw - 10px); 
+                height: calc(100vh - 10px);
+                border-radius: 10px;
+            }
+            
+            .modal-header {
+                padding: 15px;
+            }
+            
+            .modal-title {
+                font-size: 18px;
+            }
+            
+            .close-btn {
+                font-size: 24px;
+                top: 12px;
+                right: 15px;
+            }
+            
+            .modal-body {
+                padding: 15px;
+                max-height: calc(100vh - 80px);
+            }
+            
+            .profile-hero {
+                padding: 15px;
+            }
+            
+            .profile-content {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                gap: 15px;
+            }
+            
+            .profile-image {
+                width: 120px;
+                height: 120px;
+                font-size: 36px;
+            }
+            
+            .profile-info h2 {
+                font-size: 24px;
+            }
+            
+            .profile-info h3 {
+                font-size: 20px;
+                margin-top: 15px;
+            }
+            
+            .profile-info .job-title {
+                font-size: 16px;
+            }
+            
+            .profile-info .description {
+                font-size: 14px;
+                line-height: 1.5;
+            }
+            
+            .contact-links {
+                justify-content: center;
+            }
+            
+            .contact-link {
+                font-size: 12px;
+                padding: 6px 12px;
+            }
+            
+            .experience-nav {
+                gap: 8px;
+            }
+            
+            .nav-btn {
+                font-size: 12px;
+                padding: 8px 15px;
+            }
+            
+            .experience-grid { 
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+            
+            .experience-card {
+                padding: 15px;
+            }
+            
+            .card-header {
+                gap: 10px;
+            }
+            
+            .card-icon {
+                width: 40px;
+                height: 40px;
+                font-size: 20px;
+            }
+            
+            .card-title {
+                font-size: 16px;
+            }
+            
+            .card-subtitle {
+                font-size: 13px;
+            }
+            
+            .card-description {
+                font-size: 13px;
+            }
+            
+            .settings-grid { 
+                grid-template-columns: 1fr;
+            }
+            
+            .settings-section h3 {
+                font-size: 16px;
+            }
+            
+            .settings-option {
+                padding: 12px;
+            }
+            
+            .theme-preview { 
+                height: 40px;
+            }
+            
+            .settings-btn {
+                font-size: 14px;
+                padding: 10px 20px;
+            }
+        }
+        
+        /* RESPONSIVE DESIGN - SMALL MOBILE */
+        @media (max-width: 480px) {
+            .title {
+                font-size: 18px;
+            }
+            
+            .menu-btn {
+                font-size: 11px;
+                padding: 5px 10px;
+            }
+            
+            .dialogue-area {
+                min-height: 160px;
+                padding: 12px;
+            }
+            
+            .speaker-name {
+                font-size: 14px;
+                margin-bottom: 8px;
+            }
+            
+            .dialogue-text {
+                font-size: 13px;
+                min-height: 50px;
+                margin-bottom: 15px;
+            }
+            
+            .choice-btn {
+                font-size: 12px;
+                padding: 8px 12px;
+            }
+            
+            .profile-image {
+                width: 100px;
+                height: 100px;
+                font-size: 30px;
+            }
+            
+            .profile-info h2 {
+                font-size: 20px;
+            }
+            
+            .profile-info h3 {
+                font-size: 18px;
+            }
+            
+            .profile-info .job-title {
+                font-size: 14px;
+            }
+            
+            .profile-info .description {
+                font-size: 13px;
+            }
+            
+            .contact-link {
+                font-size: 11px;
+                padding: 5px 10px;
+            }
+            
+            .nav-btn {
+                font-size: 11px;
+                padding: 6px 12px;
+            }
         }
 
         .typing { animation: typing 0.05s steps(1) infinite; }
@@ -679,61 +865,14 @@
             <div class="top-bar">
                 <div class="title" data-lang="title">Fantasy Portfolio</div>
                 <div class="menu-buttons">
-                    
-                    <!-- code sebelumnya -->
-                        <!-- <div class="volume-control" id="volumeControl" style="display: none;">
-                            <span style="font-size: 12px;">🔊</span>
-                            <input type="range" class="volume-slider" id="volumeSlider" min="0" max="100" value="30">
-                            <span id="volumeText" style="font-size: 11px; min-width: 35px;">30%</span>
-                        </div>
-                        <div class="audio-btn" onclick="toggleMusic()" id="musicBtn" style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;">🎵</div>
-                        <div class="audio-btn" onclick="toggleSFX()" id="sfxBtn" style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;">🔊</div> -->
-                    
-
-                    <!-- Di top-bar, setelah menu-buttons -->
-                    <!-- <div style="display: flex; align-items: center; gap: 10px; padding: 0 15px; border-left: 1px solid rgba(168, 85, 247, 0.3);">
-                        <span style="font-size: 12px; opacity: 0.7;">🎵</span>
-                        <input type="range" id="topVolumeSlider" min="0" max="100" value="20" 
-                            oninput="updateVolume(this.value)" 
-                            style="width: 100px; height: 4px; accent-color: var(--primary-color);">
-                        <span id="topVolumeText" style="font-size: 12px; min-width: 35px;">20%</span>
-                    </div> -->
-                    
-                    
-
                     <div class="menu-btn" onclick="showModal('profile')" data-lang="nav-profile">📋 Profile</div>
                     <div class="menu-btn" onclick="showModal('experience')" data-lang="nav-experience">🚀 Experience</div>
                     <div class="menu-btn" onclick="showModal('settings')" data-lang="nav-settings">⚙️ Settings</div>
-                    <!-- <div class="lang-toggle" onclick="toggleLanguage()">
-                        <span>🌐</span>
-                        <span id="langText" data-lang="lang-toggle">ID</span>
-                    </div> -->
                 </div>
             </div>
 
             <div class="game-screen">
                 <div class="character-area">
-                    <!-- <div class="audio-controls">
-                        <div class="audio-btn" onclick="toggleMusic()" id="musicBtn">🎵</div>
-                        <div class="volume-control" id="volumeControl" style="display: none;">
-                            <span style="font-size: 12px;">🔊</span>
-                            <input type="range" class="volume-slider" id="volumeSlider" min="0" max="100" value="50">
-                            <span id="volumeText" style="font-size: 11px; min-width: 35px;">50%</span>
-                        </div>
-                        <div class="audio-btn" onclick="toggleSFX()" id="sfxBtn">🔊</div>
-                    </div> -->
-
-                    <!-- <div class="audio-controls">
-                        <div class="audio-btn" onclick="toggleMusic()" id="musicBtn">🎵</div>
-                        <div class="audio-btn" onclick="toggleSFX()" id="sfxBtn">🔊</div>
-                        <div class="volume-control" id="volumeControl" style="display: none;">
-                            <span style="font-size: 12px;">🔊</span>
-                            <input type="range" class="volume-slider" id="volumeSlider" min="0" max="100" value="30">
-                            <span id="volumeText" style="font-size: 11px; min-width: 35px;">30%</span>
-                        </div>
-                    </div> -->
-
-
                     <div class="character" id="character"></div>
                 </div>
                 

@@ -42,6 +42,13 @@ window.onload = function() {
     
     const firstDialogue = Object.keys(dialogues)[0];
     setTimeout(() => handleChoice(firstDialogue), 1000);
+
+    // Add resize listener for layout adjustment
+    window.addEventListener('resize', () => {
+        const settings = loadSettings();
+        const layout = uiSettings.layouts[settings.layout];
+        applyLayout(layout);
+    });
 };
 
 

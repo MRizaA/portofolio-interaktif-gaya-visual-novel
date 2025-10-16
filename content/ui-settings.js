@@ -204,6 +204,39 @@ function applySettings(settings) {
     updateLanguage();
 }
 
+// function applyLayout(layout) {
+//     const gameScreen = document.querySelector('.game-screen');
+//     const dialogueArea = document.querySelector('.dialogue-area');
+//     const characterArea = document.querySelector('.character-area');
+    
+//     if (!gameScreen || !dialogueArea || !characterArea) return;
+    
+//     // Reset
+//     gameScreen.style.flexDirection = 'column';
+//     dialogueArea.style.position = 'absolute';
+//     dialogueArea.style.width = '';
+//     dialogueArea.style.height = '';
+//     dialogueArea.style.bottom = '';
+//     dialogueArea.style.right = '';
+//     dialogueArea.style.left = '';
+//     characterArea.style.flex = '';
+    
+//     switch(layout.dialoguePosition) {
+//         case 'right':
+//             gameScreen.style.flexDirection = 'row';
+//             dialogueArea.style.position = 'relative';
+//             dialogueArea.style.width = '40%';
+//             dialogueArea.style.height = 'auto';
+//             characterArea.style.flex = '1';
+//             break;
+//         default: // bottom
+//             dialogueArea.style.bottom = '0';
+//             dialogueArea.style.left = '0';
+//             dialogueArea.style.right = '0';
+//             break;
+//     }
+// }
+
 function applyLayout(layout) {
     const gameScreen = document.querySelector('.game-screen');
     const dialogueArea = document.querySelector('.dialogue-area');
@@ -211,15 +244,71 @@ function applyLayout(layout) {
     
     if (!gameScreen || !dialogueArea || !characterArea) return;
     
-    // Reset
+    //IMPROVED MOBILE DETECTION
+    const width = window.innerWidth;
+    const height = window.innerHeight;
+    
+    // Mobile jika width <= 768px DAN height tidak terlalu besar
+    const isMobilePortrait = width <= 768 && height > width;
+    const isMobileLandscape = height <= 512 && width > height;
+    const isMobile = isMobilePortrait || isMobileLandscape;
+    
+    if (isMobile) {
+        if (isMobileLandscape) {
+            // LANDSCAPE MODE: Side by Side
+            gameScreen.style.flexDirection = 'row';
+            dialogueArea.style.position = 'relative';
+            dialogueArea.style.width = '60%';
+            dialogueArea.style.height = '100%';
+            dialogueArea.style.maxHeight = '100%';
+            dialogueArea.style.overflowY = 'auto';
+            dialogueArea.style.bottom = 'auto';
+            dialogueArea.style.right = 'auto';
+            dialogueArea.style.left = 'auto';
+            dialogueArea.style.borderTop = 'none';
+            dialogueArea.style.borderLeft = '3px solid var(--primary-color)';
+            characterArea.style.flex = '1';
+            characterArea.style.width = '40%';
+            characterArea.style.minHeight = '100%';
+            characterArea.style.maxHeight = '100%';
+        } else {
+            // PORTRAIT MODE: Vertical Stack
+            gameScreen.style.flexDirection = 'column';
+            dialogueArea.style.position = 'relative';
+            dialogueArea.style.width = '100%';
+            dialogueArea.style.height = 'auto';
+            dialogueArea.style.maxHeight = '50vh';
+            dialogueArea.style.overflowY = 'auto';
+            dialogueArea.style.bottom = 'auto';
+            dialogueArea.style.right = 'auto';
+            dialogueArea.style.left = 'auto';
+            dialogueArea.style.borderLeft = 'none';
+            dialogueArea.style.borderTop = '3px solid var(--primary-color)';
+            characterArea.style.flex = '1';
+            characterArea.style.width = '100%';
+            characterArea.style.minHeight = '40vh';
+            characterArea.style.maxHeight = '50vh';
+        }
+        return; // Exit early, ignore layout setting on mobile
+    }
+    
+    // DESKTOP LAYOUT - Apply user preference
+    // Reset all styles
     gameScreen.style.flexDirection = 'column';
     dialogueArea.style.position = 'absolute';
     dialogueArea.style.width = '';
     dialogueArea.style.height = '';
+    dialogueArea.style.maxHeight = '';
+    dialogueArea.style.overflowY = '';
     dialogueArea.style.bottom = '';
     dialogueArea.style.right = '';
     dialogueArea.style.left = '';
+    dialogueArea.style.borderLeft = '';
+    dialogueArea.style.borderTop = '';
     characterArea.style.flex = '';
+    characterArea.style.width = '';
+    characterArea.style.minHeight = '';
+    characterArea.style.maxHeight = '';
     
     switch(layout.dialoguePosition) {
         case 'right':
@@ -227,6 +316,7 @@ function applyLayout(layout) {
             dialogueArea.style.position = 'relative';
             dialogueArea.style.width = '40%';
             dialogueArea.style.height = 'auto';
+            dialogueArea.style.overflowY = 'auto';
             characterArea.style.flex = '1';
             break;
         default: // bottom
@@ -236,6 +326,8 @@ function applyLayout(layout) {
             break;
     }
 }
+
+
 
 // Create Settings Modal HTML
 function createSettingsModal() {
@@ -288,7 +380,7 @@ function createSettingsModal() {
                     </div>
                     
                     <div class="settings-section">
-                        <h3 data-lang="settings-layout">📐 Tata Letak</h3>
+                        <h3 data-lang="settings-layout">📐 Tata Letak (Dekstop only)</h3>
                         <div class="settings-grid" id="layoutOptions"></div>
                     </div>
                     
@@ -514,7 +606,7 @@ if (typeof uiTranslations !== 'undefined') {
         'nav-settings': '⚙️ Settings',
         'settings-title': 'Settings',
         'settings-theme': '🎨 Theme',
-        'settings-layout': '📐 Layout',
+        'settings-layout': '📐 Layout (Dekstop only)',
         'settings-animation': '✨ Animation Speed',
         'settings-font': '🔤 Font Size',
         'settings-effects': '🌟 Visual Effects',
@@ -534,7 +626,7 @@ if (typeof uiTranslations !== 'undefined') {
         'nav-settings': '⚙️ Pengaturan',
         'settings-title': 'Pengaturan',
         'settings-theme': '🎨 Tema',
-        'settings-layout': '📐 Tata Letak',
+        'settings-layout': '📐 Tata Letak (Dekstop only)',
         'settings-animation': '✨ Kecepatan Animasi',
         'settings-font': '🔤 Ukuran Font',
         'settings-effects': '🌟 Efek Visual',
