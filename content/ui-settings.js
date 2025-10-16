@@ -249,28 +249,58 @@ function applyLayout(layout) {
     const height = window.innerHeight;
     
     // Mobile jika width atau height tidak terlalu besar
-    const isMobilePortrait = width <= 769 && height > width;
+    const isMobilePortrait = width <= 768 && height > width;
     const isMobileLandscape = height <= 512 && width > height;
     const isMobile = isMobilePortrait || isMobileLandscape;
     
     if (isMobile) {
         if (isMobileLandscape) {
             // LANDSCAPE MODE: Side by Side
+
+            // gameScreen.style.flexDirection = 'row';
+            // dialogueArea.style.position = 'relative';
+            // dialogueArea.style.width = '60%';
+            // dialogueArea.style.height = '100%';
+            // dialogueArea.style.maxHeight = '100%';
+            // dialogueArea.style.overflowY = 'auto';
+            // dialogueArea.style.bottom = 'auto';
+            // dialogueArea.style.right = 'auto';
+            // dialogueArea.style.left = 'auto';
+            // dialogueArea.style.borderTop = 'none';
+            // dialogueArea.style.borderLeft = '3px solid var(--primary-color)';
+            // characterArea.style.flex = '1';
+            // characterArea.style.width = '40%';
+            // characterArea.style.minHeight = '100%';
+            // characterArea.style.maxHeight = '100%';
+
+
+            // LANDSCAPE MODE: Side by Side (Improved)
             gameScreen.style.flexDirection = 'row';
+            gameScreen.style.height = 'auto';
+            gameScreen.style.maxHeight = 'none';
+            gameScreen.style.overflowY = 'auto'; 
+            gameScreen.style.alignItems = 'stretch';
+
             dialogueArea.style.position = 'relative';
             dialogueArea.style.width = '60%';
-            dialogueArea.style.height = '100%';
-            dialogueArea.style.maxHeight = '100%';
-            dialogueArea.style.overflowY = 'auto';
+            dialogueArea.style.height = 'auto'; 
+            dialogueArea.style.maxHeight = '90vh'; 
+            dialogueArea.style.overflowY = 'auto'; 
             dialogueArea.style.bottom = 'auto';
             dialogueArea.style.right = 'auto';
             dialogueArea.style.left = 'auto';
             dialogueArea.style.borderTop = 'none';
             dialogueArea.style.borderLeft = '3px solid var(--primary-color)';
+            dialogueArea.style.padding = '1rem';
+
             characterArea.style.flex = '1';
             characterArea.style.width = '40%';
-            characterArea.style.minHeight = '100%';
-            characterArea.style.maxHeight = '100%';
+            characterArea.style.minHeight = 'auto';
+            characterArea.style.maxHeight = 'none';
+            characterArea.style.display = 'flex';
+            characterArea.style.justifyContent = 'center';
+            characterArea.style.alignItems = 'center';
+
         } else {
             // PORTRAIT MODE: Vertical Stack
             gameScreen.style.flexDirection = 'column';
