@@ -2679,347 +2679,904 @@ const experienceData = [
 
     // 16. Browser
     {
-    id: "riza-browser",
-    type: "project",
-    
-    title: {
-        id: "Riza Browser - Browser Eksperimen di Colab",
-        en: "Riza Browser - Experimental Browser in Colab"
-    },
-    subtitle: {
-        id: "Personal Project | Python + IPython | 2024",
-        en: "Personal Project | Python + IPython | 2024"
-    },
-    
-    description: {
-        id: "Browser sederhana yang dibuat di Google Colab sebagai eksperimen pembelajaran",
-        en: "Simple browser built in Google Colab as a learning experiment"
-    },
-    
-    tags: ["Python", "IPython Widgets", "Web Scraping", "Google Colab", "Experiment"],
-    
-    content: {
-        id: `
-            <h2 style="font-size: 28px; margin-bottom: 10px; background: linear-gradient(45deg, var(--primary-color), var(--secondary-color)); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
-                Riza Browser 🌐
-            </h2>
-            
-            <div style="display: flex; gap: 20px; margin-bottom: 25px; flex-wrap: wrap; opacity: 0.9;">
-                <span style="display: flex; align-items: center; gap: 8px;">🎨 <strong>Type:</strong> Personal Experiment</span>
-                <span style="display: flex; align-items: center; gap: 8px;">💻 <strong>Platform:</strong> Google Colab</span>
-                <span style="display: flex; align-items: center; gap: 8px;">🐍 <strong>Language:</strong> Python</span>
-                <span style="display: flex; align-items: center; gap: 8px;">📅 <strong>Year:</strong> 2024</span>
-            </div>
-            
-            <div style="display: inline-block; background: rgba(168, 85, 247, 0.1); border: 2px solid var(--primary-color); border-radius: 15px; padding: 8px; margin-bottom: 25px; width: 100%; max-width: 800px;">
-                <img src="assets/images/projects/riza-browser/browser-ui.png" alt="Riza Browser Interface" style="display: block; width: 100%; border-radius: 10px; object-fit: cover;">
-                <p style="text-align: center; padding: 10px; opacity: 0.8; font-size: 14px;">Riza Browser - Interface Pencarian Gambar</p>
-            </div>
+        id: "riza-browser",
+        type: "project",
+        
+        title: {
+            id: "Riza Browser - Browser Eksperimen di Colab",
+            en: "Riza Browser - Experimental Browser in Colab"
+        },
+        subtitle: {
+            id: "Personal Project | Python + IPython | 2024",
+            en: "Personal Project | Python + IPython | 2024"
+        },
+        
+        description: {
+            id: "Browser sederhana yang dibuat di Google Colab sebagai eksperimen pembelajaran",
+            en: "Simple browser built in Google Colab as a learning experiment"
+        },
+        
+        tags: ["Python", "IPython Widgets", "Web Scraping", "Google Colab", "Experiment"],
+        
+        content: {
+            id: `
+                <h2 style="font-size: 28px; margin-bottom: 10px; background: linear-gradient(45deg, var(--primary-color), var(--secondary-color)); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+                    Riza Browser 🌐
+                </h2>
+                
+                <div style="display: flex; gap: 20px; margin-bottom: 25px; flex-wrap: wrap; opacity: 0.9;">
+                    <span style="display: flex; align-items: center; gap: 8px;">🎨 <strong>Type:</strong> Personal Experiment</span>
+                    <span style="display: flex; align-items: center; gap: 8px;">💻 <strong>Platform:</strong> Google Colab</span>
+                    <span style="display: flex; align-items: center; gap: 8px;">🐍 <strong>Language:</strong> Python</span>
+                    <span style="display: flex; align-items: center; gap: 8px;">📅 <strong>Year:</strong> 2024</span>
+                </div>
+                
+                <div style="display: inline-block; background: rgba(168, 85, 247, 0.1); border: 2px solid var(--primary-color); border-radius: 15px; padding: 8px; margin-bottom: 25px; width: 100%; max-width: 800px;">
+                    <img src="assets/images/projects/riza-browser/browser-ui.png" alt="Riza Browser Interface" style="display: block; width: 100%; border-radius: 10px; object-fit: cover;">
+                    <p style="text-align: center; padding: 10px; opacity: 0.8; font-size: 14px;">Riza Browser - Interface Pencarian Gambar</p>
+                </div>
 
-            <div style="line-height: 1.8;">
-                <h3 style="color: var(--primary-color); margin: 25px 0 15px;">💡 Cerita di Balik Project</h3>
-                <p style="margin-bottom: 15px;">
-                    Project ini bermula dari tugas kuliah tentang konsep aplikasi freemium. Alih-alih hanya membuat presentasi konsep, 
-                    saya memutuskan untuk mencoba membangun prototype-nya langsung. Dan jadilah "Riza Browser" - browser sederhana 
-                    yang berjalan di Google Colab.
-                </p>
-                <p style="margin-bottom: 15px;">
-                    Meskipun terdengar sepele, project ini memberikan pembelajaran berharga tentang web scraping, API interaction, 
-                    dan building interactive UI menggunakan Python. Plus, ini project "gabut" yang ternyata cukup produktif! 😄
-                </p>
-                
-                <h3 style="color: var(--primary-color); margin: 25px 0 15px;">✨ Fitur yang Berhasil Diimplementasi</h3>
-                <div style="background: rgba(168, 85, 247, 0.05); padding: 20px; border-radius: 12px; margin-bottom: 20px; border: 1px solid rgba(168, 85, 247, 0.2);">
-                    <ul style="margin-left: 20px;">
-                        <li style="margin-bottom: 12px;">
-                            <strong>🔍 Web Search</strong><br>
-                            <span style="opacity: 0.9; font-size: 14px;">
-                                Pencarian web menggunakan DuckDuckGo & Bing tanpa memerlukan API key. 
-                                Menggunakan web scraping untuk mendapatkan hasil pencarian.
-                            </span>
-                        </li>
-                        <li style="margin-bottom: 12px;">
-                            <strong>🖼️ Image Search</strong><br>
-                            <span style="opacity: 0.9; font-size: 14px;">
-                                Pencarian gambar dengan tampilan gallery yang rapi. Hasil ditampilkan dalam grid layout yang responsif.
-                            </span>
-                        </li>
-                        <li style="margin-bottom: 12px;">
-                            <strong>🎨 Modern UI</strong><br>
-                            <span style="opacity: 0.9; font-size: 14px;">
-                                Interface bersih dengan sistem tab (Web, Gambar, Video) menggunakan IPython widgets. 
-                                Design minimalis tapi fungsional.
-                            </span>
-                        </li>
-                        <li style="margin-bottom: 12px;">
-                            <strong>💾 Basic Caching</strong><br>
-                            <span style="opacity: 0.9; font-size: 14px;">
-                                Sistem cache sederhana untuk menyimpan hasil pencarian dan mengurangi request berulang.
-                            </span>
-                        </li>
-                    </ul>
-                </div>
-                
-                <h3 style="color: var(--primary-color); margin: 25px 0 15px;">🛠️ Teknologi yang Digunakan</h3>
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 12px; margin-bottom: 20px;">
-                    <div style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(59, 130, 246, 0.05)); padding: 15px; border-left: 4px solid #3b82f6; border-radius: 8px;">
-                        <strong style="color: #3b82f6;">🐍 Python</strong>
-                        <p style="margin-top: 8px; opacity: 0.9; font-size: 14px;">Core programming language untuk logic dan API interaction</p>
-                    </div>
-                    <div style="background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(139, 92, 246, 0.05)); padding: 15px; border-left: 4px solid #8b5cf6; border-radius: 8px;">
-                        <strong style="color: #8b5cf6;">📊 IPython Widgets</strong>
-                        <p style="margin-top: 8px; opacity: 0.9; font-size: 14px;">Interactive UI components dalam Jupyter/Colab notebook</p>
-                    </div>
-                    <div style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(16, 185, 129, 0.05)); padding: 15px; border-left: 4px solid #10b981; border-radius: 8px;">
-                        <strong style="color: #10b981;">🌐 DuckDuckGo API</strong>
-                        <p style="margin-top: 8px; opacity: 0.9; font-size: 14px;">Web scraping untuk hasil pencarian tanpa API key</p>
-                    </div>
-                    <div style="background: linear-gradient(135deg, rgba(245, 158, 11, 0.1), rgba(245, 158, 11, 0.05)); padding: 15px; border-left: 4px solid #f59e0b; border-radius: 8px;">
-                        <strong style="color: #f59e0b;">🔎 Bing Search</strong>
-                        <p style="margin-top: 8px; opacity: 0.9; font-size: 14px;">Alternative search engine untuk variasi hasil</p>
-                    </div>
-                    <div style="background: linear-gradient(135deg, rgba(236, 72, 153, 0.1), rgba(236, 72, 153, 0.05)); padding: 15px; border-left: 4px solid #ec4899; border-radius: 8px;">
-                        <strong style="color: #ec4899;">☁️ Google Colab</strong>
-                        <p style="margin-top: 8px; opacity: 0.9; font-size: 14px;">Cloud-based Python notebook environment</p>
-                    </div>
-                </div>
-                
-                <h3 style="color: var(--primary-color); margin: 25px 0 15px;">🎯 Fitur & Batasan</h3>
-                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 25px;">
-                    <div style="background: rgba(16, 185, 129, 0.1); padding: 20px; border-radius: 12px; border: 2px solid rgba(16, 185, 129, 0.3);">
-                        <h4 style="color: #10b981; margin-bottom: 12px;">✅ Yang Sudah Jalan</h4>
-                        <ul style="margin-left: 20px; font-size: 14px;">
-                            <li>Web search dengan hasil real</li>
-                            <li>Image search dengan gallery view</li>
-                            <li>Tab navigation yang smooth</li>
-                            <li>Basic caching system</li>
-                            <li>Clean & modern UI</li>
+                <div style="line-height: 1.8;">
+                    <h3 style="color: var(--primary-color); margin: 25px 0 15px;">💡 Cerita di Balik Project</h3>
+                    <p style="margin-bottom: 15px;">
+                        Project ini bermula dari tugas kuliah tentang konsep aplikasi freemium. Alih-alih hanya membuat presentasi konsep, 
+                        saya memutuskan untuk mencoba membangun prototype-nya langsung. Dan jadilah "Riza Browser" - browser sederhana 
+                        yang berjalan di Google Colab.
+                    </p>
+                    <p style="margin-bottom: 15px;">
+                        Meskipun terdengar sepele, project ini memberikan pembelajaran berharga tentang web scraping, API interaction, 
+                        dan building interactive UI menggunakan Python. Plus, ini project "gabut" yang ternyata cukup produktif! 😄
+                    </p>
+                    
+                    <h3 style="color: var(--primary-color); margin: 25px 0 15px;">✨ Fitur yang Berhasil Diimplementasi</h3>
+                    <div style="background: rgba(168, 85, 247, 0.05); padding: 20px; border-radius: 12px; margin-bottom: 20px; border: 1px solid rgba(168, 85, 247, 0.2);">
+                        <ul style="margin-left: 20px;">
+                            <li style="margin-bottom: 12px;">
+                                <strong>🔍 Web Search</strong><br>
+                                <span style="opacity: 0.9; font-size: 14px;">
+                                    Pencarian web menggunakan DuckDuckGo & Bing tanpa memerlukan API key. 
+                                    Menggunakan web scraping untuk mendapatkan hasil pencarian.
+                                </span>
+                            </li>
+                            <li style="margin-bottom: 12px;">
+                                <strong>🖼️ Image Search</strong><br>
+                                <span style="opacity: 0.9; font-size: 14px;">
+                                    Pencarian gambar dengan tampilan gallery yang rapi. Hasil ditampilkan dalam grid layout yang responsif.
+                                </span>
+                            </li>
+                            <li style="margin-bottom: 12px;">
+                                <strong>🎨 Modern UI</strong><br>
+                                <span style="opacity: 0.9; font-size: 14px;">
+                                    Interface bersih dengan sistem tab (Web, Gambar, Video) menggunakan IPython widgets. 
+                                    Design minimalis tapi fungsional.
+                                </span>
+                            </li>
+                            <li style="margin-bottom: 12px;">
+                                <strong>💾 Basic Caching</strong><br>
+                                <span style="opacity: 0.9; font-size: 14px;">
+                                    Sistem cache sederhana untuk menyimpan hasil pencarian dan mengurangi request berulang.
+                                </span>
+                            </li>
                         </ul>
                     </div>
-                    <div style="background: rgba(245, 158, 11, 0.1); padding: 20px; border-radius: 12px; border: 2px solid rgba(245, 158, 11, 0.3);">
-                        <h4 style="color: #f59e0b; margin-bottom: 12px;">⏳ Placeholder/Rencana</h4>
-                        <ul style="margin-left: 20px; font-size: 14px;">
-                            <li>Video search (UI only)</li>
-                            <li>VPN Global feature</li>
-                            <li>AI Assistant integration</li>
-                            <li>Cloud storage</li>
-                            <li>Ad blocking feature</li>
+                    
+                    <h3 style="color: var(--primary-color); margin: 25px 0 15px;">🛠️ Teknologi yang Digunakan</h3>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 12px; margin-bottom: 20px;">
+                        <div style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(59, 130, 246, 0.05)); padding: 15px; border-left: 4px solid #3b82f6; border-radius: 8px;">
+                            <strong style="color: #3b82f6;">🐍 Python</strong>
+                            <p style="margin-top: 8px; opacity: 0.9; font-size: 14px;">Core programming language untuk logic dan API interaction</p>
+                        </div>
+                        <div style="background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(139, 92, 246, 0.05)); padding: 15px; border-left: 4px solid #8b5cf6; border-radius: 8px;">
+                            <strong style="color: #8b5cf6;">📊 IPython Widgets</strong>
+                            <p style="margin-top: 8px; opacity: 0.9; font-size: 14px;">Interactive UI components dalam Jupyter/Colab notebook</p>
+                        </div>
+                        <div style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(16, 185, 129, 0.05)); padding: 15px; border-left: 4px solid #10b981; border-radius: 8px;">
+                            <strong style="color: #10b981;">🌐 DuckDuckGo API</strong>
+                            <p style="margin-top: 8px; opacity: 0.9; font-size: 14px;">Web scraping untuk hasil pencarian tanpa API key</p>
+                        </div>
+                        <div style="background: linear-gradient(135deg, rgba(245, 158, 11, 0.1), rgba(245, 158, 11, 0.05)); padding: 15px; border-left: 4px solid #f59e0b; border-radius: 8px;">
+                            <strong style="color: #f59e0b;">🔎 Bing Search</strong>
+                            <p style="margin-top: 8px; opacity: 0.9; font-size: 14px;">Alternative search engine untuk variasi hasil</p>
+                        </div>
+                        <div style="background: linear-gradient(135deg, rgba(236, 72, 153, 0.1), rgba(236, 72, 153, 0.05)); padding: 15px; border-left: 4px solid #ec4899; border-radius: 8px;">
+                            <strong style="color: #ec4899;">☁️ Google Colab</strong>
+                            <p style="margin-top: 8px; opacity: 0.9; font-size: 14px;">Cloud-based Python notebook environment</p>
+                        </div>
+                    </div>
+                    
+                    <h3 style="color: var(--primary-color); margin: 25px 0 15px;">🎯 Fitur & Batasan</h3>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 25px;">
+                        <div style="background: rgba(16, 185, 129, 0.1); padding: 20px; border-radius: 12px; border: 2px solid rgba(16, 185, 129, 0.3);">
+                            <h4 style="color: #10b981; margin-bottom: 12px;">✅ Yang Sudah Jalan</h4>
+                            <ul style="margin-left: 20px; font-size: 14px;">
+                                <li>Web search dengan hasil real</li>
+                                <li>Image search dengan gallery view</li>
+                                <li>Tab navigation yang smooth</li>
+                                <li>Basic caching system</li>
+                                <li>Clean & modern UI</li>
+                            </ul>
+                        </div>
+                        <div style="background: rgba(245, 158, 11, 0.1); padding: 20px; border-radius: 12px; border: 2px solid rgba(245, 158, 11, 0.3);">
+                            <h4 style="color: #f59e0b; margin-bottom: 12px;">⏳ Placeholder/Rencana</h4>
+                            <ul style="margin-left: 20px; font-size: 14px;">
+                                <li>Video search (UI only)</li>
+                                <li>VPN Global feature</li>
+                                <li>AI Assistant integration</li>
+                                <li>Cloud storage</li>
+                                <li>Ad blocking feature</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <h3 style="color: var(--primary-color); margin: 25px 0 15px;">📚 Pembelajaran dari Project Ini</h3>
+                    <div style="background: rgba(59, 130, 246, 0.1); padding: 20px; border-radius: 12px; border-left: 4px solid #3b82f6; margin-bottom: 20px;">
+                        <ul style="margin-left: 20px;">
+                            <li style="margin-bottom: 10px;">
+                                <strong>Web Scraping</strong> - Belajar cara mengambil data dari website tanpa API resmi
+                            </li>
+                            <li style="margin-bottom: 10px;">
+                                <strong>IPython Widgets</strong> - Membuat interactive UI di Python notebook
+                            </li>
+                            <li style="margin-bottom: 10px;">
+                                <strong>API Integration</strong> - Menghubungkan berbagai search engine
+                            </li>
+                            <li style="margin-bottom: 10px;">
+                                <strong>Error Handling</strong> - Mengatasi berbagai edge cases dalam web interaction
+                            </li>
+                            <li style="margin-bottom: 10px;">
+                                <strong>UI/UX Design</strong> - Merancang interface yang user-friendly meskipun di notebook
+                            </li>
                         </ul>
                     </div>
-                </div>
-                
-                <h3 style="color: var(--primary-color); margin: 25px 0 15px;">📚 Pembelajaran dari Project Ini</h3>
-                <div style="background: rgba(59, 130, 246, 0.1); padding: 20px; border-radius: 12px; border-left: 4px solid #3b82f6; margin-bottom: 20px;">
-                    <ul style="margin-left: 20px;">
-                        <li style="margin-bottom: 10px;">
-                            <strong>Web Scraping</strong> - Belajar cara mengambil data dari website tanpa API resmi
-                        </li>
-                        <li style="margin-bottom: 10px;">
-                            <strong>IPython Widgets</strong> - Membuat interactive UI di Python notebook
-                        </li>
-                        <li style="margin-bottom: 10px;">
-                            <strong>API Integration</strong> - Menghubungkan berbagai search engine
-                        </li>
-                        <li style="margin-bottom: 10px;">
-                            <strong>Error Handling</strong> - Mengatasi berbagai edge cases dalam web interaction
-                        </li>
-                        <li style="margin-bottom: 10px;">
-                            <strong>UI/UX Design</strong> - Merancang interface yang user-friendly meskipun di notebook
-                        </li>
-                    </ul>
-                </div>
-                
-                <div style="background: linear-gradient(135deg, rgba(168, 85, 247, 0.1), rgba(236, 72, 153, 0.1)); padding: 25px; border-radius: 15px; border: 2px solid var(--primary-color); margin-top: 30px;">
-                    <h4 style="color: var(--primary-color); margin-bottom: 15px;">🔗 Try It Yourself!</h4>
-                    <p style="margin-bottom: 15px; opacity: 0.9;">
-                        Kamu bisa langsung mencoba browser ini tanpa perlu install apapun. Cukup buka link Colab dan jalankan!
-                    </p>
-                    <div style="display: flex; flex-wrap: wrap; gap: 12px;">
-                        <a href="https://colab.research.google.com/drive/1wjqVtGWhAha8BkpPduSLi61rxBYwF0sF?usp=sharing" target="_blank" rel="noopener" style="padding: 12px 24px; background: rgba(245, 158, 11, 0.2); border: 2px solid #f59e0b; border-radius: 25px; color: white; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; transition: all 0.3s;">
-                            ☁️ <strong>Open in Google Colab</strong>
-                        </a>
-                        <a href="https://github.com/MRizaA/Riza_Browser_v1" target="_blank" rel="noopener" style="padding: 12px 24px; background: rgba(0, 0, 0, 0.3); border: 2px solid #fff; border-radius: 25px; color: white; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; transition: all 0.3s;">
-                            <img src="assets/images/icons/github.png" alt="GitHub" style="width: 20px; height: 20px; border-radius: 50%; background: white; padding: 2px;">
-                            <strong>GitHub Repository</strong>
-                        </a>
+                    
+                    <div style="background: linear-gradient(135deg, rgba(168, 85, 247, 0.1), rgba(236, 72, 153, 0.1)); padding: 25px; border-radius: 15px; border: 2px solid var(--primary-color); margin-top: 30px;">
+                        <h4 style="color: var(--primary-color); margin-bottom: 15px;">🔗 Try It Yourself!</h4>
+                        <p style="margin-bottom: 15px; opacity: 0.9;">
+                            Kamu bisa langsung mencoba browser ini tanpa perlu install apapun. Cukup buka link Colab dan jalankan!
+                        </p>
+                        <div style="display: flex; flex-wrap: wrap; gap: 12px;">
+                            <a href="https://colab.research.google.com/drive/1wjqVtGWhAha8BkpPduSLi61rxBYwF0sF?usp=sharing" target="_blank" rel="noopener" style="padding: 12px 24px; background: rgba(245, 158, 11, 0.2); border: 2px solid #f59e0b; border-radius: 25px; color: white; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; transition: all 0.3s;">
+                                ☁️ <strong>Open in Google Colab</strong>
+                            </a>
+                            <a href="https://github.com/MRizaA/Riza_Browser_v1" target="_blank" rel="noopener" style="padding: 12px 24px; background: rgba(0, 0, 0, 0.3); border: 2px solid #fff; border-radius: 25px; color: white; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; transition: all 0.3s;">
+                                <img src="assets/images/icons/github.png" alt="GitHub" style="width: 20px; height: 20px; border-radius: 50%; background: white; padding: 2px;">
+                                <strong>GitHub Repository</strong>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div style="background: rgba(236, 72, 153, 0.1); padding: 20px; border-radius: 12px; border-left: 4px solid #ec4899; margin-top: 25px;">
+                        <h4 style="color: #ec4899; margin-bottom: 10px;">💭 Refleksi</h4>
+                        <p style="margin-bottom: 10px;">
+                            Project "gabut" ini ternyata mengajarkan banyak hal! Dari konsep sederhana tugas kuliah, berkembang menjadi 
+                            eksperimen yang cukup kompleks. Meskipun masih banyak fitur yang placeholder, tapi browser ini sudah fungsional 
+                            untuk kebutuhan dasar pencarian web dan gambar.
+                        </p>
+                        <p style="font-style: italic; opacity: 0.9;">
+                            "Sometimes the best projects come from just trying things out. Gak harus sempurna, yang penting jadi dan belajar dari prosesnya!"
+                        </p>
                     </div>
                 </div>
+            `,
+            en: `
+                <h2 style="font-size: 28px; margin-bottom: 10px; background: linear-gradient(45deg, var(--primary-color), var(--secondary-color)); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+                    Riza Browser 🌐
+                </h2>
                 
-                <div style="background: rgba(236, 72, 153, 0.1); padding: 20px; border-radius: 12px; border-left: 4px solid #ec4899; margin-top: 25px;">
-                    <h4 style="color: #ec4899; margin-bottom: 10px;">💭 Refleksi</h4>
-                    <p style="margin-bottom: 10px;">
-                        Project "gabut" ini ternyata mengajarkan banyak hal! Dari konsep sederhana tugas kuliah, berkembang menjadi 
-                        eksperimen yang cukup kompleks. Meskipun masih banyak fitur yang placeholder, tapi browser ini sudah fungsional 
-                        untuk kebutuhan dasar pencarian web dan gambar.
-                    </p>
-                    <p style="font-style: italic; opacity: 0.9;">
-                        "Sometimes the best projects come from just trying things out. Gak harus sempurna, yang penting jadi dan belajar dari prosesnya!"
-                    </p>
+                <div style="display: flex; gap: 20px; margin-bottom: 25px; flex-wrap: wrap; opacity: 0.9;">
+                    <span style="display: flex; align-items: center; gap: 8px;">🎨 <strong>Type:</strong> Personal Experiment</span>
+                    <span style="display: flex; align-items: center; gap: 8px;">💻 <strong>Platform:</strong> Google Colab</span>
+                    <span style="display: flex; align-items: center; gap: 8px;">🐍 <strong>Language:</strong> Python</span>
+                    <span style="display: flex; align-items: center; gap: 8px;">📅 <strong>Year:</strong> 2024</span>
                 </div>
-            </div>
-        `,
-        en: `
-            <h2 style="font-size: 28px; margin-bottom: 10px; background: linear-gradient(45deg, var(--primary-color), var(--secondary-color)); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
-                Riza Browser 🌐
-            </h2>
-            
-            <div style="display: flex; gap: 20px; margin-bottom: 25px; flex-wrap: wrap; opacity: 0.9;">
-                <span style="display: flex; align-items: center; gap: 8px;">🎨 <strong>Type:</strong> Personal Experiment</span>
-                <span style="display: flex; align-items: center; gap: 8px;">💻 <strong>Platform:</strong> Google Colab</span>
-                <span style="display: flex; align-items: center; gap: 8px;">🐍 <strong>Language:</strong> Python</span>
-                <span style="display: flex; align-items: center; gap: 8px;">📅 <strong>Year:</strong> 2024</span>
-            </div>
-            
-            <div style="display: inline-block; background: rgba(168, 85, 247, 0.1); border: 2px solid var(--primary-color); border-radius: 15px; padding: 8px; margin-bottom: 25px; width: 100%; max-width: 800px;">
-                <img src="assets/images/projects/riza-browser/browser-ui.png" alt="Riza Browser Interface" style="display: block; width: 100%; border-radius: 10px; object-fit: cover;">
-                <p style="text-align: center; padding: 10px; opacity: 0.8; font-size: 14px;">Riza Browser - Image Search Interface</p>
-            </div>
+                
+                <div style="display: inline-block; background: rgba(168, 85, 247, 0.1); border: 2px solid var(--primary-color); border-radius: 15px; padding: 8px; margin-bottom: 25px; width: 100%; max-width: 800px;">
+                    <img src="assets/images/projects/riza-browser/browser-ui.png" alt="Riza Browser Interface" style="display: block; width: 100%; border-radius: 10px; object-fit: cover;">
+                    <p style="text-align: center; padding: 10px; opacity: 0.8; font-size: 14px;">Riza Browser - Image Search Interface</p>
+                </div>
 
-            <div style="line-height: 1.8;">
-                <h3 style="color: var(--primary-color); margin: 25px 0 15px;">💡 The Story Behind</h3>
-                <p style="margin-bottom: 15px;">
-                    This project started from a college assignment about freemium app concepts. Instead of just making a presentation, 
-                    I decided to try building the prototype directly. And thus "Riza Browser" was born - a simple browser 
-                    running in Google Colab.
-                </p>
-                <p style="margin-bottom: 15px;">
-                    Although it sounds trivial, this project provided valuable lessons about web scraping, API interaction, 
-                    and building interactive UIs using Python. Plus, it's a "fun" project that turned out to be quite productive! 😄
-                </p>
-                
-                <h3 style="color: var(--primary-color); margin: 25px 0 15px;">✨ Successfully Implemented Features</h3>
-                <div style="background: rgba(168, 85, 247, 0.05); padding: 20px; border-radius: 12px; margin-bottom: 20px; border: 1px solid rgba(168, 85, 247, 0.2);">
-                    <ul style="margin-left: 20px;">
-                        <li style="margin-bottom: 12px;">
-                            <strong>🔍 Web Search</strong><br>
-                            <span style="opacity: 0.9; font-size: 14px;">
-                                Web search using DuckDuckGo & Bing without requiring API keys. 
-                                Uses web scraping to get search results.
-                            </span>
-                        </li>
-                        <li style="margin-bottom: 12px;">
-                            <strong>🖼️ Image Search</strong><br>
-                            <span style="opacity: 0.9; font-size: 14px;">
-                                Image search with neat gallery display. Results shown in responsive grid layout.
-                            </span>
-                        </li>
-                        <li style="margin-bottom: 12px;">
-                            <strong>🎨 Modern UI</strong><br>
-                            <span style="opacity: 0.9; font-size: 14px;">
-                                Clean interface with tab system (Web, Images, Video) using IPython widgets. 
-                                Minimalist but functional design.
-                            </span>
-                        </li>
-                        <li style="margin-bottom: 12px;">
-                            <strong>💾 Basic Caching</strong><br>
-                            <span style="opacity: 0.9; font-size: 14px;">
-                                Simple cache system to store search results and reduce repeated requests.
-                            </span>
-                        </li>
-                    </ul>
-                </div>
-                
-                <h3 style="color: var(--primary-color); margin: 25px 0 15px;">🛠️ Technologies Used</h3>
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 12px; margin-bottom: 20px;">
-                    <div style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(59, 130, 246, 0.05)); padding: 15px; border-left: 4px solid #3b82f6; border-radius: 8px;">
-                        <strong style="color: #3b82f6;">🐍 Python</strong>
-                        <p style="margin-top: 8px; opacity: 0.9; font-size: 14px;">Core programming language for logic and API interaction</p>
-                    </div>
-                    <div style="background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(139, 92, 246, 0.05)); padding: 15px; border-left: 4px solid #8b5cf6; border-radius: 8px;">
-                        <strong style="color: #8b5cf6;">📊 IPython Widgets</strong>
-                        <p style="margin-top: 8px; opacity: 0.9; font-size: 14px;">Interactive UI components in Jupyter/Colab notebook</p>
-                    </div>
-                    <div style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(16, 185, 129, 0.05)); padding: 15px; border-left: 4px solid #10b981; border-radius: 8px;">
-                        <strong style="color: #10b981;">🌐 DuckDuckGo API</strong>
-                        <p style="margin-top: 8px; opacity: 0.9; font-size: 14px;">Web scraping for search results without API key</p>
-                    </div>
-                    <div style="background: linear-gradient(135deg, rgba(245, 158, 11, 0.1), rgba(245, 158, 11, 0.05)); padding: 15px; border-left: 4px solid #f59e0b; border-radius: 8px;">
-                        <strong style="color: #f59e0b;">🔎 Bing Search</strong>
-                        <p style="margin-top: 8px; opacity: 0.9; font-size: 14px;">Alternative search engine for variety results</p>
-                    </div>
-                    <div style="background: linear-gradient(135deg, rgba(236, 72, 153, 0.1), rgba(236, 72, 153, 0.05)); padding: 15px; border-left: 4px solid #ec4899; border-radius: 8px;">
-                        <strong style="color: #ec4899;">☁️ Google Colab</strong>
-                        <p style="margin-top: 8px; opacity: 0.9; font-size: 14px;">Cloud-based Python notebook environment</p>
-                    </div>
-                </div>
-                
-                <h3 style="color: var(--primary-color); margin: 25px 0 15px;">🎯 Features & Limitations</h3>
-                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 25px;">
-                    <div style="background: rgba(16, 185, 129, 0.1); padding: 20px; border-radius: 12px; border: 2px solid rgba(16, 185, 129, 0.3);">
-                        <h4 style="color: #10b981; margin-bottom: 12px;">✅ Working Features</h4>
-                        <ul style="margin-left: 20px; font-size: 14px;">
-                            <li>Web search with real results</li>
-                            <li>Image search with gallery view</li>
-                            <li>Smooth tab navigation</li>
-                            <li>Basic caching system</li>
-                            <li>Clean & modern UI</li>
+                <div style="line-height: 1.8;">
+                    <h3 style="color: var(--primary-color); margin: 25px 0 15px;">💡 The Story Behind</h3>
+                    <p style="margin-bottom: 15px;">
+                        This project started from a college assignment about freemium app concepts. Instead of just making a presentation, 
+                        I decided to try building the prototype directly. And thus "Riza Browser" was born - a simple browser 
+                        running in Google Colab.
+                    </p>
+                    <p style="margin-bottom: 15px;">
+                        Although it sounds trivial, this project provided valuable lessons about web scraping, API interaction, 
+                        and building interactive UIs using Python. Plus, it's a "fun" project that turned out to be quite productive! 😄
+                    </p>
+                    
+                    <h3 style="color: var(--primary-color); margin: 25px 0 15px;">✨ Successfully Implemented Features</h3>
+                    <div style="background: rgba(168, 85, 247, 0.05); padding: 20px; border-radius: 12px; margin-bottom: 20px; border: 1px solid rgba(168, 85, 247, 0.2);">
+                        <ul style="margin-left: 20px;">
+                            <li style="margin-bottom: 12px;">
+                                <strong>🔍 Web Search</strong><br>
+                                <span style="opacity: 0.9; font-size: 14px;">
+                                    Web search using DuckDuckGo & Bing without requiring API keys. 
+                                    Uses web scraping to get search results.
+                                </span>
+                            </li>
+                            <li style="margin-bottom: 12px;">
+                                <strong>🖼️ Image Search</strong><br>
+                                <span style="opacity: 0.9; font-size: 14px;">
+                                    Image search with neat gallery display. Results shown in responsive grid layout.
+                                </span>
+                            </li>
+                            <li style="margin-bottom: 12px;">
+                                <strong>🎨 Modern UI</strong><br>
+                                <span style="opacity: 0.9; font-size: 14px;">
+                                    Clean interface with tab system (Web, Images, Video) using IPython widgets. 
+                                    Minimalist but functional design.
+                                </span>
+                            </li>
+                            <li style="margin-bottom: 12px;">
+                                <strong>💾 Basic Caching</strong><br>
+                                <span style="opacity: 0.9; font-size: 14px;">
+                                    Simple cache system to store search results and reduce repeated requests.
+                                </span>
+                            </li>
                         </ul>
                     </div>
-                    <div style="background: rgba(245, 158, 11, 0.1); padding: 20px; border-radius: 12px; border: 2px solid rgba(245, 158, 11, 0.3);">
-                        <h4 style="color: #f59e0b; margin-bottom: 12px;">⏳ Placeholder/Plans</h4>
-                        <ul style="margin-left: 20px; font-size: 14px;">
-                            <li>Video search (UI only)</li>
-                            <li>VPN Global feature</li>
-                            <li>AI Assistant integration</li>
-                            <li>Cloud storage</li>
-                            <li>Ad blocking feature</li>
+                    
+                    <h3 style="color: var(--primary-color); margin: 25px 0 15px;">🛠️ Technologies Used</h3>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 12px; margin-bottom: 20px;">
+                        <div style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(59, 130, 246, 0.05)); padding: 15px; border-left: 4px solid #3b82f6; border-radius: 8px;">
+                            <strong style="color: #3b82f6;">🐍 Python</strong>
+                            <p style="margin-top: 8px; opacity: 0.9; font-size: 14px;">Core programming language for logic and API interaction</p>
+                        </div>
+                        <div style="background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(139, 92, 246, 0.05)); padding: 15px; border-left: 4px solid #8b5cf6; border-radius: 8px;">
+                            <strong style="color: #8b5cf6;">📊 IPython Widgets</strong>
+                            <p style="margin-top: 8px; opacity: 0.9; font-size: 14px;">Interactive UI components in Jupyter/Colab notebook</p>
+                        </div>
+                        <div style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(16, 185, 129, 0.05)); padding: 15px; border-left: 4px solid #10b981; border-radius: 8px;">
+                            <strong style="color: #10b981;">🌐 DuckDuckGo API</strong>
+                            <p style="margin-top: 8px; opacity: 0.9; font-size: 14px;">Web scraping for search results without API key</p>
+                        </div>
+                        <div style="background: linear-gradient(135deg, rgba(245, 158, 11, 0.1), rgba(245, 158, 11, 0.05)); padding: 15px; border-left: 4px solid #f59e0b; border-radius: 8px;">
+                            <strong style="color: #f59e0b;">🔎 Bing Search</strong>
+                            <p style="margin-top: 8px; opacity: 0.9; font-size: 14px;">Alternative search engine for variety results</p>
+                        </div>
+                        <div style="background: linear-gradient(135deg, rgba(236, 72, 153, 0.1), rgba(236, 72, 153, 0.05)); padding: 15px; border-left: 4px solid #ec4899; border-radius: 8px;">
+                            <strong style="color: #ec4899;">☁️ Google Colab</strong>
+                            <p style="margin-top: 8px; opacity: 0.9; font-size: 14px;">Cloud-based Python notebook environment</p>
+                        </div>
+                    </div>
+                    
+                    <h3 style="color: var(--primary-color); margin: 25px 0 15px;">🎯 Features & Limitations</h3>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 25px;">
+                        <div style="background: rgba(16, 185, 129, 0.1); padding: 20px; border-radius: 12px; border: 2px solid rgba(16, 185, 129, 0.3);">
+                            <h4 style="color: #10b981; margin-bottom: 12px;">✅ Working Features</h4>
+                            <ul style="margin-left: 20px; font-size: 14px;">
+                                <li>Web search with real results</li>
+                                <li>Image search with gallery view</li>
+                                <li>Smooth tab navigation</li>
+                                <li>Basic caching system</li>
+                                <li>Clean & modern UI</li>
+                            </ul>
+                        </div>
+                        <div style="background: rgba(245, 158, 11, 0.1); padding: 20px; border-radius: 12px; border: 2px solid rgba(245, 158, 11, 0.3);">
+                            <h4 style="color: #f59e0b; margin-bottom: 12px;">⏳ Placeholder/Plans</h4>
+                            <ul style="margin-left: 20px; font-size: 14px;">
+                                <li>Video search (UI only)</li>
+                                <li>VPN Global feature</li>
+                                <li>AI Assistant integration</li>
+                                <li>Cloud storage</li>
+                                <li>Ad blocking feature</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <h3 style="color: var(--primary-color); margin: 25px 0 15px;">📚 Lessons Learned</h3>
+                    <div style="background: rgba(59, 130, 246, 0.1); padding: 20px; border-radius: 12px; border-left: 4px solid #3b82f6; margin-bottom: 20px;">
+                        <ul style="margin-left: 20px;">
+                            <li style="margin-bottom: 10px;">
+                                <strong>Web Scraping</strong> - Learned how to extract data from websites without official APIs
+                            </li>
+                            <li style="margin-bottom: 10px;">
+                                <strong>IPython Widgets</strong> - Creating interactive UI in Python notebooks
+                            </li>
+                            <li style="margin-bottom: 10px;">
+                                <strong>API Integration</strong> - Connecting various search engines
+                            </li>
+                            <li style="margin-bottom: 10px;">
+                                <strong>Error Handling</strong> - Managing various edge cases in web interaction
+                            </li>
+                            <li style="margin-bottom: 10px;">
+                                <strong>UI/UX Design</strong> - Designing user-friendly interfaces even in notebooks
+                            </li>
                         </ul>
                     </div>
-                </div>
-                
-                <h3 style="color: var(--primary-color); margin: 25px 0 15px;">📚 Lessons Learned</h3>
-                <div style="background: rgba(59, 130, 246, 0.1); padding: 20px; border-radius: 12px; border-left: 4px solid #3b82f6; margin-bottom: 20px;">
-                    <ul style="margin-left: 20px;">
-                        <li style="margin-bottom: 10px;">
-                            <strong>Web Scraping</strong> - Learned how to extract data from websites without official APIs
-                        </li>
-                        <li style="margin-bottom: 10px;">
-                            <strong>IPython Widgets</strong> - Creating interactive UI in Python notebooks
-                        </li>
-                        <li style="margin-bottom: 10px;">
-                            <strong>API Integration</strong> - Connecting various search engines
-                        </li>
-                        <li style="margin-bottom: 10px;">
-                            <strong>Error Handling</strong> - Managing various edge cases in web interaction
-                        </li>
-                        <li style="margin-bottom: 10px;">
-                            <strong>UI/UX Design</strong> - Designing user-friendly interfaces even in notebooks
-                        </li>
-                    </ul>
-                </div>
-                
-                <div style="background: linear-gradient(135deg, rgba(168, 85, 247, 0.1), rgba(236, 72, 153, 0.1)); padding: 25px; border-radius: 15px; border: 2px solid var(--primary-color); margin-top: 30px;">
-                    <h4 style="color: var(--primary-color); margin-bottom: 15px;">🔗 Try It Yourself!</h4>
-                    <p style="margin-bottom: 15px; opacity: 0.9;">
-                        You can try this browser directly without installing anything. Just open the Colab link and run!
-                    </p>
-                    <div style="display: flex; flex-wrap: wrap; gap: 12px;">
-                        <a href="https://colab.research.google.com/drive/1wjqVtGWhAha8BkpPduSLi61rxBYwF0sF?usp=sharing" target="_blank" rel="noopener" style="padding: 12px 24px; background: rgba(245, 158, 11, 0.2); border: 2px solid #f59e0b; border-radius: 25px; color: white; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; transition: all 0.3s;">
-                            ☁️ <strong>Open in Google Colab</strong>
-                        </a>
-                        <a href="https://github.com/MRizaA/Riza_Browser_v1" target="_blank" rel="noopener" style="padding: 12px 24px; background: rgba(0, 0, 0, 0.3); border: 2px solid #fff; border-radius: 25px; color: white; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; transition: all 0.3s;">
-                            <img src="assets/images/icons/github.png" alt="GitHub" style="width: 20px; height: 20px; border-radius: 50%; background: white; padding: 2px;">
-                            <strong>GitHub Repository</strong>
-                        </a>
+                    
+                    <div style="background: linear-gradient(135deg, rgba(168, 85, 247, 0.1), rgba(236, 72, 153, 0.1)); padding: 25px; border-radius: 15px; border: 2px solid var(--primary-color); margin-top: 30px;">
+                        <h4 style="color: var(--primary-color); margin-bottom: 15px;">🔗 Try It Yourself!</h4>
+                        <p style="margin-bottom: 15px; opacity: 0.9;">
+                            You can try this browser directly without installing anything. Just open the Colab link and run!
+                        </p>
+                        <div style="display: flex; flex-wrap: wrap; gap: 12px;">
+                            <a href="https://colab.research.google.com/drive/1wjqVtGWhAha8BkpPduSLi61rxBYwF0sF?usp=sharing" target="_blank" rel="noopener" style="padding: 12px 24px; background: rgba(245, 158, 11, 0.2); border: 2px solid #f59e0b; border-radius: 25px; color: white; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; transition: all 0.3s;">
+                                ☁️ <strong>Open in Google Colab</strong>
+                            </a>
+                            <a href="https://github.com/MRizaA/Riza_Browser_v1" target="_blank" rel="noopener" style="padding: 12px 24px; background: rgba(0, 0, 0, 0.3); border: 2px solid #fff; border-radius: 25px; color: white; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; transition: all 0.3s;">
+                                <img src="assets/images/icons/github.png" alt="GitHub" style="width: 20px; height: 20px; border-radius: 50%; background: white; padding: 2px;">
+                                <strong>GitHub Repository</strong>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div style="background: rgba(236, 72, 153, 0.1); padding: 20px; border-radius: 12px; border-left: 4px solid #ec4899; margin-top: 25px;">
+                        <h4 style="color: #ec4899; margin-bottom: 10px;">💭 Reflection</h4>
+                        <p style="margin-bottom: 10px;">
+                            This "fun" project taught me a lot! From a simple college assignment concept, it evolved into 
+                            quite a complex experiment. Although many features are still placeholders, this browser is functional 
+                            for basic web and image search needs.
+                        </p>
+                        <p style="font-style: italic; opacity: 0.9;">
+                            "Sometimes the best projects come from just trying things out. It doesn't have to be perfect, what matters is that it works and you learn from the process!"
+                        </p>
                     </div>
                 </div>
+            `
+        }
+    },
+
+
+    // 17. SMA Negeri 1 Rantau Badauh
+    {
+        id: "sma-rantau-badauh",
+        type: "education",
+        
+        title: {
+            id: "SMA Negeri 1 Rantau Badauh",
+            en: "Senior High School 1 Rantau Badauh"
+        },
+        subtitle: {
+            id: "2019 - 2022",
+            en: "2019 - 2022"
+        },
+        
+        description: {
+            id: "Lulusan SMA jurusan IPA",
+            en: "Senior High School graduate - Science Major"
+        },
+        
+        tags: ["SMA", "IPA", "2019-2022"],
+        
+        content: {
+            id: `
+                <h2 style="font-size: 28px; margin-bottom: 10px; background: linear-gradient(45deg, var(--primary-color), var(--secondary-color)); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+                    SMA Negeri 1 Rantau Badauh
+                </h2>
                 
-                <div style="background: rgba(236, 72, 153, 0.1); padding: 20px; border-radius: 12px; border-left: 4px solid #ec4899; margin-top: 25px;">
-                    <h4 style="color: #ec4899; margin-bottom: 10px;">💭 Reflection</h4>
-                    <p style="margin-bottom: 10px;">
-                        This "fun" project taught me a lot! From a simple college assignment concept, it evolved into 
-                        quite a complex experiment. Although many features are still placeholders, this browser is functional 
-                        for basic web and image search needs.
-                    </p>
-                    <p style="font-style: italic; opacity: 0.9;">
-                        "Sometimes the best projects come from just trying things out. It doesn't have to be perfect, what matters is that it works and you learn from the process!"
-                    </p>
+                <div style="display: flex; gap: 20px; margin-bottom: 25px; flex-wrap: wrap; opacity: 0.9;">
+                    <span style="display: flex; align-items: center; gap: 8px;">🏫 <strong>Sekolah:</strong> SMA Negeri 1 Rantau Badauh</span>
+                    <span style="display: flex; align-items: center; gap: 8px;">📅 <strong>Periode:</strong> 2019 - 2022</span>
+                    <span style="display: flex; align-items: center; gap: 8px;">📚 <strong>Jurusan:</strong> IPA (Ilmu Pengetahuan Alam)</span>
+                    <span style="display: flex; align-items: center; gap: 8px;">📍 <strong>Lokasi:</strong> Rantau Badauh, Barito Kuala</span>
                 </div>
-            </div>
-        `
+                
+                <div style="line-height: 1.8;">
+                    <h3 style="color: var(--primary-color); margin: 25px 0 15px;">Tentang Sekolah</h3>
+                    <p style="margin-bottom: 15px;">
+                        SMA Negeri 1 Rantau Badauh merupakan salah satu sekolah menengah atas di Kabupaten Barito Kuala, 
+                        Kalimantan Selatan. Sekolah ini berlokasi di Kecamatan Rantau Badauh dan menjadi pilihan utama 
+                        bagi siswa di wilayah tersebut untuk melanjutkan pendidikan tingkat menengah atas.
+                    </p>
+                    
+                    <h3 style="color: var(--primary-color); margin: 25px 0 15px;">Program Studi</h3>
+                    <div style="background: rgba(59, 130, 246, 0.1); padding: 20px; border-radius: 12px; margin-bottom: 20px; border-left: 4px solid #3b82f6;">
+                        <h4 style="color: #3b82f6; margin-bottom: 10px;">🔬 Jurusan IPA (Ilmu Pengetahuan Alam)</h4>
+                        <p style="margin-bottom: 15px;">
+                            Fokus pada mata pelajaran sains dan matematika dengan penekanan pada:
+                        </p>
+                        <ul style="margin-left: 20px;">
+                            <li style="margin-bottom: 8px;">Matematika (Wajib & Peminatan)</li>
+                            <li style="margin-bottom: 8px;">Fisika</li>
+                            <li style="margin-bottom: 8px;">Kimia</li>
+                            <li style="margin-bottom: 8px;">Biologi</li>
+                            <li style="margin-bottom: 8px;">Bahasa Inggris</li>
+                            <li style="margin-bottom: 8px;">Bahasa Indonesia</li>
+                        </ul>
+                    </div>
+                    
+                    <h3 style="color: var(--primary-color); margin: 25px 0 15px;">Kegiatan & Pengalaman</h3>
+                    <div style="display: grid; gap: 12px; margin-bottom: 20px;">
+                        <div style="background: rgba(16, 185, 129, 0.1); padding: 15px; border-radius: 10px; border-left: 4px solid #10b981;">
+                            <strong>🏆 Kompetisi KSN Matematika</strong>
+                            <p style="margin-top: 8px; opacity: 0.9; font-size: 14px;">
+                                Terpilih mewakili sekolah dalam Kompetisi Sains Nasional bidang Matematika tingkat kabupaten
+                            </p>
+                        </div>
+                        <div style="background: rgba(245, 158, 11, 0.1); padding: 15px; border-radius: 10px; border-left: 4px solid #f59e0b;">
+                            <strong>📚 Pembelajaran Aktif</strong>
+                            <p style="margin-top: 8px; opacity: 0.9; font-size: 14px;">
+                                Mengikuti berbagai kegiatan ekstrakurikuler dan pembelajaran di luar kelas
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <h3 style="color: var(--primary-color); margin: 25px 0 15px;">Persiapan Masa Depan</h3>
+                    <p style="margin-bottom: 15px;">
+                        Pendidikan SMA di jurusan IPA memberikan fondasi kuat dalam bidang sains dan matematika yang sangat 
+                        berguna untuk melanjutkan studi ke jenjang perguruan tinggi, khususnya program D3 Teknik Informatika 
+                        di Politeknik Hasnur.
+                    </p>
+                    
+                    <div style="background: linear-gradient(135deg, rgba(168, 85, 247, 0.1), rgba(236, 72, 153, 0.1)); padding: 20px; border-radius: 15px; border: 2px solid var(--primary-color); margin-top: 25px;">
+                        <h4 style="color: var(--primary-color); margin-bottom: 10px;">🎓 Pencapaian</h4>
+                        <p>
+                            Menyelesaikan pendidikan SMA dengan baik dan melanjutkan ke pendidikan vokasi di bidang teknologi informasi, 
+                            mengaplikasikan kemampuan analitis dan problem-solving yang dipelajari selama masa SMA.
+                        </p>
+                    </div>
+                </div>
+            `,
+            en: `
+                <h2 style="font-size: 28px; margin-bottom: 10px; background: linear-gradient(45deg, var(--primary-color), var(--secondary-color)); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+                    Senior High School 1 Rantau Badauh
+                </h2>
+                
+                <div style="display: flex; gap: 20px; margin-bottom: 25px; flex-wrap: wrap; opacity: 0.9;">
+                    <span style="display: flex; align-items: center; gap: 8px;">🏫 <strong>School:</strong> SMA Negeri 1 Rantau Badauh</span>
+                    <span style="display: flex; align-items: center; gap: 8px;">📅 <strong>Period:</strong> 2019 - 2022</span>
+                    <span style="display: flex; align-items: center; gap: 8px;">📚 <strong>Major:</strong> Science (IPA)</span>
+                    <span style="display: flex; align-items: center; gap: 8px;">📍 <strong>Location:</strong> Rantau Badauh, Barito Kuala</span>
+                </div>
+                
+                <div style="line-height: 1.8;">
+                    <h3 style="color: var(--primary-color); margin: 25px 0 15px;">About the School</h3>
+                    <p style="margin-bottom: 15px;">
+                        SMA Negeri 1 Rantau Badauh is one of the senior high schools in Barito Kuala Regency, 
+                        South Kalimantan. The school is located in Rantau Badauh District and is the main choice 
+                        for students in the area to continue their senior high school education.
+                    </p>
+                    
+                    <h3 style="color: var(--primary-color); margin: 25px 0 15px;">Study Program</h3>
+                    <div style="background: rgba(59, 130, 246, 0.1); padding: 20px; border-radius: 12px; margin-bottom: 20px; border-left: 4px solid #3b82f6;">
+                        <h4 style="color: #3b82f6; margin-bottom: 10px;">🔬 Science Major (IPA)</h4>
+                        <p style="margin-bottom: 15px;">
+                            Focus on science and mathematics subjects with emphasis on:
+                        </p>
+                        <ul style="margin-left: 20px;">
+                            <li style="margin-bottom: 8px;">Mathematics (Core & Specialization)</li>
+                            <li style="margin-bottom: 8px;">Physics</li>
+                            <li style="margin-bottom: 8px;">Chemistry</li>
+                            <li style="margin-bottom: 8px;">Biology</li>
+                            <li style="margin-bottom: 8px;">English</li>
+                            <li style="margin-bottom: 8px;">Indonesian Language</li>
+                        </ul>
+                    </div>
+                    
+                    <h3 style="color: var(--primary-color); margin: 25px 0 15px;">Activities & Experience</h3>
+                    <div style="display: grid; gap: 12px; margin-bottom: 20px;">
+                        <div style="background: rgba(16, 185, 129, 0.1); padding: 15px; border-radius: 10px; border-left: 4px solid #10b981;">
+                            <strong>🏆 KSN Mathematics Competition</strong>
+                            <p style="margin-top: 8px; opacity: 0.9; font-size: 14px;">
+                                Selected to represent school in National Science Competition in Mathematics at regency level
+                            </p>
+                        </div>
+                        <div style="background: rgba(245, 158, 11, 0.1); padding: 15px; border-radius: 10px; border-left: 4px solid #f59e0b;">
+                            <strong>📚 Active Learning</strong>
+                            <p style="margin-top: 8px; opacity: 0.9; font-size: 14px;">
+                                Participated in various extracurricular activities and outdoor learning
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <h3 style="color: var(--primary-color); margin: 25px 0 15px;">Future Preparation</h3>
+                    <p style="margin-bottom: 15px;">
+                        High school education in the Science major provided a strong foundation in science and mathematics 
+                        which was very useful for continuing studies to higher education, especially the D3 Informatics Engineering 
+                        program at Politeknik Hasnur.
+                    </p>
+                    
+                    <div style="background: linear-gradient(135deg, rgba(168, 85, 247, 0.1), rgba(236, 72, 153, 0.1)); padding: 20px; border-radius: 15px; border: 2px solid var(--primary-color); margin-top: 25px;">
+                        <h4 style="color: var(--primary-color); margin-bottom: 10px;">🎓 Achievement</h4>
+                        <p>
+                            Completed high school education successfully and continued to vocational education in information technology, 
+                            applying analytical and problem-solving skills learned during high school.
+                        </p>
+                    </div>
+                </div>
+            `
+        }
+    },
+
+    // 18. SMP Negeri 2 Rantau Badauh
+    {
+        id: "smp-rantau-badauh",
+        type: "education",
+        
+        title: {
+            id: "SMP Negeri 2 Rantau Badauh",
+            en: "Junior High School 2 Rantau Badauh"
+        },
+        subtitle: {
+            id: "2016 - 2019",
+            en: "2016 - 2019"
+        },
+        
+        description: {
+            id: "Lulusan SMP dengan prestasi UNBK peringkat 1",
+            en: "Junior High School graduate - Rank 1 National Exam"
+        },
+        
+        tags: ["SMP", "UNBK Rank 1", "2016-2019"],
+        
+        content: {
+            id: `
+                <h2 style="font-size: 28px; margin-bottom: 10px; background: linear-gradient(45deg, var(--primary-color), var(--secondary-color)); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+                    SMP Negeri 2 Rantau Badauh
+                </h2>
+                
+                <div style="display: flex; gap: 20px; margin-bottom: 25px; flex-wrap: wrap; opacity: 0.9;">
+                    <span style="display: flex; align-items: center; gap: 8px;">🏫 <strong>Sekolah:</strong> SMP Negeri 2 Rantau Badauh</span>
+                    <span style="display: flex; align-items: center; gap: 8px;">📅 <strong>Periode:</strong> 2016 - 2019</span>
+                    <span style="display: flex; align-items: center; gap: 8px;">🏆 <strong>Prestasi:</strong> UNBK Peringkat 1</span>
+                    <span style="display: flex; align-items: center; gap: 8px;">📍 <strong>Lokasi:</strong> Rantau Badauh, Barito Kuala</span>
+                </div>
+                
+                <div style="line-height: 1.8;">
+                    <h3 style="color: var(--primary-color); margin: 25px 0 15px;">Tentang Sekolah</h3>
+                    <p style="margin-bottom: 15px;">
+                        SMP Negeri 2 Rantau Badauh adalah sekolah menengah pertama yang berlokasi di Kecamatan Rantau Badauh, 
+                        Kabupaten Barito Kuala, Kalimantan Selatan. Sekolah ini berkomitmen memberikan pendidikan berkualitas 
+                        untuk membentuk siswa yang berprestasi dan berkarakter.
+                    </p>
+                    
+                    <h3 style="color: var(--primary-color); margin: 25px 0 15px;">Prestasi Akademik</h3>
+                    <div style="text-align: center; margin: 30px 0;">
+                        <div style="display: inline-block; padding: 30px 50px; background: linear-gradient(135deg, rgba(245, 158, 11, 0.2), rgba(239, 68, 68, 0.2)); border-radius: 20px; border: 3px solid #f59e0b; box-shadow: 0 10px 30px rgba(245, 158, 11, 0.3);">
+                            <div style="font-size: 72px; margin-bottom: 10px;">🏆</div>
+                            <div style="font-size: 48px; font-weight: bold; background: linear-gradient(45deg, #f59e0b, #ef4444); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+                                #1
+                            </div>
+                            <p style="margin-top: 15px; font-size: 20px; font-weight: 600;">Peringkat Pertama UNBK</p>
+                            <p style="margin-top: 5px; opacity: 0.9;">Tahun Pelajaran 2018/2019</p>
+                            <p style="margin-top: 5px; font-size: 14px; opacity: 0.8;">Tingkat Sekolah</p>
+                        </div>
+                    </div>
+                    
+                    <h3 style="color: var(--primary-color); margin: 25px 0 15px;">Mata Pelajaran Unggulan</h3>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; margin-bottom: 20px;">
+                        <div style="padding: 15px; background: rgba(59, 130, 246, 0.1); border-radius: 10px; border: 2px solid rgba(59, 130, 246, 0.3); text-align: center;">
+                            <div style="font-size: 32px; margin-bottom: 8px;">🔢</div>
+                            <strong>Matematika</strong>
+                        </div>
+                        <div style="padding: 15px; background: rgba(16, 185, 129, 0.1); border-radius: 10px; border: 2px solid rgba(16, 185, 129, 0.3); text-align: center;">
+                            <div style="font-size: 32px; margin-bottom: 8px;">📘</div>
+                            <strong>Bahasa Indonesia</strong>
+                        </div>
+                        <div style="padding: 15px; background: rgba(139, 92, 246, 0.1); border-radius: 10px; border: 2px solid rgba(139, 92, 246, 0.3); text-align: center;">
+                            <div style="font-size: 32px; margin-bottom: 8px;">🔬</div>
+                            <strong>IPA</strong>
+                        </div>
+                        <div style="padding: 15px; background: rgba(236, 72, 153, 0.1); border-radius: 10px; border: 2px solid rgba(236, 72, 153, 0.3); text-align: center;">
+                            <div style="font-size: 32px; margin-bottom: 8px;">🌏</div>
+                            <strong>Bahasa Inggris</strong>
+                        </div>
+                    </div>
+                    
+                    <h3 style="color: var(--primary-color); margin: 25px 0 15px;">Pengalaman & Pembelajaran</h3>
+                    <div style="background: rgba(168, 85, 247, 0.05); padding: 20px; border-radius: 12px; margin-bottom: 20px; border: 1px solid rgba(168, 85, 247, 0.2);">
+                        <ul style="margin-left: 20px;">
+                            <li style="margin-bottom: 12px;">
+                                <strong>Konsistensi Akademik</strong> - Mempertahankan prestasi akademik yang baik selama 3 tahun
+                            </li>
+                            <li style="margin-bottom: 12px;">
+                                <strong>UNBK Peringkat 1</strong> - Meraih peringkat tertinggi dalam Ujian Nasional Berbasis Komputer
+                            </li>
+                            <li style="margin-bottom: 12px;">
+                                <strong>Pengembangan Diri</strong> - Aktif dalam kegiatan pembelajaran dan ekstrakurikuler
+                            </li>
+                            <li style="margin-bottom: 12px;">
+                                <strong>Fondasi Kuat</strong> - Membangun dasar pengetahuan yang solid untuk jenjang pendidikan selanjutnya
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div style="background: linear-gradient(135deg, rgba(168, 85, 247, 0.1), rgba(236, 72, 153, 0.1)); padding: 20px; border-radius: 15px; border: 2px solid var(--primary-color); margin-top: 25px;">
+                        <h4 style="color: var(--primary-color); margin-bottom: 10px;">🎓 Perjalanan Pendidikan</h4>
+                        <p style="margin-bottom: 10px;">
+                            Masa SMP menjadi periode penting dalam membangun fondasi akademik yang kuat. Prestasi sebagai 
+                            peringkat 1 UNBK menunjukkan dedikasi dan konsistensi dalam belajar, yang menjadi modal penting 
+                            untuk melanjutkan pendidikan ke jenjang SMA dan selanjutnya.
+                        </p>
+                    </div>
+                </div>
+            `,
+            en: `
+                <h2 style="font-size: 28px; margin-bottom: 10px; background: linear-gradient(45deg, var(--primary-color), var(--secondary-color)); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+                    Junior High School 2 Rantau Badauh
+                </h2>
+                
+                <div style="display: flex; gap: 20px; margin-bottom: 25px; flex-wrap: wrap; opacity: 0.9;">
+                    <span style="display: flex; align-items: center; gap: 8px;">🏫 <strong>School:</strong> SMP Negeri 2 Rantau Badauh</span>
+                    <span style="display: flex; align-items: center; gap: 8px;">📅 <strong>Period:</strong> 2016 - 2019</span>
+                    <span style="display: flex; align-items: center; gap: 8px;">🏆 <strong>Achievement:</strong> UNBK Rank 1</span>
+                    <span style="display: flex; align-items: center; gap: 8px;">📍 <strong>Location:</strong> Rantau Badauh, Barito Kuala</span>
+                </div>
+                
+                <div style="line-height: 1.8;">
+                    <h3 style="color: var(--primary-color); margin: 25px 0 15px;">About the School</h3>
+                    <p style="margin-bottom: 15px;">
+                        SMP Negeri 2 Rantau Badauh is a junior high school located in Rantau Badauh District, 
+                        Barito Kuala Regency, South Kalimantan. The school is committed to providing quality education 
+                        to develop achieving and character-building students.
+                    </p>
+                    
+                    <h3 style="color: var(--primary-color); margin: 25px 0 15px;">Academic Achievement</h3>
+                    <div style="text-align: center; margin: 30px 0;">
+                        <div style="display: inline-block; padding: 30px 50px; background: linear-gradient(135deg, rgba(245, 158, 11, 0.2), rgba(239, 68, 68, 0.2)); border-radius: 20px; border: 3px solid #f59e0b; box-shadow: 0 10px 30px rgba(245, 158, 11, 0.3);">
+                            <div style="font-size: 72px; margin-bottom: 10px;">🏆</div>
+                            <div style="font-size: 48px; font-weight: bold; background: linear-gradient(45deg, #f59e0b, #ef4444); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+                                #1
+                            </div>
+                            <p style="margin-top: 15px; font-size: 20px; font-weight: 600;">First Rank UNBK</p>
+                            <p style="margin-top: 5px; opacity: 0.9;">Academic Year 2018/2019</p>
+                            <p style="margin-top: 5px; font-size: 14px; opacity: 0.8;">School Level</p>
+                        </div>
+                    </div>
+                    
+                    <h3 style="color: var(--primary-color); margin: 25px 0 15px;">Key Subjects</h3>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; margin-bottom: 20px;">
+                        <div style="padding: 15px; background: rgba(59, 130, 246, 0.1); border-radius: 10px; border: 2px solid rgba(59, 130, 246, 0.3); text-align: center;">
+                            <div style="font-size: 32px; margin-bottom: 8px;">🔢</div>
+                            <strong>Mathematics</strong>
+                        </div>
+                        <div style="padding: 15px; background: rgba(16, 185, 129, 0.1); border-radius: 10px; border: 2px solid rgba(16, 185, 129, 0.3); text-align: center;">
+                            <div style="font-size: 32px; margin-bottom: 8px;">📘</div>
+                            <strong>Indonesian</strong>
+                        </div>
+                        <div style="padding: 15px; background: rgba(139, 92, 246, 0.1); border-radius: 10px; border: 2px solid rgba(139, 92, 246, 0.3); text-align: center;">
+                            <div style="font-size: 32px; margin-bottom: 8px;">🔬</div>
+                            <strong>Science</strong>
+                        </div>
+                        <div style="padding: 15px; background: rgba(236, 72, 153, 0.1); border-radius: 10px; border: 2px solid rgba(236, 72, 153, 0.3); text-align: center;">
+                            <div style="font-size: 32px; margin-bottom: 8px;">🌏</div>
+                            <strong>English</strong>
+                        </div>
+                    </div>
+                    
+                    <h3 style="color: var(--primary-color); margin: 25px 0 15px;">Experience & Learning</h3>
+                    <div style="background: rgba(168, 85, 247, 0.05); padding: 20px; border-radius: 12px; margin-bottom: 20px; border: 1px solid rgba(168, 85, 247, 0.2);">
+                        <ul style="margin-left: 20px;">
+                            <li style="margin-bottom: 12px;">
+                                <strong>Academic Consistency</strong> - Maintained good academic performance for 3 years
+                            </li>
+                            <li style="margin-bottom: 12px;">
+                                <strong>UNBK Rank 1</strong> - Achieved highest rank in Computer-Based National Examination
+                            </li>
+                            <li style="margin-bottom: 12px;">
+                                <strong>Self Development</strong> - Active in learning activities and extracurriculars
+                            </li>
+                            <li style="margin-bottom: 12px;">
+                                <strong>Strong Foundation</strong> - Built solid knowledge base for further education
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div style="background: linear-gradient(135deg, rgba(168, 85, 247, 0.1), rgba(236, 72, 153, 0.1)); padding: 20px; border-radius: 15px; border: 2px solid var(--primary-color); margin-top: 25px;">
+                        <h4 style="color: var(--primary-color); margin-bottom: 10px;">🎓 Educational Journey</h4>
+                        <p style="margin-bottom: 10px;">
+                            Junior high school was an important period in building a strong academic foundation. The achievement as 
+                            rank 1 UNBK demonstrated dedication and consistency in learning, which became important capital 
+                            to continue education to high school and beyond.
+                        </p>
+                    </div>
+                </div>
+            `
+        }
+    },
+
+    // 19. SDN Danda Jaya 2
+    {
+        id: "sdn-danda-jaya-2",
+        type: "education",
+        
+        title: {
+            id: "SDN Danda Jaya 2",
+            en: "SDN Danda Jaya 2 (Elementary School)"
+        },
+        subtitle: {
+            id: "2009 - 2016",
+            en: "2009 - 2016"
+        },
+        
+        description: {
+            id: "Lulusan sekolah dasar dengan rata-rata nilai akademik yang baik",
+            en: "Elementary school graduate with solid academic performance"
+        },
+        
+        tags: ["SD", "2009-2016", "Barito Kuala"],
+        
+        content: {
+            id: `
+                <h2 style="font-size: 28px; margin-bottom: 10px; background: linear-gradient(45deg, var(--primary-color), var(--secondary-color)); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+                    SDN Danda Jaya 2
+                </h2>
+                
+                <div style="display: flex; gap: 20px; margin-bottom: 25px; flex-wrap: wrap; opacity: 0.9;">
+                    <span style="display: flex; align-items: center; gap: 8px;">🏫 <strong>Sekolah:</strong> SDN Danda Jaya 2</span>
+                    <span style="display: flex; align-items: center; gap: 8px;">📅 <strong>Periode:</strong> 2009 - 2016</span>
+                    <span style="display: flex; align-items: center; gap: 8px;">📍 <strong>Lokasi:</strong> Desa Danda Jaya, Kec. Rantau Badauh</span>
+                    <span style="display: flex; align-items: center; gap: 8px;">🗂️ <strong>NIS:</strong> 1108</span>
+                </div>
+                
+                <div style="line-height: 1.8;">
+                    <h3 style="color: var(--primary-color); margin: 25px 0 15px;">Tentang Sekolah</h3>
+                    <p style="margin-bottom: 15px;">
+                        SDN Danda Jaya 2 adalah sekolah dasar negeri yang berlokasi di Desa Danda Jaya, Kecamatan Rantau Badauh, 
+                        Kabupaten Barito Kuala, Kalimantan Selatan. Sekolah ini menjadi fondasi awal pendidikan formal dalam 
+                        membentuk karakter dan kompetensi akademik siswa.
+                    </p>
+                    
+                    <h3 style="color: var(--primary-color); margin: 25px 0 15px;">Prestasi Akademik</h3>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 25px;">
+                        <div style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(59, 130, 246, 0.05)); padding: 20px; border-left: 4px solid #3b82f6; border-radius: 8px;">
+                            <div style="font-size: 14px; color: #3b82f6; font-weight: 600; margin-bottom: 8px;">Rata-rata Rapor</div>
+                            <div style="font-size: 32px; font-weight: bold; color: #3b82f6;">74,4</div>
+                            <p style="margin-top: 8px; opacity: 0.9; font-size: 13px;">Tahun Pelajaran 2015/2016</p>
+                        </div>
+                        <div style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(16, 185, 129, 0.05)); padding: 20px; border-left: 4px solid #10b981; border-radius: 8px;">
+                            <div style="font-size: 14px; color: #10b981; font-weight: 600; margin-bottom: 8px;">Nilai Ujian Sekolah</div>
+                            <div style="font-size: 32px; font-weight: bold; color: #10b981;">76,6</div>
+                            <p style="margin-top: 8px; opacity: 0.9; font-size: 13px;">Ujian Akhir Sekolah Dasar</p>
+                        </div>
+                    </div>
+                    
+                    <h3 style="color: var(--primary-color); margin: 25px 0 15px;">Mata Pelajaran Utama</h3>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; margin-bottom: 20px;">
+                        <div style="padding: 15px; background: rgba(59, 130, 246, 0.1); border-radius: 10px; border-left: 3px solid #3b82f6;">
+                            <div style="font-weight: 600; margin-bottom: 5px;">📘 Bahasa Indonesia</div>
+                            <div style="font-size: 13px; opacity: 0.9;">Rapor: 78 | Ujian: 84</div>
+                        </div>
+                        <div style="padding: 15px; background: rgba(16, 185, 129, 0.1); border-radius: 10px; border-left: 3px solid #10b981;">
+                            <div style="font-weight: 600; margin-bottom: 5px;">🔢 Matematika</div>
+                            <div style="font-size: 13px; opacity: 0.9;">Rapor: 70 | Ujian: 85</div>
+                        </div>
+                        <div style="padding: 15px; background: rgba(139, 92, 246, 0.1); border-radius: 10px; border-left: 3px solid #8b5cf6;">
+                            <div style="font-weight: 600; margin-bottom: 5px;">🔬 IPA</div>
+                            <div style="font-size: 13px; opacity: 0.9;">Rapor: 82 | Ujian: 87,5</div>
+                        </div>
+                        <div style="padding: 15px; background: rgba(245, 158, 11, 0.1); border-radius: 10px; border-left: 3px solid #f59e0b;">
+                            <div style="font-weight: 600; margin-bottom: 5px;">🌍 IPS</div>
+                            <div style="font-size: 13px; opacity: 0.9;">Rapor: 69 | Ujian: 60</div>
+                        </div>
+                    </div>
+                    
+                    <h3 style="color: var(--primary-color); margin: 25px 0 15px;">Perjalanan Pendidikan</h3>
+                    <div style="background: rgba(168, 85, 247, 0.05); padding: 20px; border-radius: 12px; margin-bottom: 20px; border: 1px solid rgba(168, 85, 247, 0.2);">
+                        <p style="margin-bottom: 15px;">
+                            Pendidikan dasar di SDN Danda Jaya 2 menjadi fase penting dalam membentuk 
+                            fondasi akademik dan karakter. Dengan rata-rata nilai rapor 74,4 dan nilai ujian sekolah 76,6, 
+                            menunjukkan konsistensi dalam pembelajaran terutama di bidang sains dan bahasa.
+                        </p>
+                        <p>
+                            Keberhasilan di tingkat SD ini menjadi modal awal untuk melanjutkan pendidikan ke jenjang SMP 
+                            dengan prestasi yang terus meningkat hingga meraih peringkat 1 UNBK di tingkat sekolah.
+                        </p>
+                    </div>
+                    
+                    <h3 style="color: var(--primary-color); margin: 25px 0 15px;">Kompetensi yang Dikembangkan</h3>
+                    <div style="display: grid; gap: 10px; margin-bottom: 25px;">
+                        <div style="background: rgba(59, 130, 246, 0.1); padding: 12px; border-radius: 8px; border-left: 3px solid #3b82f6;">
+                            ✓ Kemampuan dasar dalam matematika dan sains
+                        </div>
+                        <div style="background: rgba(16, 185, 129, 0.1); padding: 12px; border-radius: 8px; border-left: 3px solid #10b981;">
+                            ✓ Pemahaman literasi dan komunikasi dalam bahasa Indonesia
+                        </div>
+                        <div style="background: rgba(139, 92, 246, 0.1); padding: 12px; border-radius: 8px; border-left: 3px solid #8b5cf6;">
+                            ✓ Pengetahuan umum dan kesadaran sosial
+                        </div>
+                        <div style="background: rgba(245, 158, 11, 0.1); padding: 12px; border-radius: 8px; border-left: 3px solid #f59e0b;">
+                            ✓ Disiplin dan kebiasaan belajar yang baik
+                        </div>
+                    </div>
+                    
+                    <div style="background: linear-gradient(135deg, rgba(168, 85, 247, 0.1), rgba(236, 72, 153, 0.1)); padding: 20px; border-radius: 15px; border: 2px solid var(--primary-color); margin-top: 25px;">
+                        <h4 style="color: var(--primary-color); margin-bottom: 10px;">🎓 Lanjut ke Jenjang Berikutnya</h4>
+                        <p style="margin-bottom: 10px;">
+                            Lulus dari SDN Danda Jaya 2 pada 25 Juni 2016 dengan hasil belajar yang konsisten. 
+                            Melanjutkan pendidikan ke SMP Negeri 2 Rantau Badauh dengan persiapan akademik yang solid.
+                        </p>
+                    </div>
+                </div>
+            `,
+            en: `
+                <h2 style="font-size: 28px; margin-bottom: 10px; background: linear-gradient(45deg, var(--primary-color), var(--secondary-color)); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+                    SDN Danda Jaya 2
+                </h2>
+                
+                <div style="display: flex; gap: 20px; margin-bottom: 25px; flex-wrap: wrap; opacity: 0.9;">
+                    <span style="display: flex; align-items: center; gap: 8px;">🏫 <strong>School:</strong> SDN Danda Jaya 2</span>
+                    <span style="display: flex; align-items: center; gap: 8px;">📅 <strong>Period:</strong> 2009 - 2016</span>
+                    <span style="display: flex; align-items: center; gap: 8px;">📍 <strong>Location:</strong> Danda Jaya Village, Rantau Badauh District</span>
+                    <span style="display: flex; align-items: center; gap: 8px;">🗂️ <strong>Student ID:</strong> 1108</span>
+                </div>
+                
+                <div style="line-height: 1.8;">
+                    <h3 style="color: var(--primary-color); margin: 25px 0 15px;">About the School</h3>
+                    <p style="margin-bottom: 15px;">
+                        SDN Danda Jaya 2 is an elementary school located in Danda Jaya Village, Rantau Badauh District, 
+                        Barito Kuala Regency, South Kalimantan. The school serves as the foundation of formal education 
+                        in developing academic competence and character formation for students.
+                    </p>
+                    
+                    <h3 style="color: var(--primary-color); margin: 25px 0 15px;">Academic Achievement</h3>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 25px;">
+                        <div style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(59, 130, 246, 0.05)); padding: 20px; border-left: 4px solid #3b82f6; border-radius: 8px;">
+                            <div style="font-size: 14px; color: #3b82f6; font-weight: 600; margin-bottom: 8px;">Average Report Card</div>
+                            <div style="font-size: 32px; font-weight: bold; color: #3b82f6;">74,4</div>
+                            <p style="margin-top: 8px; opacity: 0.9; font-size: 13px;">Academic Year 2015/2016</p>
+                        </div>
+                        <div style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(16, 185, 129, 0.05)); padding: 20px; border-left: 4px solid #10b981; border-radius: 8px;">
+                            <div style="font-size: 14px; color: #10b981; font-weight: 600; margin-bottom: 8px;">School Exam Score</div>
+                            <div style="font-size: 32px; font-weight: bold; color: #10b981;">76,6</div>
+                            <p style="margin-top: 8px; opacity: 0.9; font-size: 13px;">Elementary School Final Exam</p>
+                        </div>
+                    </div>
+                    
+                    <h3 style="color: var(--primary-color); margin: 25px 0 15px;">Main Subjects</h3>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; margin-bottom: 20px;">
+                        <div style="padding: 15px; background: rgba(59, 130, 246, 0.1); border-radius: 10px; border-left: 3px solid #3b82f6;">
+                            <div style="font-weight: 600; margin-bottom: 5px;">📘 Indonesian Language</div>
+                            <div style="font-size: 13px; opacity: 0.9;">Report: 78 | Exam: 84</div>
+                        </div>
+                        <div style="padding: 15px; background: rgba(16, 185, 129, 0.1); border-radius: 10px; border-left: 3px solid #10b981;">
+                            <div style="font-weight: 600; margin-bottom: 5px;">🔢 Mathematics</div>
+                            <div style="font-size: 13px; opacity: 0.9;">Report: 70 | Exam: 85</div>
+                        </div>
+                        <div style="padding: 15px; background: rgba(139, 92, 246, 0.1); border-radius: 10px; border-left: 3px solid #8b5cf6;">
+                            <div style="font-weight: 600; margin-bottom: 5px;">🔬 Science</div>
+                            <div style="font-size: 13px; opacity: 0.9;">Report: 82 | Exam: 87,5</div>
+                        </div>
+                        <div style="padding: 15px; background: rgba(245, 158, 11, 0.1); border-radius: 10px; border-left: 3px solid #f59e0b;">
+                            <div style="font-weight: 600; margin-bottom: 5px;">🌍 Social Studies</div>
+                            <div style="font-size: 13px; opacity: 0.9;">Report: 69 | Exam: 60</div>
+                        </div>
+                    </div>
+                    
+                    <h3 style="color: var(--primary-color); margin: 25px 0 15px;">Educational Journey</h3>
+                    <div style="background: rgba(168, 85, 247, 0.05); padding: 20px; border-radius: 12px; margin-bottom: 20px; border: 1px solid rgba(168, 85, 247, 0.2);">
+                        <p style="margin-bottom: 15px;">
+                            Elementary education at SDN Danda Jaya 2 was an important phase in building 
+                            academic foundation and character development. With an average report card of 74.4 and school exam score of 76.6, 
+                            it demonstrates consistency in learning, especially in science and language subjects.
+                        </p>
+                        <p>
+                            This success at the elementary level provided a strong foundation to continue to junior high school 
+                            with continuously improving achievements, eventually reaching rank 1 in the UNBK at the school level.
+                        </p>
+                    </div>
+                    
+                    <h3 style="color: var(--primary-color); margin: 25px 0 15px;">Competencies Developed</h3>
+                    <div style="display: grid; gap: 10px; margin-bottom: 25px;">
+                        <div style="background: rgba(59, 130, 246, 0.1); padding: 12px; border-radius: 8px; border-left: 3px solid #3b82f6;">
+                            ✓ Foundation in mathematics and science
+                        </div>
+                        <div style="background: rgba(16, 185, 129, 0.1); padding: 12px; border-radius: 8px; border-left: 3px solid #10b981;">
+                            ✓ Understanding of literacy and communication in Indonesian language
+                        </div>
+                        <div style="background: rgba(139, 92, 246, 0.1); padding: 12px; border-radius: 8px; border-left: 3px solid #8b5cf6;">
+                            ✓ General knowledge and social awareness
+                        </div>
+                        <div style="background: rgba(245, 158, 11, 0.1); padding: 12px; border-radius: 8px; border-left: 3px solid #f59e0b;">
+                            ✓ Discipline and good learning habits
+                        </div>
+                    </div>
+                    
+                    <div style="background: linear-gradient(135deg, rgba(168, 85, 247, 0.1), rgba(236, 72, 153, 0.1)); padding: 20px; border-radius: 15px; border: 2px solid var(--primary-color); margin-top: 25px;">
+                        <h4 style="color: var(--primary-color); margin-bottom: 10px;">🎓 Continuing to Next Level</h4>
+                        <p style="margin-bottom: 10px;">
+                            Graduated from SDN Danda Jaya 2 on June 25, 2016 with consistent learning results. 
+                            Continued education to SMP Negeri 2 Rantau Badauh with solid academic preparation.
+                        </p>
+                    </div>
+                </div>
+            `
+        }
     }
-},
-
 
 
 // TEMPLATE UNTUK MENAMBAH EXPERIENCE BARU:

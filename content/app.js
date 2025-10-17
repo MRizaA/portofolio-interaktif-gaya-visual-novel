@@ -272,7 +272,7 @@ function toggleLanguage() {
     
     // Update language button text
     const langText = document.getElementById('langText');
-    langText.textContent = config.currentLanguage === 'en' ? 'EN' : 'ID';
+    // langText.textContent = config.currentLanguage === 'en' ? 'EN' : 'ID'; // tombol dihapus
     
     // Re-render dialog yang aktif
     const currentDialogue = document.getElementById('dialogueText').dataset.dialogueKey;

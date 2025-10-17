@@ -33,7 +33,7 @@ const dialogues = {
                     id: "🚀 Tunjukkan proyekmu!",
                     en: "🚀 Show me your projects!"
                 },
-                action: () => showModal('experience')  // Bisa juga function langsung
+                action: () => showModal('experience')  // Bisa juga function langsung misalnya showModal('profile') atau showModal('settings')
             }
         ]
     },
@@ -55,13 +55,13 @@ const dialogues = {
                 },
                 action: "skills"
             },
-            // {
-            //     text: {
-            //         id: "🎓 Cerita tentang pendidikanmu",
-            //         en: "🎓 Tell me about your education"
-            //     },
-            //     action: "education"
-            // },
+            {
+                text: {
+                    id: "🎓 Cerita tentang pendidikanmu",
+                    en: "🎓 Tell me about your education"
+                },
+                action: "education"
+            },
             {
                 text: {
                     id: "🔙 Kembali ke awal",
@@ -89,13 +89,13 @@ const dialogues = {
                 },
                 action: () => showModal('experience')
             },
-            // {
-            //     text: {
-            //         id: "💼 Pengalaman kerja?",
-            //         en: "💼 Work experience?"
-            //     },
-            //     action: "work"
-            // },
+            {
+                text: {
+                    id: "💼 Pengalaman kerja?",
+                    en: "💼 Work experience?"
+                },
+                action: "work_experience"
+            },
             {
                 text: {
                     id: "🔙 Kembali",
@@ -105,7 +105,7 @@ const dialogues = {
             }
         ]
     },
-    
+
     // Tambah dialog baru
     // Copy template di bawah dan edit sesuai kebutuhan
     

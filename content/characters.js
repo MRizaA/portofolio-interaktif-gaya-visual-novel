@@ -6,9 +6,11 @@ const characters = {
         color: "#3b82f6",  // Blue
         sprites: {
             // idle: "assets/characters/developer/idle.png",
-            idle: "assets/characters/developer/riza2.png", // belum ada foto yang bagus 😅
+            idle: "assets/characters/developer/riza3.png", 
             explaining: "assets/characters/developer/riza2.png",
-            excited: "assets/characters/developer/riza2.png"
+            excited: "assets/characters/developer/riza6.png",
+            smart: "assets/characters/developer/riza5.png",
+            coding: "assets/characters/developer/riza4.png"
         }
     },
     
