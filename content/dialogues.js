@@ -57,10 +57,10 @@ const dialogues = {
             },
             {
                 text: {
-                    id: "🎓 Cerita tentang pendidikanmu",
-                    en: "🎓 Tell me about your education"
+                    id: "dalam proses development",
+                    en: "coming soon"
                 },
-                action: "education"
+                action: ""
             },
             {
                 text: {
@@ -91,10 +91,10 @@ const dialogues = {
             },
             {
                 text: {
-                    id: "💼 Pengalaman kerja?",
-                    en: "💼 Work experience?"
+                    id: "dalam proses development",
+                    en: "coming soon"
                 },
-                action: "work_experience"
+                action: ""
             },
             {
                 text: {
@@ -105,6 +105,7 @@ const dialogues = {
             }
         ]
     },
+
 
     // Tambah dialog baru
     // Copy template di bawah dan edit sesuai kebutuhan
