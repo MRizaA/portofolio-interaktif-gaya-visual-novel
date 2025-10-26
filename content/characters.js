@@ -3,14 +3,24 @@
 const characters = {
     developer: {
         name: "Muhammad Riza Aditya",
-        color: "#3b82f6",  // Blue
+        color: "#3b82f6",  
         sprites: {
-            // idle: "assets/characters/developer/idle.png",
             idle: "assets/characters/developer/riza3.png", 
             explaining: "assets/characters/developer/riza2.png",
             excited: "assets/characters/developer/riza6.png",
             smart: "assets/characters/developer/riza5.png",
             coding: "assets/characters/developer/riza4.png"
+        }
+    },
+    flashback: {
+        name: "Narator",
+        color: "#3bf660ff",  
+        sprites: {
+            perkenalan: "assets/characters/flashback/rizakecil.png", 
+            konflik: "assets/characters/flashback/bullied.png",
+            fight: "assets/characters/flashback/melawan.png",
+            resolution: "assets/characters/flashback/bangga.png",
+            
         }
     },
     
@@ -19,7 +29,7 @@ const characters = {
     
     // characterid: {
     //     name: "Gude",
-    //     color: "#a855f7",  // Purple
+    //     color: "#a855f7",  
     //     sprites: {
     //         idle: "assets/characters/guide/example.jpg",
     //         speaking: "assets/characters/guide/example2.jpg",
