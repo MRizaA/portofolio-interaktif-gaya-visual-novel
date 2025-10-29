@@ -29,7 +29,7 @@ const profileData = {
         {
             icon: "📧",
             label: "Email: mra474188@gmail.com",
-            //url: "mailto:mra474188@gmail.com"
+            url: "mailto:mra474188@gmail.com"
         },
         {
             icon: "assets/images/icons/github.png",
@@ -39,7 +39,7 @@ const profileData = {
         {
             icon: "assets/images/icons/whatsapp.png",
             label: "WhatsApp: +62 887-4362-34143",
-            //url: "https://wa.me/62887436234143"
+            url: "https://wa.me/62887436234143"
         }, 
         {
             icon: "assets/images/icons/linkedin.png",
@@ -49,7 +49,7 @@ const profileData = {
         {
             icon: "📍",
             label: "Location: Danda Jaya, Rantau Badauh, Barito Kuala",
-            //url: "https://maps.google.com/?q=-3.101331, 114.655527"
+            url: "https://maps.google.com/?q=-3.101331, 114.655527"
         }
         // Tambah contact lainnya di sini
         // {
