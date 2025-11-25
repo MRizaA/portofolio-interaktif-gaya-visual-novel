@@ -34,7 +34,8 @@ const dialogues = {
                     en: "🚀 Show me your projects!"
                 },
                 action: () => showModal('experience')  // Bisa juga function langsung misalnya showModal('profile') atau showModal('settings')
-            }
+            },
+            // { text: { id: "🔙 Kembali", en: "🔙 Back" }, action: () => goBack() }
         ]
     },
     
@@ -80,8 +81,10 @@ const dialogues = {
                     id: "🔙 Kembali ke awal",
                     en: "🔙 Back to start"
                 },
-                action: "intro"
-            }
+                // action: "intro"
+                action: () => goBack()
+            },
+            
         ]
     },
     
@@ -114,8 +117,10 @@ const dialogues = {
                     id: "🔙 Kembali",
                     en: "🔙 Back"
                 },
-                action: "about"
-            }
+                // action: "about"
+                action: () => goBack()
+            },
+            
         ]
     },
 
@@ -143,7 +148,7 @@ const dialogues = {
                 },
                 action: "mystory_fightback"
             },
-            
+            { text: { id: "🔙 Kembali", en: "🔙 Back" }, action: () => goBack() }
         ]
     },
 
@@ -164,7 +169,7 @@ const dialogues = {
                 },
                 action: "mystory_resolution1"
             },
-            
+            { text: { id: "🔙 Kembali", en: "🔙 Back" }, action: () => goBack() }
         ]
     },
 
@@ -185,7 +190,7 @@ const dialogues = {
                 },
                 action: "mystory_resolution2"
             },
-            
+            { text: { id: "🔙 Kembali", en: "🔙 Back" }, action: () => goBack() }
         ]
     }, 
 
@@ -206,7 +211,7 @@ const dialogues = {
                 },
                 action: "mystory_resolution3"
             },
-            
+            { text: { id: "🔙 Kembali", en: "🔙 Back" }, action: () => goBack() }
         ]
     },
     
@@ -222,11 +227,12 @@ const dialogues = {
         choices: [
             {
                 text: {
-                    id: "🔙 Kembali",
-                    en: "🔙 Back"
+                    id: "🔙 Kembali ke awal",
+                    en: "🔙 Back To Start"
                 },
-                action: "about" 
+                action: "intro" 
             },
+            { text: { id: "🔙 Kembali", en: "🔙 Back" }, action: () => goBack() }
             
         ]
     },
@@ -262,7 +268,8 @@ const dialogues = {
                     id: "🔙 Kembali",
                     en: "🔙 Back"
                 },
-                action: "about"
+                // action: "about"
+                action: () => goBack()
             }
         ]
     },
@@ -296,7 +303,8 @@ const dialogues = {
                     id: "🔙 Kembali",
                     en: "🔙 Back"
                 },
-                action: "about"
+                // action: "about"
+                action: () => goBack()
             }
         ]
     },
@@ -339,7 +347,8 @@ const dialogues = {
                     id: "🔙 Kembali",
                     en: "🔙 Back"
                 },
-                action: "about"
+                // action: "about"
+                action: () => goBack()
             }
         ]
     },
@@ -361,7 +370,8 @@ const dialogues = {
                     id: "🔙 Kembali",
                     en: "🔙 Back"
                 },
-                action: "experience"
+                // action: "experience"
+                action: () => goBack()
             }
         ]
     },
@@ -382,7 +392,8 @@ const dialogues = {
                     id: "🔙 Kembali",
                     en: "🔙 Back"
                 },
-                action: "experience"
+                // action: "experience"
+                action: () => goBack()
             }
         ]
     },
@@ -403,7 +414,8 @@ const dialogues = {
                     id: "🔙 Kembali",
                     en: "🔙 Back"
                 },
-                action: "portfolio_concept"
+                // action: "portfolio_concept"
+                action: () => goBack()
             }
         ]
     },
@@ -425,7 +437,8 @@ const dialogues = {
                     id: "🔙 Kembali",
                     en: "🔙 Back"
                 },
-                action: "experience"
+                // action: "experience"
+                action: () => goBack()
             }
         ]
     },
@@ -446,7 +459,8 @@ const dialogues = {
                     id: "🔙 Kembali",
                     en: "🔙 Back"
                 },
-                action: "skills"
+                // action: "skills"
+                action: () => goBack()
             }
         ]
     },
@@ -467,7 +481,8 @@ const dialogues = {
                     id: "🔙 Kembali",
                     en: "🔙 Back"
                 },
-                action: "portfolio_concept"
+                // action: "portfolio_concept"
+                action: () => goBack()
             }
         ]
     },

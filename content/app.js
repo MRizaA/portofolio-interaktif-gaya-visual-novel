@@ -4,7 +4,8 @@ const config = {
     currentLanguage: 'id',
     musicEnabled: false,
     sfxEnabled: true,
-    currentFilter: 'all'
+    currentFilter: 'all',
+    typingSpeed: 20 // default speed
 };
 
 window.onload = function() {
@@ -52,13 +53,18 @@ window.onload = function() {
 };
 
 
-// PARTICLES
+// PARTICLES - dengan dynamic color
 function createParticles() {
     const container = document.getElementById('particles');
+    const settings = loadSettings();
+    const theme = uiSettings.themes[settings.theme];
+    
     container.innerHTML = '';
     for (let i = 0; i < 30; i++) {
         const p = document.createElement('div');
         p.className = 'particle';
+        p.style.background = theme.colors.particleColor || theme.colors.primary;
+        p.style.boxShadow = `0 0 10px ${theme.colors.glowColor || theme.colors.primary}`;
         p.style.left = Math.random() * 100 + 'vw';
         p.style.animationDelay = Math.random() * 6 + 's';
         p.style.animationDuration = (Math.random() * 4 + 4) + 's';
@@ -79,28 +85,95 @@ function setCharacter(key, pose = 'idle') {
     setTimeout(() => el.style.animation = 'characterEnter 1s ease forwards', 100);
 }
 
-// TYPING
+// TYPING - FIXED: Click ANYWHERE = Skip (tidak ignore)
+let currentTypingInterval = null;
+let isTypingComplete = false; // Track jika typing sudah selesai
+
 function typeText(el, text, callback) {
+    // Clear previous typing if exists
+    if (currentTypingInterval) {
+        clearInterval(currentTypingInterval);
+        currentTypingInterval = null;
+    }
+    
+    const settings = loadSettings();
+    const speed = settings.typingSpeed !== undefined ? settings.typingSpeed : 20;
+    
+    isTypingComplete = false;
+    
+    // Instant mode (speed = 0)
+    if (speed === 0) {
+        el.innerHTML = text;
+        el.classList.remove('typing');
+        isTypingComplete = true;
+        if (callback) callback();
+        return;
+    }
+    
     el.innerHTML = '';
     el.classList.add('typing');
     let i = 0;
-    const interval = setInterval(() => {
+    
+    // Function to finish typing instantly
+    const finishTyping = () => {
+        if (isTypingComplete) return; // Sudah selesai, jangan ulang
+        
+        isTypingComplete = true;
+        
+        if (currentTypingInterval) {
+            clearInterval(currentTypingInterval);
+            currentTypingInterval = null;
+        }
+        
+        el.innerHTML = text;
+        el.classList.remove('typing');
+        
+        // Remove ALL event listeners untuk prevent double execution
+        document.removeEventListener('click', skipHandler);
+        document.removeEventListener('keydown', skipHandlerKey);
+        
+        if (callback) callback();
+    };
+    
+    // Handler functions
+    const skipHandler = (e) => {
+        // Skip jika click di area dialogue atau character (bukan modal/button lain)
+        if (e.target.closest('.dialogue-area') || 
+            e.target.closest('.character-area') ||
+            e.target === document.getElementById('dialogueText')) {
+            finishTyping();
+        }
+    };
+    
+    const skipHandlerKey = (e) => {
+        // Skip dengan Enter atau Space
+        if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            finishTyping();
+        }
+    };
+    
+    // Add listeners untuk skip
+    document.addEventListener('click', skipHandler);
+    document.addEventListener('keydown', skipHandlerKey);
+    
+    // Typing animation
+    currentTypingInterval = setInterval(() => {
         if (i < text.length) {
             el.innerHTML += text.charAt(i);
             i++;
         } else {
-            clearInterval(interval);
-            el.classList.remove('typing');
-            if (callback) callback();
+            finishTyping();
         }
-    }, 20);
+    }, speed);
 }
 
-// DIALOGUE
-function handleChoice(action) {
+// DIALOGUE - FIXED: Choices disabled sampai typing selesai
+const dialogHistory = [];
+let saveDialogue = null; 
+let backInProgress = false;
 
-    // playSFX('click');
-
+function handleChoice(action) {  
     if (typeof action === 'function') {
         action();
         return;
@@ -112,10 +185,27 @@ function handleChoice(action) {
     const char = characters[d.speaker];
     if (!char) return;
 
+    // Save ke history 
+    if (saveDialogue && saveDialogue !== action) {
+        if (!backInProgress) {
+            dialogHistory.push(saveDialogue);
+            console.log('Saved to history:', saveDialogue);
+        } else {
+            backInProgress = false;
+        }
+        console.log('History now:', dialogHistory);
+    }
+
+    saveDialogue = action;
+
     const charEl = document.getElementById('character');
     const speaker = document.getElementById('speakerName');
     const dialogue = document.getElementById('dialogueText');
     const choices = document.getElementById('dialogueChoices');
+
+    // ✅ CLEAR CHOICES IMMEDIATELY (prevent accidental click during typing)
+    choices.innerHTML = '<p style="opacity:0.5;text-align:center;font-size:14px;">⏳ Mengetik...</p>';
+    choices.style.pointerEvents = 'none'; // Disable all clicks
 
     setCharacter(d.speaker, d.pose || 'idle');
     charEl.classList.remove('speaking');
@@ -127,7 +217,10 @@ function handleChoice(action) {
 
         const text = d.text[config.currentLanguage] || d.text.id;
         
+        // ✅ Typing dengan callback untuk render choices SETELAH selesai
         typeText(dialogue, text, () => {
+            // Render choices ONLY after typing done
+            choices.style.pointerEvents = 'auto'; // Re-enable clicks
             choices.innerHTML = '';
             d.choices.forEach(c => {
                 const btn = document.createElement('div');
@@ -138,8 +231,23 @@ function handleChoice(action) {
             });
         });
 
-        dialogue.dataset.dialogueKey = action;
-    }, 500);
+        dialogue.dataset.dialogueKey = action;    
+        
+    }, 100);
+}
+
+// Kembali ke dialog sebelumnya
+function goBack() {
+    const previous = dialogHistory.pop();
+    console.log('Going back to:', previous);
+    console.log('History after pop:', dialogHistory);
+    
+    if (previous) {
+        backInProgress = true;
+        handleChoice(previous);
+    } else {
+        handleChoice('intro'); // Default fallback
+    }
 }
 
 // EXPERIENCE - Full HTML content without template
@@ -270,10 +378,6 @@ function toggleLanguage() {
     config.currentLanguage = config.currentLanguage === 'en' ? 'id' : 'en';
     updateLanguage();
     
-    // Update language button text
-    const langText = document.getElementById('langText');
-    // langText.textContent = config.currentLanguage === 'en' ? 'EN' : 'ID'; // tombol dihapus
-    
     // Re-render dialog yang aktif
     const currentDialogue = document.getElementById('dialogueText').dataset.dialogueKey;
     if (currentDialogue && dialogues[currentDialogue]) {
@@ -350,11 +454,6 @@ function toggleSFX() {
     updateAudioUI();
 }
 
-// function playSFX(key) {
-//     if (!config.sfxEnabled || !audioConfig || !audioConfig.sfx[key]) return;
-//     playSoundEffect(key);
-// }
-
 function playSFX(key) {
     if (!config.sfxEnabled) return;
     if (!audioConfig || !audioConfig.sfx || !audioConfig.sfx[key]) return;
@@ -363,7 +462,6 @@ function playSFX(key) {
     audio.volume = audioConfig.volumes.sfx;
     audio.play().catch(err => console.log('SFX failed:', err));
 }
-
 
 function updateVolume(value) {
     const music = document.getElementById('bgMusic');
@@ -399,16 +497,6 @@ function updateAudioUI() {
 
 // EVENTS
 window.onclick = e => {
-    //global sfx
-    // playSFX('click');
-
-    // sfx tombol tertentu
-    // if (e.target.classList.contains('choice-btn') || 
-    //     e.target.classList.contains('menu-btn') ||
-    //     e.target.classList.contains('settings-btn') ) {
-    //     playSFX('click');
-    // }
-
     // sfx semua tombol
     const classList = e.target.className;
     if (typeof classList === 'string' && /-btn\b/.test(classList)) {

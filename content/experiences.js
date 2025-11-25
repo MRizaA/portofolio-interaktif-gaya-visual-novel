@@ -11,7 +11,7 @@ const experienceTypes = {
 
 const experienceData = [
 
-    // 1. Digitaliz
+    // Digitaliz
     {
         id: "digitaliz-internship",
         type: "work",
@@ -128,7 +128,7 @@ const experienceData = [
         }
     },
     
-    // 2. Koperasi Konek
+    // Koperasi Konek
     {
         id: "koperasi-system",
         type: "project",
@@ -455,7 +455,7 @@ const experienceData = [
         }
     },
 
-    // 3. Kuliah d3 Hasnur
+    // Kuliah d3 Hasnur
     {
         id: "d3-informatika",
         type: "education",
@@ -700,7 +700,7 @@ const experienceData = [
         }
     },
 
-    // 4. KSN matematika
+    // KSN matematika
     {
         id: "achieve-ksn-math",
         type: "achievement",
@@ -859,7 +859,7 @@ const experienceData = [
         }
     },
 
-    // 5. ulangan nilai tertinggi
+    // ulangan nilai tertinggi
     {
         id: "achieve-unbk-rank1",
         type: "achievement",
@@ -1020,7 +1020,7 @@ const experienceData = [
         }
     },
 
-    // 6. python dasar
+    // python dasar
     {
         id: "cert-python-dicoding",
         type: "certification",
@@ -1187,7 +1187,7 @@ const experienceData = [
         }
     },
 
-    // 7. Routing jaringan
+    // Routing jaringan
     {
         id: "cert-jna",
         type: "certification",
@@ -1375,7 +1375,7 @@ const experienceData = [
         }
     },
 
-    // 8. Dasar software engineering
+    // Dasar software engineering
     {
         id: "cert-revou-sefc",
         type: "certification",
@@ -1530,7 +1530,7 @@ const experienceData = [
         }
     },
 
-    // 9. backend dasar
+    // backend dasar
     {
         id: "cert-alterra-backend",
         type: "certification",
@@ -1665,7 +1665,7 @@ const experienceData = [
         }
     },
 
-    // 10. frontend dasar
+    // frontend dasar
     {
         id: "cert-alterra-frontend",
         type: "certification",
@@ -1800,7 +1800,7 @@ const experienceData = [
         }
     },
 
-    // 11. quality assurance
+    // quality assurance
     {
         id: "cert-alterra-qa",
         type: "certification",
@@ -1935,7 +1935,7 @@ const experienceData = [
         }
     },
 
-    // 12. Creative Critical
+    // Creative Critical
     {
         id: "cert-creative-canvas",
         type: "certification",
@@ -2062,7 +2062,7 @@ const experienceData = [
         }
     },
 
-    // 13. ledership 
+    // ledership 
     {
         id: "cert-leadership-polhas",
         type: "certification",
@@ -2197,7 +2197,7 @@ const experienceData = [
         }
     },
 
-    // 14. Bahasa Indonesia
+    // Bahasa Indonesia
     {
         id: "cert-bahasa-indonesia",
         type: "certification",
@@ -2410,7 +2410,7 @@ const experienceData = [
         }
     },
 
-    // 15. Balfair GIBS
+    // Balfair GIBS
     {
         id: "balfair-2024",
         type: "project",
@@ -2447,7 +2447,7 @@ const experienceData = [
 
                 <div style="display: flex; flex-direction: row; align-items: flex-start; justify-content: center; gap: 3%; flex-wrap: wrap; width: 100%; margin: 0 auto;">
                 
-                    <div style="flex: 1 1 60%; ">
+                    <div style="flex: 1 1 60%; margin-bottom: 15px;">
                         <h3 style="color: var(--primary-color); margin-bottom: 15px;">Tentang Project</h3>
                         <p style="margin-bottom: 15px;">
                             Banua Litera Fair 2024 adalah website event management untuk Festival Bulan Bahasa yang diselenggarakan 
@@ -2568,7 +2568,7 @@ const experienceData = [
                 
                 <div style="display: flex; flex-direction: row; align-items: flex-start; justify-content: center; gap: 3%; flex-wrap: wrap; width: 100%; margin: 0 auto;">
                 
-                    <div style="flex: 1 1 60%; ">
+                    <div style="flex: 1 1 60%; margin-bottom: 15px;">
                         <h3 style="color: var(--primary-color); margin: 25px 0 15px;">About the Project</h3>
                         <p style="margin-bottom: 15px;">
                             Banua Litera Fair 2024 is an event management website for the Language Month Festival organized by 
@@ -2677,7 +2677,7 @@ const experienceData = [
         }
     },
 
-    // 16. Browser
+    // Browser
     {
         id: "riza-browser",
         type: "project",
@@ -3020,8 +3020,7 @@ const experienceData = [
         }
     },
 
-
-    // 17. SMA Negeri 1 Rantau Badauh
+    // SMA Negeri 1 Rantau Badauh
     {
         id: "sma-rantau-badauh",
         type: "education",
@@ -3182,7 +3181,7 @@ const experienceData = [
         }
     },
 
-    // 18. SMP Negeri 2 Rantau Badauh
+    // SMP Negeri 2 Rantau Badauh
     {
         id: "smp-rantau-badauh",
         type: "education",
@@ -3369,7 +3368,7 @@ const experienceData = [
         }
     },
 
-    // 19. SDN Danda Jaya 2
+    // SDN Danda Jaya 2
     {
         id: "sdn-danda-jaya-2",
         type: "education",
@@ -3576,7 +3575,1023 @@ const experienceData = [
                 </div>
             `
         }
+    },
+
+    // SADP
+    {
+        id: "sadp-17agustus-app",
+        type: "project",
+        
+        title: {
+            id: "Sistem Manajemen Lomba 17 Agustus",
+            en: "17th August Competition Management System"
+        },
+        subtitle: {
+            id: "Technical Test | Golang + React.js | PT Sinar Alam Duta Perdana | 2025",
+            en: "Technical Test | Golang + React.js | PT Sinar Alam Duta Perdana | 2025"
+        },
+        
+        description: {
+            id: "Aplikasi web fullstack untuk manajemen kompetisi kemerdekaan dengan multiple user roles - dibuat sebagai technical test",
+            en: "Fullstack web application for independence competition management with multiple user roles - created as technical test"
+        },
+        
+        tags: ["Golang", "React.js", "MySQL", "RESTful API", "Fullstack", "Multi-Role System"],
+        
+        content: {
+            id: `<h2 style="font-size: 28px; margin-bottom: 10px; background: linear-gradient(45deg, var(--primary-color), var(--secondary-color)); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+                    Sistem Manajemen Lomba 17 Agustus 🇮🇩
+                </h2>
+
+                <div style="display: flex; gap: 20px; margin-bottom: 25px; flex-wrap: wrap; opacity: 0.9;">
+                    <span style="display: flex; align-items: center; gap: 8px;">🎯 <strong>Tipe:</strong> Technical Test Project</span>
+                    <span style="display: flex; align-items: center; gap: 8px;">🏢 <strong>Untuk:</strong> PT Sinar Alam Duta Perdana</span>
+                    <span style="display: flex; align-items: center; gap: 8px;">💻 <strong>Stack:</strong> Golang + React.js + MySQL</span>
+                    <span style="display: flex; align-items: center; gap: 8px;">📅 <strong>Tahun:</strong> 2025</span>
+                </div>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 15px; margin-bottom: 25px;">
+                    <div style="background: rgba(168, 85, 247, 0.1); border: 2px solid var(--primary-color); border-radius: 15px; padding: 8px;">
+                        <img src="assets/images/projects/17agustus/login-page.jpg" alt="Login Page" style="display: block; width: 100%; height: 220px; border-radius: 10px; object-fit: cover;">
+                        <p style="text-align: center; padding: 10px; opacity: 0.8; font-size: 14px;">Halaman Login & Autentikasi</p>
+                    </div>
+                    <div style="background: rgba(168, 85, 247, 0.1); border: 2px solid var(--primary-color); border-radius: 15px; padding: 8px;">
+                        <img src="assets/images/projects/17agustus/admin-panel.jpg" alt="Admin Panel" style="display: block; width: 100%; height: 220px; border-radius: 10px; object-fit: cover;">
+                        <p style="text-align: center; padding: 10px; opacity: 0.8; font-size: 14px;">Dashboard Admin Panel</p>
+                    </div>
+                    <div style="background: rgba(168, 85, 247, 0.1); border: 2px solid var(--primary-color); border-radius: 15px; padding: 8px;">
+                        <img src="assets/images/projects/17agustus/user-competitions.jpg" alt="User View" style="display: block; width: 100%; height: 220px; border-radius: 10px; object-fit: cover;">
+                        <p style="text-align: center; padding: 10px; opacity: 0.8; font-size: 14px;">User Panel - Daftar Lomba</p>
+                    </div>
+                </div>
+
+                <div style="line-height: 1.8;">
+                    <h3 style="color: var(--primary-color); margin: 25px 0 15px;">📖 Latar Belakang Project</h3>
+                    <p style="margin-bottom: 15px;">
+                        Aplikasi ini dibuat sebagai bagian dari <strong>technical test</strong> saat melamar posisi <strong>Fullstack Developer</strong> 
+                        di PT Sinar Alam Duta Perdana (SADP), sebuah perusahaan terkemuka di bidang distribusi bahan bakar dan logistik yang telah 
+                        dipercaya PERTAMINA sejak tahun 1985.
+                    </p>
+                    <p style="margin-bottom: 15px;">
+                        Test ini dirancang untuk mengevaluasi kemampuan dalam membangun aplikasi web lengkap dari konsep hingga implementasi. 
+                        Meskipun akhirnya tidak lolos ke tahap interview, project ini menjadi pembelajaran sangat berharga tentang backend Golang, 
+                        frontend React, dan arsitektur aplikasi modern.
+                    </p>
+                    
+                    <h3 style="color: var(--primary-color); margin: 25px 0 15px;">🛠️ Tech Stack & Arsitektur</h3>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 12px; margin-bottom: 25px;">
+                        <div style="background: linear-gradient(135deg, rgba(0, 173, 216, 0.1), rgba(0, 173, 216, 0.05)); padding: 15px; border-left: 4px solid #00ADD8; border-radius: 8px;">
+                            <strong style="color: #00ADD8;">🔷 Golang Backend</strong>
+                            <p style="margin-top: 8px; opacity: 0.9; font-size: 14px;">
+                                RESTful API dengan Gorilla Mux router, direct SQL queries untuk performa maksimal, 
+                                CORS middleware untuk komunikasi frontend, comprehensive error handling
+                            </p>
+                        </div>
+                        <div style="background: linear-gradient(135deg, rgba(97, 218, 251, 0.1), rgba(97, 218, 251, 0.05)); padding: 15px; border-left: 4px solid #61DAFB; border-radius: 8px;">
+                            <strong style="color: #61DAFB;">⚛️ React.js Frontend</strong>
+                            <p style="margin-top: 8px; opacity: 0.9; font-size: 14px;">
+                                Component-based UI dengan Hooks (useState, useEffect), Axios untuk HTTP requests, 
+                                inline CSS styling, modal dialogs untuk user interactions
+                            </p>
+                        </div>
+                        <div style="background: linear-gradient(135deg, rgba(0, 117, 143, 0.1), rgba(0, 117, 143, 0.05)); padding: 15px; border-left: 4px solid #00758F; border-radius: 8px;">
+                            <strong style="color: #00758F;">🐘 MySQL Database</strong>
+                            <p style="margin-top: 8px; opacity: 0.9; font-size: 14px;">
+                                Relational database dengan 3 tabel utama, foreign key constraints untuk integritas data, 
+                                indexed queries untuk performa, CASCADE delete untuk konsistensi
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <h3 style="color: var(--primary-color); margin: 25px 0 15px;">✨ Fitur Aplikasi (Multi-Role System)</h3>
+                    
+                    <h4 style="color: var(--secondary-color); margin: 20px 0 10px; font-size: 18px;">👨‍💼 Admin Panel - Penuh Kontrol</h4>
+                    <div style="background: rgba(168, 85, 247, 0.05); padding: 20px; border-radius: 12px; margin-bottom: 20px; border: 1px solid rgba(168, 85, 247, 0.2);">
+                        <ul style="margin-left: 20px;">
+                            <li style="margin-bottom: 12px;">
+                                <strong>👥 Kelola User</strong><br>
+                                <span style="opacity: 0.9; font-size: 14px;">
+                                    CRUD lengkap untuk user (admin & peserta), validasi data, edit profile, 
+                                    hapus user dengan cascade delete otomatis
+                                </span>
+                            </li>
+                            <li style="margin-bottom: 12px;">
+                                <strong>🏆 Kelola Lomba</strong><br>
+                                <span style="opacity: 0.9; font-size: 14px;">
+                                    Tambah jenis lomba baru (Tarik Tambang, Balap Karung, Makan Kerupuk, dll), 
+                                    edit deskripsi dan detail, hapus dengan pembersihan data peserta
+                                </span>
+                            </li>
+                            <li style="margin-bottom: 12px;">
+                                <strong>📋 Kelola Peserta</strong><br>
+                                <span style="opacity: 0.9; font-size: 14px;">
+                                    Daftarkan user ke lomba, lihat peserta per lomba, hapus registrasi dengan 
+                                    pencegahan duplikasi registrasi
+                                </span>
+                            </li>
+                            <li style="margin-bottom: 12px;">
+                                <strong>📊 Dashboard Analytics</strong><br>
+                                <span style="opacity: 0.9; font-size: 14px;">
+                                    Monitor total peserta, jumlah lomba tersedia, statistik registrasi per lomba
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <h4 style="color: var(--secondary-color); margin: 20px 0 10px; font-size: 18px;">👤 User Panel - Peserta Mandiri</h4>
+                    <div style="background: rgba(168, 85, 247, 0.05); padding: 20px; border-radius: 12px; margin-bottom: 20px; border: 1px solid rgba(168, 85, 247, 0.2);">
+                        <ul style="margin-left: 20px;">
+                            <li style="margin-bottom: 12px;">
+                                <strong>🔍 Browse Lomba</strong><br>
+                                <span style="opacity: 0.9; font-size: 14px;">
+                                    Lihat semua lomba yang tersedia dengan detail lengkap
+                                </span>
+                            </li>
+                            <li style="margin-bottom: 12px;">
+                                <strong>📝 Daftar Lomba</strong><br>
+                                <span style="opacity: 0.9; font-size: 14px;">
+                                    Register diri ke lomba pilihan dengan automatic user ID assignment, 
+                                    deteksi duplikasi registrasi
+                                </span>
+                            </li>
+                            <li style="margin-bottom: 12px;">
+                                <strong>👥 Lihat Peserta</strong><br>
+                                <span style="opacity: 0.9; font-size: 14px;">
+                                    View peserta terdaftar di masing-masing lomba secara transparan
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <h4 style="color: var(--secondary-color); margin: 20px 0 10px; font-size: 18px;">🌐 Guest Mode - Akses Publik (Read-Only)</h4>
+                    <div style="background: rgba(168, 85, 247, 0.05); padding: 20px; border-radius: 12px; margin-bottom: 20px; border: 1px solid rgba(168, 85, 247, 0.2);">
+                        <ul style="margin-left: 20px;">
+                            <li style="margin-bottom: 12px;">
+                                <strong>👀 Browse Lomba</strong> - Lihat semua lomba tanpa login
+                            </li>
+                            <li style="margin-bottom: 12px;">
+                                <strong>👥 Lihat Peserta</strong> - Daftar peserta per lomba terbuka untuk publik
+                            </li>
+                            <li style="margin-bottom: 12px;">
+                                <strong>📢 Call-to-Action</strong> - Prompt jelas untuk register agar bisa ikut
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <h3 style="color: var(--primary-color); margin: 25px 0 15px;">🗄️ Struktur Database</h3>
+                    <div style="background: rgba(139, 92, 246, 0.1); padding: 20px; border-radius: 12px; margin-bottom: 20px; border-left: 4px solid #8b5cf6;">
+                        <div style="display: grid; gap: 12px;">
+                            <div style="background: rgba(255,255,255,0.05); padding: 12px; border-radius: 8px;">
+                                <strong>📋 users</strong><br>
+                                <span style="font-size: 13px; opacity: 0.9; font-family: monospace;">
+                                    id (PK), name, email (UNIQUE), password (hashed), role (admin/peserta), created_at, updated_at
+                                </span>
+                            </div>
+                            <div style="background: rgba(255,255,255,0.05); padding: 12px; border-radius: 8px;">
+                                <strong>🏆 lomba</strong><br>
+                                <span style="font-size: 13px; opacity: 0.9; font-family: monospace;">
+                                    id (PK), name (UNIQUE), description, created_at, updated_at
+                                </span>
+                            </div>
+                            <div style="background: rgba(255,255,255,0.05); padding: 12px; border-radius: 8px;">
+                                <strong>👥 peserta</strong><br>
+                                <span style="font-size: 13px; opacity: 0.9; font-family: monospace;">
+                                    id (PK), user_id (FK), lomba_id (FK), registered_at<br>
+                                    <em style="color: #f59e0b;">UNIQUE (user_id, lomba_id) - Prevent duplicate registrations</em>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h3 style="color: var(--primary-color); margin: 25px 0 15px;">🚀 REST API Endpoints</h3>
+                    <div style="background: rgba(16, 185, 129, 0.1); padding: 20px; border-radius: 12px; margin-bottom: 20px; border-left: 4px solid #10b981;">
+                        <div style="font-family: monospace; font-size: 13px; background: rgba(0,0,0,0.2); padding: 15px; border-radius: 8px;">
+                            <div style="color: #61dafb; margin-bottom: 15px;"><strong>🔐 Authentication</strong></div>
+                            POST /api/login<br>
+                            POST /api/register (user hanya)<br>
+                            GET /api/profile<br><br>
+                            
+                            <div style="color: #61dafb; margin-bottom: 15px;"><strong>👥 Users (Admin Only)</strong></div>
+                            GET /api/users<br>
+                            GET /api/users/{id}<br>
+                            POST /api/users<br>
+                            PUT /api/users/{id}<br>
+                            DELETE /api/users/{id}<br><br>
+                            
+                            <div style="color: #61dafb; margin-bottom: 15px;"><strong>🏆 Contests</strong></div>
+                            GET /api/lomba<br>
+                            GET /api/lomba/{id}<br>
+                            POST /api/lomba (admin only)<br>
+                            PUT /api/lomba/{id} (admin only)<br>
+                            DELETE /api/lomba/{id} (admin only)<br><br>
+                            
+                            <div style="color: #61dafb;"><strong>👤 Participants</strong></div>
+                            GET /api/peserta<br>
+                            GET /api/peserta/{id}<br>
+                            POST /api/peserta (register to contest)<br>
+                            DELETE /api/peserta/{id}
+                        </div>
+                    </div>
+                    
+                    <h3 style="color: var(--primary-color); margin: 25px 0 15px;">💡 Key Features & Pembelajaran</h3>
+                    <div style="display: grid; gap: 12px; margin-bottom: 25px;">
+                        <div style="background: linear-gradient(135deg, rgba(0, 173, 216, 0.1), rgba(0, 173, 216, 0.05)); padding: 15px; border-left: 4px solid #00ADD8; border-radius: 8px;">
+                            <strong style="color: #00ADD8;">Multi-Role Authorization</strong>
+                            <p style="margin-top: 8px; opacity: 0.9; font-size: 14px;">
+                                Implementasi 3 level akses berbeda (Admin, User, Guest) dengan backend validation untuk security
+                            </p>
+                        </div>
+                        <div style="background: linear-gradient(135deg, rgba(97, 218, 251, 0.1), rgba(97, 218, 251, 0.05)); padding: 15px; border-left: 4px solid #61DAFB; border-radius: 8px;">
+                            <strong style="color: #61DAFB;">Duplicate Prevention</strong>
+                            <p style="margin-top: 8px; opacity: 0.9; font-size: 14px;">
+                                Unique composite index pada tabel peserta mencegah user mendaftar 2x ke lomba yang sama
+                            </p>
+                        </div>
+                        <div style="background: linear-gradient(135deg, rgba(0, 117, 143, 0.1), rgba(0, 117, 143, 0.05)); padding: 15px; border-left: 4px solid #00758F; border-radius: 8px;">
+                            <strong style="color: #00758F;">Data Integrity</strong>
+                            <p style="margin-top: 8px; opacity: 0.9; font-size: 14px;">
+                                Foreign key constraints & CASCADE delete memastikan konsistensi data saat hapus user/lomba
+                            </p>
+                        </div>
+                        <div style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(16, 185, 129, 0.05)); padding: 15px; border-left: 4px solid #10b981; border-radius: 8px;">
+                            <strong style="color: #10b981;">Performance Optimization</strong>
+                            <p style="margin-top: 8px; opacity: 0.9; font-size: 14px;">
+                                Golang dengan direct SQL queries menghasilkan response time < 50ms, indexed database queries
+                            </p>
+                        </div>
+                        <div style="background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(139, 92, 246, 0.05)); padding: 15px; border-left: 4px solid #8b5cf6; border-radius: 8px;">
+                            <strong style="color: #8b5cf6;">Responsive UI Design</strong>
+                            <p style="margin-top: 8px; opacity: 0.9; font-size: 14px;">
+                                React components yang responsif untuk desktop, tablet, mobile dengan consistent UX
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <h3 style="color: var(--primary-color); margin: 25px 0 15px;">📚 Pengalaman & Pembelajaran</h3>
+                    <div style="background: rgba(236, 72, 153, 0.1); padding: 20px; border-radius: 12px; margin-bottom: 20px; border-left: 4px solid #ec4899;">
+                        <ul style="margin-left: 20px;">
+                            <li style="margin-bottom: 12px;">
+                                <strong>First Golang Project</strong> - Pertama kali build fullstack app dengan Golang, 
+                                belajar Gorilla Mux, database/sql package, error handling patterns
+                            </li>
+                            <li style="margin-bottom: 12px;">
+                                <strong>React State Management</strong> - Multi-role authentication dengan React hooks, 
+                                handling conditional rendering berdasarkan user role
+                            </li>
+                            <li style="margin-bottom: 12px;">
+                                <strong>Database Design</strong> - Merancang schema dengan normalization, 
+                                relationships, constraints untuk business logic
+                            </li>
+                            <li style="margin-bottom: 12px;">
+                                <strong>API Integration</strong> - Connect React frontend ke Golang API dengan Axios, 
+                                handle CORS, error handling, loading states
+                            </li>
+                            <li style="margin-bottom: 12px;">
+                                <strong>Input Validation</strong> - Server-side validation comprehensive untuk security, 
+                                duplicate detection, foreign key validation
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div style="background: linear-gradient(135deg, rgba(168, 85, 247, 0.1), rgba(236, 72, 153, 0.1)); padding: 25px; border-radius: 15px; border: 2px solid var(--primary-color); margin-top: 30px;">
+                        <h4 style="color: var(--primary-color); margin-bottom: 15px;">🔗 GitHub Repository</h4>
+                        <a href="https://github.com/MRizaA/17-agustus-sadp" target="_blank" rel="noopener" style="padding: 12px 24px; background: rgba(0, 0, 0, 0.3); border: 2px solid #fff; border-radius: 25px; color: white; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; transition: all 0.3s;">
+                            <img src="assets/images/icons/github.png" alt="GitHub" style="width: 20px; height: 20px; border-radius: 50%; background: white; padding: 2px;">
+                            <strong>View Repository</strong>
+                        </a>
+                    </div>
+                    
+                    <div style="background: rgba(59, 130, 246, 0.1); padding: 20px; border-radius: 12px; border-left: 4px solid #3b82f6; margin-top: 25px;">
+                        <h4 style="color: #3b82f6; margin-bottom: 10px;">💭 Refleksi</h4>
+                        <p style="margin-bottom: 10px;">
+                            Meskipun project ini tidak lolos ke tahap interview, nilai pembelajaran yang didapat sangat besar. 
+                            Ini adalah first experience dengan Golang production-ready dan memberikan confidence bahwa saya 
+                            bisa dengan cepat belajar bahasa pemrograman baru dan implement dengan proper architecture.
+                        </p>
+                        <p style="font-style: italic; opacity: 0.9;">
+                            "Technical test bukan hanya tentang lolos atau tidak. Lebih penting adalah proses pembelajaran dan 
+                            bagaimana kita menunjukkan kemampuan problem-solving. Project ini membuktikan bahwa saya bisa handle 
+                            fullstack development dari design hingga deployment."
+                        </p>
+                    </div>
+                </div>`,
+            en: `<h2 style="font-size: 28px; margin-bottom: 10px; background: linear-gradient(45deg, var(--primary-color), var(--secondary-color)); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+                    17th August Competition Management System 🇮🇩
+                </h2>
+
+                <div style="display: flex; gap: 20px; margin-bottom: 25px; flex-wrap: wrap; opacity: 0.9;">
+                    <span style="display: flex; align-items: center; gap: 8px;">🎯 <strong>Type:</strong> Technical Test Project</span>
+                    <span style="display: flex; align-items: center; gap: 8px;">🏢 <strong>For:</strong> PT Sinar Alam Duta Perdana</span>
+                    <span style="display: flex; align-items: center; gap: 8px;">💻 <strong>Stack:</strong> Golang + React.js + MySQL</span>
+                    <span style="display: flex; align-items: center; gap: 8px;">📅 <strong>Year:</strong> 2025</span>
+                </div>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 15px; margin-bottom: 25px;">
+                    <div style="background: rgba(168, 85, 247, 0.1); border: 2px solid var(--primary-color); border-radius: 15px; padding: 8px;">
+                        <img src="assets/images/projects/17agustus/login-page.jpg" alt="Login Page" style="display: block; width: 100%; height: 220px; border-radius: 10px; object-fit: cover;">
+                        <p style="text-align: center; padding: 10px; opacity: 0.8; font-size: 14px;">Authentication & Login Interface</p>
+                    </div>
+                    <div style="background: rgba(168, 85, 247, 0.1); border: 2px solid var(--primary-color); border-radius: 15px; padding: 8px;">
+                        <img src="assets/images/projects/17agustus/admin-panel.jpg" alt="Admin Panel" style="display: block; width: 100%; height: 220px; border-radius: 10px; object-fit: cover;">
+                        <p style="text-align: center; padding: 10px; opacity: 0.8; font-size: 14px;">Admin Dashboard & Management</p>
+                    </div>
+                    <div style="background: rgba(168, 85, 247, 0.1); border: 2px solid var(--primary-color); border-radius: 15px; padding: 8px;">
+                        <img src="assets/images/projects/17agustus/user-competitions.jpg" alt="User View" style="display: block; width: 100%; height: 220px; border-radius: 10px; object-fit: cover;">
+                        <p style="text-align: center; padding: 10px; opacity: 0.8; font-size: 14px;">User Panel - Browse & Register</p>
+                    </div>
+                </div>
+
+                <div style="line-height: 1.8;">
+                    <h3 style="color: var(--primary-color); margin: 25px 0 15px;">📖 Project Background</h3>
+                    <p style="margin-bottom: 15px;">
+                        This application was developed as a <strong>technical test</strong> for the <strong>Fullstack Developer</strong> 
+                        position at PT Sinar Alam Duta Perdana (SADP), a leading fuel distribution and logistics company trusted by 
+                        PERTAMINA since 1985. The test was designed to evaluate full-stack development capabilities from concept to implementation.
+                    </p>
+                    <p style="margin-bottom: 15px;">
+                        Although the project didn't advance to the final interview stage, it provided invaluable learning in building 
+                        production-grade applications with Golang backend, React frontend, and MySQL database. The experience reinforced 
+                        my ability to quickly learn new technologies and implement them with proper architecture.
+                    </p>
+                    
+                    <h3 style="color: var(--primary-color); margin: 25px 0 15px;">🛠️ Tech Stack & Architecture</h3>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 12px; margin-bottom: 25px;">
+                        <div style="background: linear-gradient(135deg, rgba(0, 173, 216, 0.1), rgba(0, 173, 216, 0.05)); padding: 15px; border-left: 4px solid #00ADD8; border-radius: 8px;">
+                            <strong style="color: #00ADD8;">🔷 Golang Backend</strong>
+                            <p style="margin-top: 8px; opacity: 0.9; font-size: 14px;">
+                                RESTful API with Gorilla Mux router, direct SQL queries for maximum performance, 
+                                CORS middleware for frontend communication, comprehensive error handling
+                            </p>
+                        </div>
+                        <div style="background: linear-gradient(135deg, rgba(97, 218, 251, 0.1), rgba(97, 218, 251, 0.05)); padding: 15px; border-left: 4px solid #61DAFB; border-radius: 8px;">
+                            <strong style="color: #61DAFB;">⚛️ React.js Frontend</strong>
+                            <p style="margin-top: 8px; opacity: 0.9; font-size: 14px;">
+                                Component-based UI with Hooks (useState, useEffect), Axios for HTTP requests, 
+                                inline CSS styling, modal dialogs for user interactions
+                            </p>
+                        </div>
+                        <div style="background: linear-gradient(135deg, rgba(0, 117, 143, 0.1), rgba(0, 117, 143, 0.05)); padding: 15px; border-left: 4px solid #00758F; border-radius: 8px;">
+                            <strong style="color: #00758F;">🐘 MySQL Database</strong>
+                            <p style="margin-top: 8px; opacity: 0.9; font-size: 14px;">
+                                Relational database with 3 core tables, foreign key constraints for data integrity, 
+                                indexed queries for performance, CASCADE delete for consistency
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <h3 style="color: var(--primary-color); margin: 25px 0 15px;">✨ Application Features (Multi-Role System)</h3>
+                    
+                    <h4 style="color: var(--secondary-color); margin: 20px 0 10px; font-size: 18px;">👨‍💼 Admin Panel - Full Control</h4>
+                    <div style="background: rgba(168, 85, 247, 0.05); padding: 20px; border-radius: 12px; margin-bottom: 20px; border: 1px solid rgba(168, 85, 247, 0.2);">
+                        <ul style="margin-left: 20px;">
+                            <li style="margin-bottom: 12px;">
+                                <strong>👥 Manage Users</strong><br>
+                                <span style="opacity: 0.9; font-size: 14px;">
+                                    Complete CRUD for users (admin & participants), data validation, profile editing, 
+                                    user deletion with automatic cascade
+                                </span>
+                            </li>
+                            <li style="margin-bottom: 12px;">
+                                <strong>🏆 Manage Competitions</strong><br>
+                                <span style="opacity: 0.9; font-size: 14px;">
+                                    Add new competition types (Tug of War, Sack Race, Cracker Eating, etc.), 
+                                    edit descriptions and details, delete with participant data cleanup
+                                </span>
+                            </li>
+                            <li style="margin-bottom: 12px;">
+                                <strong>📋 Manage Participants</strong><br>
+                                <span style="opacity: 0.9; font-size: 14px;">
+                                    Register users to competitions, view participants per competition, remove registrations 
+                                    with duplicate prevention
+                                </span>
+                            </li>
+                            <li style="margin-bottom: 12px;">
+                                <strong>📊 Analytics Dashboard</strong><br>
+                                <span style="opacity: 0.9; font-size: 14px;">
+                                    Monitor total participants, available competitions, registration statistics per competition
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <h4 style="color: var(--secondary-color); margin: 20px 0 10px; font-size: 18px;">👤 User Panel - Self-Service</h4>
+                    <div style="background: rgba(168, 85, 247, 0.05); padding: 20px; border-radius: 12px; margin-bottom: 20px; border: 1px solid rgba(168, 85, 247, 0.2);">
+                        <ul style="margin-left: 20px;">
+                            <li style="margin-bottom: 12px;">
+                                <strong>🔍 Browse Competitions</strong><br>
+                                <span style="opacity: 0.9; font-size: 14px;">
+                                    View all available competitions with complete details
+                                </span>
+                            </li>
+                            <li style="margin-bottom: 12px;">
+                                <strong>📝 Competition Registration</strong><br>
+                                <span style="opacity: 0.9; font-size: 14px;">
+                                    Self-register to chosen competitions with automatic user ID assignment, 
+                                    duplicate registration detection
+                                </span>
+                            </li>
+                            <li style="margin-bottom: 12px;">
+                                <strong>👥 View Participants</strong><br>
+                                <span style="opacity: 0.9; font-size: 14px;">
+                                    Transparently view registered participants in each competition
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <h4 style="color: var(--secondary-color); margin: 20px 0 10px; font-size: 18px;">🌐 Guest Mode - Public Access (Read-Only)</h4>
+                    <div style="background: rgba(168, 85, 247, 0.05); padding: 20px; border-radius: 12px; margin-bottom: 20px; border: 1px solid rgba(168, 85, 247, 0.2);">
+                        <ul style="margin-left: 20px;">
+                            <li style="margin-bottom: 12px;">
+                                <strong>👀 Browse Competitions</strong> - View all competitions without login
+                            </li>
+                            <li style="margin-bottom: 12px;">
+                                <strong>👥 View Participants</strong> - Participant lists per competition open to public
+                            </li>
+                            <li style="margin-bottom: 12px;">
+                                <strong>📢 Call-to-Action</strong> - Clear prompts to register for participation
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <h3 style="color: var(--primary-color); margin: 25px 0 15px;">🗄️ Database Schema</h3>
+                    <div style="background: rgba(139, 92, 246, 0.1); padding: 20px; border-radius: 12px; margin-bottom: 20px; border-left: 4px solid #8b5cf6;">
+                        <div style="display: grid; gap: 12px;">
+                            <div style="background: rgba(255,255,255,0.05); padding: 12px; border-radius: 8px;">
+                                <strong>📋 users</strong><br>
+                                <span style="font-size: 13px; opacity: 0.9; font-family: monospace;">
+                                    id (PK), name, email (UNIQUE), password (hashed), role (admin/peserta), created_at, updated_at
+                                </span>
+                            </div>
+                            <div style="background: rgba(255,255,255,0.05); padding: 12px; border-radius: 8px;">
+                                <strong>🏆 lomba</strong><br>
+                                <span style="font-size: 13px; opacity: 0.9; font-family: monospace;">
+                                    id (PK), name (UNIQUE), description, created_at, updated_at
+                                </span>
+                            </div>
+                            <div style="background: rgba(255,255,255,0.05); padding: 12px; border-radius: 8px;">
+                                <strong>👥 peserta</strong><br>
+                                <span style="font-size: 13px; opacity: 0.9; font-family: monospace;">
+                                    id (PK), user_id (FK), lomba_id (FK), registered_at<br>
+                                    <em style="color: #f59e0b;">UNIQUE (user_id, lomba_id) - Prevents duplicate registrations</em>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h3 style="color: var(--primary-color); margin: 25px 0 15px;">🚀 REST API Endpoints</h3>
+                    <div style="background: rgba(16, 185, 129, 0.1); padding: 20px; border-radius: 12px; margin-bottom: 20px; border-left: 4px solid #10b981;">
+                        <div style="font-family: monospace; font-size: 13px; background: rgba(0,0,0,0.2); padding: 15px; border-radius: 8px;">
+                            <div style="color: #61dafb; margin-bottom: 15px;"><strong>🔐 Authentication</strong></div>
+                            POST /api/login<br>
+                            POST /api/register (users only)<br>
+                            GET /api/profile<br><br>
+                            
+                            <div style="color: #61dafb; margin-bottom: 15px;"><strong>👥 Users (Admin Only)</strong></div>
+                            GET /api/users<br>
+                            GET /api/users/{id}<br>
+                            POST /api/users<br>
+                            PUT /api/users/{id}<br>
+                            DELETE /api/users/{id}<br><br>
+                            
+                            <div style="color: #61dafb; margin-bottom: 15px;"><strong>🏆 Contests</strong></div>
+                            GET /api/lomba<br>
+                            GET /api/lomba/{id}<br>
+                            POST /api/lomba (admin only)<br>
+                            PUT /api/lomba/{id} (admin only)<br>
+                            DELETE /api/lomba/{id} (admin only)<br><br>
+                            
+                            <div style="color: #61dafb;"><strong>👤 Participants</strong></div>
+                            GET /api/peserta<br>
+                            GET /api/peserta/{id}<br>
+                            POST /api/peserta (register to contest)<br>
+                            DELETE /api/peserta/{id}
+                        </div>
+                    </div>
+                    
+                    <h3 style="color: var(--primary-color); margin: 25px 0 15px;">💡 Key Features & Learning</h3>
+                    <div style="display: grid; gap: 12px; margin-bottom: 25px;">
+                        <div style="background: linear-gradient(135deg, rgba(0, 173, 216, 0.1), rgba(0, 173, 216, 0.05)); padding: 15px; border-left: 4px solid #00ADD8; border-radius: 8px;">
+                            <strong style="color: #00ADD8;">Multi-Role Authorization</strong>
+                            <p style="margin-top: 8px; opacity: 0.9; font-size: 14px;">
+                                Implemented 3 access levels (Admin, User, Guest) with backend validation for security
+                            </p>
+                        </div>
+                        <div style="background: linear-gradient(135deg, rgba(97, 218, 251, 0.1), rgba(97, 218, 251, 0.05)); padding: 15px; border-left: 4px solid #61DAFB; border-radius: 8px;">
+                            <strong style="color: #61DAFB;">Duplicate Prevention</strong>
+                            <p style="margin-top: 8px; opacity: 0.9; font-size: 14px;">
+                                Unique composite index on participant table prevents users from double-registering to same competition
+                            </p>
+                        </div>
+                        <div style="background: linear-gradient(135deg, rgba(0, 117, 143, 0.1), rgba(0, 117, 143, 0.05)); padding: 15px; border-left: 4px solid #00758F; border-radius: 8px;">
+                            <strong style="color: #00758F;">Data Integrity</strong>
+                            <p style="margin-top: 8px; opacity: 0.9; font-size: 14px;">
+                                Foreign key constraints & CASCADE delete ensure data consistency when deleting users/competitions
+                            </p>
+                        </div>
+                        <div style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(16, 185, 129, 0.05)); padding: 15px; border-left: 4px solid #10b981; border-radius: 8px;">
+                            <strong style="color: #10b981;">Performance Optimization</strong>
+                            <p style="margin-top: 8px; opacity: 0.9; font-size: 14px;">
+                                Golang with direct SQL queries achieves < 50ms average response time, with indexed database queries
+                            </p>
+                        </div>
+                        <div style="background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(139, 92, 246, 0.05)); padding: 15px; border-left: 4px solid #8b5cf6; border-radius: 8px;">
+                            <strong style="color: #8b5cf6;">Responsive UI Design</strong>
+                            <p style="margin-top: 8px; opacity: 0.9; font-size: 14px;">
+                                React components responsive across desktop, tablet, mobile with consistent UX
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <h3 style="color: var(--primary-color); margin: 25px 0 15px;">📚 Experience & Learning</h3>
+                    <div style="background: rgba(236, 72, 153, 0.1); padding: 20px; border-radius: 12px; margin-bottom: 20px; border-left: 4px solid #ec4899;">
+                        <ul style="margin-left: 20px;">
+                            <li style="margin-bottom: 12px;">
+                                <strong>First Golang Project</strong> - First time building fullstack app with Golang, 
+                                learned Gorilla Mux, database/sql package, and error handling patterns
+                            </li>
+                            <li style="margin-bottom: 12px;">
+                                <strong>React State Management</strong> - Multi-role authentication with React hooks, 
+                                handling conditional rendering based on user roles
+                            </li>
+                            <li style="margin-bottom: 12px;">
+                                <strong>Database Design</strong> - Designed schema with normalization, 
+                                relationships, and constraints for business logic
+                            </li>
+                            <li style="margin-bottom: 12px;">
+                                <strong>API Integration</strong> - Connected React frontend to Golang API with Axios, 
+                                handled CORS, error handling, and loading states
+                            </li>
+                            <li style="margin-bottom: 12px;">
+                                <strong>Input Validation</strong> - Comprehensive server-side validation for security, 
+                                duplicate detection, and foreign key validation
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div style="background: linear-gradient(135deg, rgba(168, 85, 247, 0.1), rgba(236, 72, 153, 0.1)); padding: 25px; border-radius: 15px; border: 2px solid var(--primary-color); margin-top: 30px;">
+                        <h4 style="color: var(--primary-color); margin-bottom: 15px;">🔗 GitHub Repository</h4>
+                        <a href="https://github.com/MRizaA/17-agustus-sadp" target="_blank" rel="noopener" style="padding: 12px 24px; background: rgba(0, 0, 0, 0.3); border: 2px solid #fff; border-radius: 25px; color: white; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; transition: all 0.3s;">
+                            <img src="assets/images/icons/github.png" alt="GitHub" style="width: 20px; height: 20px; border-radius: 50%; background: white; padding: 2px;">
+                            <strong>View Repository</strong>
+                        </a>
+                    </div>
+                    
+                    <div style="background: rgba(59, 130, 246, 0.1); padding: 20px; border-radius: 12px; border-left: 4px solid #3b82f6; margin-top: 25px;">
+                        <h4 style="color: #3b82f6; margin-bottom: 10px;">💭 Reflection</h4>
+                        <p style="margin-bottom: 10px;">
+                            Although this project didn't advance to the interview stage, the learning value gained was immense. 
+                            This was my first experience with production-ready Golang and gave me confidence that I can quickly 
+                            learn new programming languages and implement them with proper architecture.
+                        </p>
+                        <p style="font-style: italic; opacity: 0.9;">
+                            "Technical tests aren't just about passing or failing. More important is the learning process and 
+                            how we demonstrate problem-solving abilities. This project proves that I can handle fullstack 
+                            development from design to deployment."
+                        </p>
+                    </div>
+                </div>`
+        }
+    },
+
+    {
+    id: "sadp-poster-17agustus",
+    type: "project",
+    
+    title: {
+        id: "Poster Lomba 17 Agustus - PT Sinar Alam",
+        en: "17th August Competition Poster - PT Sinar Alam"
+    },
+    subtitle: {
+        id: "Design Test | Canva | PT Sinar Alam Duta Perdana | 2025",
+        en: "Design Test | Canva | PT Sinar Alam Duta Perdana | 2025"
+    },
+    
+    description: {
+        id: "Poster event digital dengan tema kemerdekaan Indonesia - dibuat sebagai design test",
+        en: "Digital event poster with Indonesian independence theme - created as design test"
+    },
+    
+    tags: ["Graphic Design", "Canva", "Event Poster", "Visual Communication"],
+    
+    
+    content: {
+        id: `<h2 style="font-size: 28px; margin-bottom: 10px; background: linear-gradient(45deg, var(--primary-color), var(--secondary-color)); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+                Poster Lomba 17 Agustus - PT Sinar Alam Group 🎨
+            </h2>
+
+            <div style="display: flex; gap: 20px; margin-bottom: 25px; flex-wrap: wrap; opacity: 0.9;">
+                <span style="display: flex; align-items: center; gap: 8px;">🎯 <strong>Tipe:</strong> Design Test Project</span>
+                <span style="display: flex; align-items: center; gap: 8px;">🏢 <strong>Untuk:</strong> PT Sinar Alam Group</span>
+                <span style="display: flex; align-items: center; gap: 8px;">🎨 <strong>Tool:</strong> Canva</span>
+                <span style="display: flex; align-items: center; gap: 8px;">📅 <strong>Tahun:</strong> 2025</span>
+            </div>
+
+            <div style="display: inline-block; background: rgba(168, 85, 247, 0.1); border: 2px solid var(--primary-color); border-radius: 15px; padding: 8px; margin-bottom: 25px; width: 100%; max-width: 700px;">
+                <img src="assets/images/projects/poster-17agustus/poster-final.jpg" alt="Poster Final" style="display: block; width: 100%; border-radius: 10px; object-fit: contain;">
+                <p style="text-align: center; padding: 10px; opacity: 0.8; font-size: 14px;">Poster Lomba 17 Agustus - Final Design</p>
+            </div>
+
+            <div style="line-height: 1.8;">
+                <h3 style="color: var(--primary-color); margin: 25px 0 15px;">📖 Latar Belakang Project</h3>
+                <p style="margin-bottom: 15px;">
+                    Poster ini dibuat sebagai bagian kedua dari <strong>technical test</strong> saat melamar posisi 
+                    <strong>Fullstack Developer</strong> di PT Sinar Alam Duta Perdana. Selain kemampuan coding, test ini 
+                    juga mengevaluasi kemampuan design visual dan komunikasi grafis.
+                </p>
+                <p style="margin-bottom: 15px;">
+                    Brief yang diberikan adalah membuat poster untuk acara perayaan 17 Agustus internal perusahaan dengan 
+                    ketentuan spesifik: penggunaan logo PT Sinar Alam Group, nuansa merah-putih, informasi event lengkap, 
+                    dan visualisasi yang menarik untuk karyawan.
+                </p>
+                
+                <h3 style="color: var(--primary-color); margin: 25px 0 15px;">📝 Brief & Requirements</h3>
+                <div style="background: rgba(59, 130, 246, 0.1); padding: 20px; border-radius: 12px; margin-bottom: 20px; border-left: 4px solid #3b82f6;">
+                    <h4 style="color: #3b82f6; margin-bottom: 10px;">Informasi yang Harus Ada:</h4>
+                    <ul style="margin-left: 20px;">
+                        <li style="margin-bottom: 8px;"><strong>Judul Event:</strong> Semangat Kemerdekaan di Sinar Alam Group</li>
+                        <li style="margin-bottom: 8px;"><strong>Tanggal:</strong> 17 Agustus 2025</li>
+                        <li style="margin-bottom: 8px;"><strong>Waktu:</strong> 08.00 WIB - Selesai</li>
+                        <li style="margin-bottom: 8px;"><strong>Lokasi:</strong> Lapangan Kantor PT Sinar Alam Group</li>
+                        <li style="margin-bottom: 8px;"><strong>Jenis Lomba:</strong> Tarik Tambang, Balap Karung, Makan Kerupuk, dll</li>
+                        <li style="margin-bottom: 8px;"><strong>Dress Code:</strong> Merah-Putih atau Pakaian Adat</li>
+                    </ul>
+                    
+                    <h4 style="color: #3b82f6; margin: 20px 0 10px;">Design Requirements:</h4>
+                    <ul style="margin-left: 20px;">
+                        <li style="margin-bottom: 8px;">Gunakan logo PT Sinar Alam Group</li>
+                        <li style="margin-bottom: 8px;">Nuansa warna merah-putih (tema kemerdekaan)</li>
+                        <li style="margin-bottom: 8px;">Layout yang menarik dan mudah dibaca</li>
+                        <li style="margin-bottom: 8px;">Ukuran dan format siap cetak/digital</li>
+                    </ul>
+                </div>
+                
+                <h3 style="color: var(--primary-color); margin: 25px 0 15px;">🎨 Konsep & Design Process</h3>
+                
+                <h4 style="color: var(--secondary-color); margin: 20px 0 10px; font-size: 18px;">1️⃣ Research & Inspiration</h4>
+                <div style="background: rgba(168, 85, 247, 0.05); padding: 15px; border-radius: 12px; margin-bottom: 15px;">
+                    <p style="margin-bottom: 10px;">
+                        <strong>Target Audience:</strong> Karyawan PT Sinar Alam Group dari berbagai departemen dan usia. 
+                        Poster harus menarik perhatian, informatif, dan mencerminkan semangat kemerdekaan.
+                    </p>
+                    <p>
+                        <strong>Style Direction:</strong> Memilih ilustrasi bergaya modern dengan sentuhan tradisional Indonesia. 
+                        Kombinasi warna merah-putih dominan dengan aksen gold untuk kesan festive dan premium.
+                    </p>
+                </div>
+                
+                <h4 style="color: var(--secondary-color); margin: 20px 0 10px; font-size: 18px;">2️⃣ Visual Elements</h4>
+                <div style="display: grid; gap: 12px; margin-bottom: 20px;">
+                    <div style="background: linear-gradient(135deg, rgba(239, 68, 68, 0.1), rgba(239, 68, 68, 0.05)); padding: 15px; border-left: 4px solid #ef4444; border-radius: 8px;">
+                        <strong style="color: #ef4444;">🔴 Color Palette</strong>
+                        <p style="margin-top: 8px; opacity: 0.9; font-size: 14px;">
+                            <strong>Merah (#B91C1C):</strong> Semangat, keberanian, patriotisme<br>
+                            <strong>Putih (#FFFFFF):</strong> Kesucian, perdamaian, profesionalisme<br>
+                            <strong>Gold/Kuning (#F59E0B):</strong> Kemeriahan, kegembiraan, accent highlights
+                        </p>
+                    </div>
+                    <div style="background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(139, 92, 246, 0.05)); padding: 15px; border-left: 4px solid #8b5cf6; border-radius: 8px;">
+                        <strong style="color: #8b5cf6;">🎭 Illustrations</strong>
+                        <p style="margin-top: 8px; opacity: 0.9; font-size: 14px;">
+                            Ilustrasi karakter bergaya flat design melakukan lomba tradisional (tarik tambang). 
+                            Background ornamen awan Jawa untuk sentuhan budaya Indonesia. Iconic buildings Kalimantan Selatan 
+                            (Menara Pandang, Masjid Raya) untuk local identity.
+                        </p>
+                    </div>
+                    <div style="background: linear-gradient(135deg, rgba(245, 158, 11, 0.1), rgba(245, 158, 11, 0.05)); padding: 15px; border-left: 4px solid #f59e0b; border-radius: 8px;">
+                        <strong style="color: #f59e0b;">✍️ Typography</strong>
+                        <p style="margin-top: 8px; opacity: 0.9; font-size: 14px;">
+                            <strong>Heading:</strong> Font bold dan playful untuk "Lomba 17 Agustus"<br>
+                            <strong>Body Text:</strong> Font clean dan readable untuk informasi detail<br>
+                            <strong>Emphasis:</strong> Yellow ribbon banner untuk subtitle yang eye-catching
+                        </p>
+                    </div>
+                </div>
+                
+                <h4 style="color: var(--secondary-color); margin: 20px 0 10px; font-size: 18px;">3️⃣ Layout & Composition</h4>
+                <div style="background: rgba(16, 185, 129, 0.1); padding: 20px; border-radius: 12px; margin-bottom: 20px; border-left: 4px solid #10b981;">
+                    <ul style="margin-left: 20px;">
+                        <li style="margin-bottom: 12px;">
+                            <strong>Top Section:</strong> Logo PT Sinar Alam Group prominently placed
+                        </li>
+                        <li style="margin-bottom: 12px;">
+                            <strong>Hero Section:</strong> Main title "Lomba 17 Agustus" dengan typography yang bold dan striking
+                        </li>
+                        <li style="margin-bottom: 12px;">
+                            <strong>Visual Center:</strong> Ilustrasi characters doing tug-of-war sebagai focal point
+                        </li>
+                        <li style="margin-bottom: 12px;">
+                            <strong>Info Boxes:</strong> Dua card di bottom untuk "Waktu & Tempat" dan "Aneka Lomba" dengan hierarchy jelas
+                        </li>
+                        <li style="margin-bottom: 12px;">
+                            <strong>Footer:</strong> Dress code information dengan background kontras
+                        </li>
+                    </ul>
+                </div>
+                
+                <h3 style="color: var(--primary-color); margin: 25px 0 15px;">🛠️ Tools & Techniques</h3>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 12px; margin-bottom: 20px;">
+                    <div style="background: linear-gradient(135deg, rgba(97, 218, 251, 0.1), rgba(97, 218, 251, 0.05)); padding: 15px; border-left: 4px solid #61dafb; border-radius: 8px;">
+                        <strong style="color: #61dafb;">🎨 Canva Platform</strong>
+                        <p style="margin-top: 8px; opacity: 0.9; font-size: 14px;">
+                            Menggunakan Canva Pro untuk akses ke premium elements, templates, dan high-quality export options
+                        </p>
+                    </div>
+                    <div style="background: linear-gradient(135deg, rgba(245, 158, 11, 0.1), rgba(245, 158, 11, 0.05)); padding: 15px; border-left: 4px solid #f59e0b; border-radius: 8px;">
+                        <strong style="color: #f59e0b;">🖼️ Asset Selection</strong>
+                        <p style="margin-top: 8px; opacity: 0.9; font-size: 14px;">
+                            Kombinasi Canva elements library + custom modifications untuk menciptakan visual yang unique
+                        </p>
+                    </div>
+                    <div style="background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(139, 92, 246, 0.05)); padding: 15px; border-left: 4px solid #8b5cf6; border-radius: 8px;">
+                        <strong style="color: #8b5cf6;">⚙️ Techniques Used</strong>
+                        <p style="margin-top: 8px; opacity: 0.9; font-size: 14px;">
+                            Layering, color adjustments, custom shapes, text effects, gradient backgrounds, shadow/depth effects
+                        </p>
+                    </div>
+                </div>
+                
+                <h3 style="color: var(--primary-color); margin: 25px 0 15px;">✨ Key Design Features</h3>
+                <div style="display: grid; gap: 10px; margin-bottom: 25px;">
+                    <div style="padding: 15px; background: rgba(239, 68, 68, 0.1); border-radius: 10px; border-left: 4px solid #ef4444;">
+                        <strong>🎯 Visual Hierarchy</strong>
+                        <p style="margin-top: 5px; font-size: 14px; opacity: 0.9;">
+                            Title besar dan bold untuk immediate attention, diikuti subtitle dengan yellow banner yang kontras, 
+                            lalu detail information terstruktur dalam boxes
+                        </p>
+                    </div>
+                    <div style="padding: 15px; background: rgba(16, 185, 129, 0.1); border-radius: 10px; border-left: 4px solid #10b981;">
+                        <strong>🎨 Color Psychology</strong>
+                        <p style="margin-top: 5px; font-size: 14px; opacity: 0.9;">
+                            Merah-putih untuk patriotisme, gold untuk festivity, background gradients untuk depth dan visual interest
+                        </p>
+                    </div>
+                    <div style="padding: 15px; background: rgba(139, 92, 246, 0.1); border-radius: 10px; border-left: 4px solid #8b5cf6;">
+                        <strong>🏛️ Cultural Elements</strong>
+                        <p style="margin-top: 5px; font-size: 14px; opacity: 0.9;">
+                            Ornamen awan tradisional Jawa, ilustrasi bangunan ikonik Kalimantan, karakter dengan pakaian adat sebagai opsi dress code
+                        </p>
+                    </div>
+                    <div style="padding: 15px; background: rgba(59, 130, 246, 0.1); border-radius: 10px; border-left: 4px solid #3b82f6;">
+                        <strong>📱 Multi-Platform Ready</strong>
+                        <p style="margin-top: 5px; font-size: 14px; opacity: 0.9;">
+                            Design scalable untuk berbagai media: print A3/A4, digital banner, social media post, WhatsApp broadcast
+                        </p>
+                    </div>
+                </div>
+                
+                <h3 style="color: var(--primary-color); margin: 25px 0 15px;">📚 Design Considerations</h3>
+                <div style="background: rgba(236, 72, 153, 0.1); padding: 20px; border-radius: 12px; margin-bottom: 20px; border-left: 4px solid #ec4899;">
+                    <ul style="margin-left: 20px;">
+                        <li style="margin-bottom: 12px;">
+                            <strong>Readability First:</strong> Semua text harus mudah dibaca dari jarak jauh untuk poster printed. 
+                            Kontras warna background-foreground optimal.
+                        </li>
+                        <li style="margin-bottom: 12px;">
+                            <strong>Brand Consistency:</strong> Logo Sinar Alam Group ditempatkan prominent di top. 
+                            Color scheme tidak bentrok dengan brand identity.
+                        </li>
+                        <li style="margin-bottom: 12px;">
+                            <strong>Cultural Sensitivity:</strong> Ilustrasi dan elemen design menghormati budaya lokal Kalimantan 
+                            dan Indonesia secara umum.
+                        </li>
+                        <li style="margin-bottom: 12px;">
+                            <strong>Target Audience Appeal:</strong> Design tidak terlalu formal atau terlalu childish. 
+                            Balance antara fun & professional untuk corporate event.
+                        </li>
+                    </ul>
+                </div>
+                
+                <div style="background: linear-gradient(135deg, rgba(168, 85, 247, 0.1), rgba(236, 72, 153, 0.1)); padding: 25px; border-radius: 15px; border: 2px solid var(--primary-color); margin-top: 30px;">
+                    <h4 style="color: var(--primary-color); margin-bottom: 15px;">🔗 View Design</h4>
+                    <a href="https://www.canva.com/design/DAGz71IAxDg/F41BMX4IuqqrVf6NxCMQgg/edit?utm_content=DAGz71IAxDg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" rel="noopener" style="padding: 12px 24px; background: rgba(97, 218, 251, 0.2); border: 2px solid #61dafb; border-radius: 25px; color: white; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; transition: all 0.3s;">
+                        🎨 <strong>Open in Canva</strong>
+                    </a>
+                </div>
+                
+                <div style="background: rgba(59, 130, 246, 0.1); padding: 20px; border-radius: 12px; border-left: 4px solid #3b82f6; margin-top: 25px;">
+                    <h4 style="color: #3b82f6; margin-bottom: 10px;">💭 Refleksi</h4>
+                    <p style="margin-bottom: 10px;">
+                        Project design ini melengkapi technical test dengan menunjukkan bahwa sebagai developer, saya juga 
+                        memahami pentingnya visual communication dan user experience. Tidak hanya bisa coding, tapi juga 
+                        bisa communicate ideas secara visual.
+                    </p>
+                    <p style="font-style: italic; opacity: 0.9;">
+                        "Good developers understand design. Great developers can do both. Meskipun bukan designer profesional, 
+                        kemampuan membuat visual yang appealing adalah value add yang penting dalam development team."
+                    </p>
+                </div>
+            </div>`,
+        en: `<h2 style="font-size: 28px; margin-bottom: 10px; background: linear-gradient(45deg, var(--primary-color), var(--secondary-color)); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+                17th August Competition Poster - PT Sinar Alam Group 🎨
+            </h2>
+
+            <div style="display: flex; gap: 20px; margin-bottom: 25px; flex-wrap: wrap; opacity: 0.9;">
+                <span style="display: flex; align-items: center; gap: 8px;">🎯 <strong>Type:</strong> Design Test Project</span>
+                <span style="display: flex; align-items: center; gap: 8px;">🏢 <strong>For:</strong> PT Sinar Alam Group</span>
+                <span style="display: flex; align-items: center; gap: 8px;">🎨 <strong>Tool:</strong> Canva</span>
+                <span style="display: flex; align-items: center; gap: 8px;">📅 <strong>Year:</strong> 2025</span>
+            </div>
+
+            <div style="display: inline-block; background: rgba(168, 85, 247, 0.1); border: 2px solid var(--primary-color); border-radius: 15px; padding: 8px; margin-bottom: 25px; width: 100%; max-width: 700px;">
+                <img src="assets/images/projects/poster-17agustus/poster-final.jpg" alt="Final Poster" style="display: block; width: 100%; border-radius: 10px; object-fit: contain;">
+                <p style="text-align: center; padding: 10px; opacity: 0.8; font-size: 14px;">17th August Competition Poster - Final Design</p>
+            </div>
+
+            <div style="line-height: 1.8;">
+                <h3 style="color: var(--primary-color); margin: 25px 0 15px;">📖 Project Background</h3>
+                <p style="margin-bottom: 15px;">
+                    This poster was created as the second part of the <strong>technical test</strong> when applying for 
+                    a <strong>Fullstack Developer</strong> position at PT Sinar Alam Duta Perdana. Beyond coding abilities, 
+                    this test also evaluated visual design and graphic communication skills.
+                </p>
+                <p style="margin-bottom: 15px;">
+                    The brief provided was to create a poster for the internal company's 17th August celebration with 
+                    specific requirements: use of PT Sinar Alam Group logo, red-white theme, complete event information, 
+                    and engaging visualizations for employees.
+                </p>
+                
+                <h3 style="color: var(--primary-color); margin: 25px 0 15px;">📝 Brief & Requirements</h3>
+                <div style="background: rgba(59, 130, 246, 0.1); padding: 20px; border-radius: 12px; margin-bottom: 20px; border-left: 4px solid #3b82f6;">
+                    <h4 style="color: #3b82f6; margin-bottom: 10px;">Required Information:</h4>
+                    <ul style="margin-left: 20px;">
+                        <li style="margin-bottom: 8px;"><strong>Event Title:</strong> Spirit of Independence at Sinar Alam Group</li>
+                        <li style="margin-bottom: 8px;"><strong>Date:</strong> August 17, 2025</li>
+                        <li style="margin-bottom: 8px;"><strong>Time:</strong> 08.00 WIB - End</li>
+                        <li style="margin-bottom: 8px;"><strong>Location:</strong> PT Sinar Alam Group Office Field</li>
+                        <li style="margin-bottom: 8px;"><strong>Competition Types:</strong> Tug of War, Sack Race, Cracker Eating, etc.</li>
+                        <li style="margin-bottom: 8px;"><strong>Dress Code:</strong> Red-White or Traditional Attire</li>
+                    </ul>
+                    
+                    <h4 style="color: #3b82f6; margin: 20px 0 10px;">Design Requirements:</h4>
+                    <ul style="margin-left: 20px;">
+                        <li style="margin-bottom: 8px;">Use PT Sinar Alam Group logo</li>
+                        <li style="margin-bottom: 8px;">Red-white color theme (independence theme)</li>
+                        <li style="margin-bottom: 8px;">Attractive and readable layout</li>
+                        <li style="margin-bottom: 8px;">Print/digital ready size and format</li>
+                    </ul>
+                </div>
+                
+                <h3 style="color: var(--primary-color); margin: 25px 0 15px;">🎨 Concept & Design Process</h3>
+                
+                <h4 style="color: var(--secondary-color); margin: 20px 0 10px; font-size: 18px;">1️⃣ Research & Inspiration</h4>
+                <div style="background: rgba(168, 85, 247, 0.05); padding: 15px; border-radius: 12px; margin-bottom: 15px;">
+                    <p style="margin-bottom: 10px;">
+                        <strong>Target Audience:</strong> PT Sinar Alam Group employees from various departments and ages. 
+                        Poster must be attention-grabbing, informative, and reflect the spirit of independence.
+                    </p>
+                    <p>
+                        <strong>Style Direction:</strong> Modern illustrated style with traditional Indonesian touches. 
+                        Dominant red-white color combination with gold accents for festive and premium impression.
+                    </p>
+                </div>
+                
+                <h4 style="color: var(--secondary-color); margin: 20px 0 10px; font-size: 18px;">2️⃣ Visual Elements</h4>
+                <div style="display: grid; gap: 12px; margin-bottom: 20px;">
+                    <div style="background: linear-gradient(135deg, rgba(239, 68, 68, 0.1), rgba(239, 68, 68, 0.05)); padding: 15px; border-left: 4px solid #ef4444; border-radius: 8px;">
+                        <strong style="color: #ef4444;">🔴 Color Palette</strong>
+                        <p style="margin-top: 8px; opacity: 0.9; font-size: 14px;">
+                            <strong>Red (#B91C1C):</strong> Spirit, courage, patriotism<br>
+                            <strong>White (#FFFFFF):</strong> Purity, peace, professionalism<br>
+                            <strong>Gold/Yellow (#F59E0B):</strong> Festivity, joy, accent highlights
+                        </p>
+                    </div>
+                    <div style="background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(139, 92, 246, 0.05)); padding: 15px; border-left: 4px solid #8b5cf6; border-radius: 8px;">
+                        <strong style="color: #8b5cf6;">🎭 Illustrations</strong>
+                        <p style="margin-top: 8px; opacity: 0.9; font-size: 14px;">
+                            Flat design style character illustrations doing traditional competitions (tug of war). 
+                            Background Javanese cloud ornaments for Indonesian cultural touch. Iconic South Kalimantan buildings 
+                            (Pandang Tower, Grand Mosque) for local identity.
+                        </p>
+                    </div>
+                    <div style="background: linear-gradient(135deg, rgba(245, 158, 11, 0.1), rgba(245, 158, 11, 0.05)); padding: 15px; border-left: 4px solid #f59e0b; border-radius: 8px;">
+                        <strong style="color: #f59e0b;">✍️ Typography</strong>
+                        <p style="margin-top: 8px; opacity: 0.9; font-size: 14px;">
+                            <strong>Heading:</strong> Bold and playful font for "Lomba 17 Agustus"<br>
+                            <strong>Body Text:</strong> Clean and readable font for detailed information<br>
+                            <strong>Emphasis:</strong> Yellow ribbon banner for eye-catching subtitle
+                        </p>
+                    </div>
+                </div>
+                
+                <h4 style="color: var(--secondary-color); margin: 20px 0 10px; font-size: 18px;">3️⃣ Layout & Composition</h4>
+                <div style="background: rgba(16, 185, 129, 0.1); padding: 20px; border-radius: 12px; margin-bottom: 20px; border-left: 4px solid #10b981;">
+                    <ul style="margin-left: 20px;">
+                        <li style="margin-bottom: 12px;">
+                            <strong>Top Section:</strong> PT Sinar Alam Group logo prominently placed
+                        </li>
+                        <li style="margin-bottom: 12px;">
+                            <strong>Hero Section:</strong> Main title "Lomba 17 Agustus" with bold and striking typography
+                        </li>
+                        <li style="margin-bottom: 12px;">
+                            <strong>Visual Center:</strong> Character illustrations doing tug-of-war as focal point
+                        </li>
+                        <li style="margin-bottom: 12px;">
+                            <strong>Info Boxes:</strong> Two cards at bottom for "Time & Place" and "Various Competitions" with clear hierarchy
+                        </li>
+                        <li style="margin-bottom: 12px;">
+                            <strong>Footer:</strong> Dress code information with contrasting background
+                        </li>
+                    </ul>
+                </div>
+                
+                <h3 style="color: var(--primary-color); margin: 25px 0 15px;">🛠️ Tools & Techniques</h3>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 12px; margin-bottom: 20px;">
+                    <div style="background: linear-gradient(135deg, rgba(97, 218, 251, 0.1), rgba(97, 218, 251, 0.05)); padding: 15px; border-left: 4px solid #61dafb; border-radius: 8px;">
+                        <strong style="color: #61dafb;">🎨 Canva Platform</strong>
+                        <p style="margin-top: 8px; opacity: 0.9; font-size: 14px;">
+                            Used Canva Pro for access to premium elements, templates, and high-quality export options
+                        </p>
+                    </div>
+                    <div style="background: linear-gradient(135deg, rgba(245, 158, 11, 0.1), rgba(245, 158, 11, 0.05)); padding: 15px; border-left: 4px solid #f59e0b; border-radius: 8px;">
+                        <strong style="color: #f59e0b;">🖼️ Asset Selection</strong>
+                        <p style="margin-top: 8px; opacity: 0.9; font-size: 14px;">
+                            Combination of Canva elements library + custom modifications to create unique visuals
+                        </p>
+                    </div>
+                    <div style="background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(139, 92, 246, 0.05)); padding: 15px; border-left: 4px solid #8b5cf6; border-radius: 8px;">
+                        <strong style="color: #8b5cf6;">⚙️ Techniques Used</strong>
+                        <p style="margin-top: 8px; opacity: 0.9; font-size: 14px;">
+                            Layering, color adjustments, custom shapes, text effects, gradient backgrounds, shadow/depth effects
+                        </p>
+                    </div>
+                </div>
+                
+                <h3 style="color: var(--primary-color); margin: 25px 0 15px;">✨ Key Design Features</h3>
+                <div style="display: grid; gap: 10px; margin-bottom: 25px;">
+                    <div style="padding: 15px; background: rgba(239, 68, 68, 0.1); border-radius: 10px; border-left: 4px solid #ef4444;">
+                        <strong>🎯 Visual Hierarchy</strong>
+                        <p style="margin-top: 5px; font-size: 14px; opacity: 0.9;">
+                            Large bold title for immediate attention, followed by subtitle with contrasting yellow banner, 
+                            then structured information details in boxes
+                        </p>
+                    </div>
+                    <div style="padding: 15px; background: rgba(16, 185, 129, 0.1); border-radius: 10px; border-left: 4px solid #10b981;">
+                        <strong>🎨 Color Psychology</strong>
+                        <p style="margin-top: 5px; font-size: 14px; opacity: 0.9;">
+                            Red-white for patriotism, gold for festivity, gradient backgrounds for depth and visual interest
+                        </p>
+                    </div>
+                    <div style="padding: 15px; background: rgba(139, 92, 246, 0.1); border-radius: 10px; border-left: 4px solid #8b5cf6;">
+                        <strong>🏛️ Cultural Elements</strong>
+                        <p style="margin-top: 5px; font-size: 14px; opacity: 0.9;">
+                            Traditional Javanese cloud ornaments, iconic Kalimantan building illustrations, characters in traditional dress as dress code options
+                        </p>
+                    </div>
+                    <div style="padding: 15px; background: rgba(59, 130, 246, 0.1); border-radius: 10px; border-left: 4px solid #3b82f6;">
+                        <strong>📱 Multi-Platform Ready</strong>
+                        <p style="margin-top: 5px; font-size: 14px; opacity: 0.9;">
+                            Scalable design for various media: A3/A4 print, digital banners, social media posts, WhatsApp broadcasts
+                        </p>
+                    </div>
+                </div>
+                
+                <h3 style="color: var(--primary-color); margin: 25px 0 15px;">📚 Design Considerations</h3>
+                <div style="background: rgba(236, 72, 153, 0.1); padding: 20px; border-radius: 12px; margin-bottom: 20px; border-left: 4px solid #ec4899;">
+                    <ul style="margin-left: 20px;">
+                        <li style="margin-bottom: 12px;">
+                            <strong>Readability First:</strong> All text must be easily readable from distance for printed posters. 
+                            Optimal background-foreground color contrast.
+                        </li>
+                        <li style="margin-bottom: 12px;">
+                            <strong>Brand Consistency:</strong> Sinar Alam Group logo prominently placed at top. 
+                            Color scheme doesn't clash with brand identity.
+                        </li>
+                        <li style="margin-bottom: 12px;">
+                            <strong>Cultural Sensitivity:</strong> Illustrations and design elements respect local Kalimantan culture 
+                            and Indonesian culture in general.
+                        </li>
+                        <li style="margin-bottom: 12px;">
+                            <strong>Target Audience Appeal:</strong> Design not too formal or too childish. 
+                            Balance between fun & professional for corporate event.
+                        </li>
+                    </ul>
+                </div>
+                
+                <div style="background: linear-gradient(135deg, rgba(168, 85, 247, 0.1), rgba(236, 72, 153, 0.1)); padding: 25px; border-radius: 15px; border: 2px solid var(--primary-color); margin-top: 30px;">
+                    <h4 style="color: var(--primary-color); margin-bottom: 15px;">🔗 View Design</h4>
+                    <a href="https://www.canva.com/design/DAGz71IAxDg/F41BMX4IuqqrVf6NxCMQgg/edit?utm_content=DAGz71IAxDg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" rel="noopener" style="padding: 12px 24px; background: rgba(97, 218, 251, 0.2); border: 2px solid #61dafb; border-radius: 25px; color: white; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; transition: all 0.3s;">
+                        🎨 <strong>Open in Canva</strong>
+                    </a>
+                </div>
+                
+                <div style="background: rgba(59, 130, 246, 0.1); padding: 20px; border-radius: 12px; border-left: 4px solid #3b82f6; margin-top: 25px;">
+                    <h4 style="color: #3b82f6; margin-bottom: 10px;">💭 Reflection</h4>
+                    <p style="margin-bottom: 10px;">
+                        This design project complemented the technical test by showing that as a developer, I also 
+                        understand the importance of visual communication and user experience. Not just coding, 
+                        but also communicating ideas visually.
+                    </p>
+                    <p style="font-style: italic; opacity: 0.9;">
+                        "Good developers understand design. Great developers can do both. While not a professional designer, 
+                        the ability to create appealing visuals is an important value-add in development teams."
+                    </p>
+                </div>
+            </div>`
     }
+},
+
+
 
 
 // TEMPLATE UNTUK MENAMBAH EXPERIENCE BARU:
