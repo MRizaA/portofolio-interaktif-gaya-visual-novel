@@ -3577,9 +3577,1015 @@ const experienceData = [
         }
     },
 
- 
+    // SADP
+    {
+        id: "sadp-17agustus-app",
+        type: "project",
+        
+        title: {
+            id: "Sistem Manajemen Lomba 17 Agustus",
+            en: "17th August Competition Management System"
+        },
+        subtitle: {
+            id: "Technical Test | Golang + React.js | PT Sinar Alam Duta Perdana | 2025",
+            en: "Technical Test | Golang + React.js | PT Sinar Alam Duta Perdana | 2025"
+        },
+        
+        description: {
+            id: "Aplikasi web fullstack untuk manajemen kompetisi kemerdekaan dengan multiple user roles - dibuat sebagai technical test",
+            en: "Fullstack web application for independence competition management with multiple user roles - created as technical test"
+        },
+        
+        tags: ["Golang", "React.js", "MySQL", "RESTful API", "Fullstack", "Multi-Role System"],
+        
+        content: {
+            id: `<h2 style="font-size: 28px; margin-bottom: 10px; background: linear-gradient(45deg, var(--primary-color), var(--secondary-color)); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+                Sistem Manajemen Lomba 17 Agustus 🇮🇩
+            </h2>
 
+            <div style="display: flex; gap: 20px; margin-bottom: 25px; flex-wrap: wrap; opacity: 0.9;">
+                <span style="display: flex; align-items: center; gap: 8px;">🎯 <strong>Tipe:</strong> Technical Test</span>
+                <span style="display: flex; align-items: center; gap: 8px;">🏢 <strong>Untuk:</strong> PT Sinar Alam Duta Perdana</span>
+                <span style="display: flex; align-items: center; gap: 8px;">💻 <strong>Stack:</strong> Golang, React.js, MySQL</span>
+                <span style="display: flex; align-items: center; gap: 8px;">📅 <strong>Tahun:</strong> 2025</span>
+            </div>
 
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 15px; margin-bottom: 25px;">
+                <div style="background: rgba(168, 85, 247, 0.1); border: 2px solid var(--primary-color); border-radius: 15px; padding: 8px;">
+                    <img src="assets/images/projects/sadp/login.png" alt="Login Page" style="display: block; width: 100%; height: 220px; border-radius: 10px; object-fit: cover;">
+                    <p style="text-align: center; padding: 10px; opacity: 0.8; font-size: 14px;">Halaman Login</p>
+                </div>
+                <div style="background: rgba(168, 85, 247, 0.1); border: 2px solid var(--primary-color); border-radius: 15px; padding: 8px;">
+                    <img src="assets/images/projects/sadp/admin.png" alt="Admin Panel" style="display: block; width: 100%; height: 220px; border-radius: 10px; object-fit: cover;">
+                    <p style="text-align: center; padding: 10px; opacity: 0.8; font-size: 14px;">Admin - Kelola User</p>
+                </div>
+                <div style="background: rgba(168, 85, 247, 0.1); border: 2px solid var(--primary-color); border-radius: 15px; padding: 8px;">
+                    <img src="assets/images/projects/sadp/peserta.png" alt="User View" style="display: block; width: 100%; height: 220px; border-radius: 10px; object-fit: cover;">
+                    <p style="text-align: center; padding: 10px; opacity: 0.8; font-size: 14px;">User - Lihat & Daftar Lomba</p>
+                </div>
+                <div style="background: rgba(168, 85, 247, 0.1); border: 2px solid var(--primary-color); border-radius: 15px; padding: 8px;">
+                    <img src="assets/images/projects/sadp/guest.png" alt="Guest View" style="display: block; width: 100%; height: 220px; border-radius: 10px; object-fit: cover;">
+                    <p style="text-align: center; padding: 10px; opacity: 0.8; font-size: 14px;">Guest - Lihat & Daftar Menjadi Peserta</p>
+                </div>
+            </div>
+
+            <div style="line-height: 1.8;">
+                <h3 style="color: var(--primary-color); margin: 25px 0 15px;">📖 Latar Belakang</h3>
+                <p style="margin-bottom: 15px;">
+                    Aplikasi ini dibuat sebagai technical testsaat melamar posisi Fullstack Developer 
+                    di PT Sinar Alam Duta Perdana.
+                </p>
+                <p style="margin-bottom: 15px;">
+                    Tugas yang diberikan adalah membuat aplikasi web dengan waktu pengerjaan terbatas. 
+                    Meskipun tidak lolos ke tahap interview, ini menjadi pengalaman berharga untuk pertama kali membangun 
+                    aplikasi fullstack dengan Golang.
+                </p>
+                
+                <h3 style="color: var(--primary-color); margin: 25px 0 15px;">🛠️ Teknologi yang Digunakan</h3>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 12px; margin-bottom: 25px;">
+                    <div style="background: linear-gradient(135deg, rgba(0, 173, 216, 0.1), rgba(0, 173, 216, 0.05)); padding: 15px; border-left: 4px solid #00ADD8; border-radius: 8px;">
+                        <strong style="color: #00ADD8;">🔷 Golang + Gorilla Mux</strong>
+                        <p style="margin-top: 8px; opacity: 0.9; font-size: 14px;">
+                            Backend API dengan Gorilla Mux untuk routing. Query langsung ke MySQL untuk fetch & update data.
+                        </p>
+                    </div>
+                    <div style="background: linear-gradient(135deg, rgba(97, 218, 251, 0.1), rgba(97, 218, 251, 0.05)); padding: 15px; border-left: 4px solid #61DAFB; border-radius: 8px;">
+                        <strong style="color: #61DAFB;">⚛️ React.js</strong>
+                        <p style="margin-top: 8px; opacity: 0.9; font-size: 14px;">
+                            Frontend dengan React hooks untuk state management. Axios untuk koneksi ke backend.
+                        </p>
+                    </div>
+                    <div style="background: linear-gradient(135deg, rgba(0, 117, 143, 0.1), rgba(0, 117, 143, 0.05)); padding: 15px; border-left: 4px solid #00758F; border-radius: 8px;">
+                        <strong style="color: #00758F;">🐘 MySQL</strong>
+                        <p style="margin-top: 8px; opacity: 0.9; font-size: 14px;">
+                            Database dengan 3 tabel (users, lomba, peserta). Relasi antar tabel untuk menjaga konsistensi data.
+                        </p>
+                    </div>
+                </div>
+                
+                <h3 style="color: var(--primary-color); margin: 25px 0 15px;">✨ Fitur Aplikasi</h3>
+                
+                <h4 style="color: var(--secondary-color); margin: 20px 0 10px; font-size: 18px;">👨‍💼 Admin</h4>
+                <div style="background: rgba(168, 85, 247, 0.05); padding: 20px; border-radius: 12px; margin-bottom: 20px; border: 1px solid rgba(168, 85, 247, 0.2);">
+                    <ul style="margin-left: 20px;">
+                        <li style="margin-bottom: 10px;">
+                            <strong>Kelola User:</strong> Tambah, edit, hapus user (admin & peserta)
+                        </li>
+                        <li style="margin-bottom: 10px;">
+                            <strong>Kelola Lomba:</strong> Buat jenis lomba baru (Tarik Tambang, Balap Karung, dll)
+                        </li>
+                        <li style="margin-bottom: 10px;">
+                            <strong>Kelola Peserta:</strong> Daftarkan user ke lomba, lihat & hapus registrasi
+                        </li>
+                    </ul>
+                </div>
+                
+                <h4 style="color: var(--secondary-color); margin: 20px 0 10px; font-size: 18px;">👤 User (Peserta)</h4>
+                <div style="background: rgba(168, 85, 247, 0.05); padding: 20px; border-radius: 12px; margin-bottom: 20px; border: 1px solid rgba(168, 85, 247, 0.2);">
+                    <ul style="margin-left: 20px;">
+                        <li style="margin-bottom: 10px;">
+                            <strong>Lihat Lomba:</strong> Browse lomba yang tersedia
+                        </li>
+                        <li style="margin-bottom: 10px;">
+                            <strong>Daftar Lomba:</strong> Registrasi diri ke lomba pilihan (otomatis pakai ID user login)
+                        </li>
+                        <li style="margin-bottom: 10px;">
+                            <strong>Lihat Peserta:</strong> Cek siapa saja yang terdaftar di lomba tertentu
+                        </li>
+                    </ul>
+                </div>
+                
+                <h4 style="color: var(--secondary-color); margin: 20px 0 10px; font-size: 18px;">🌐 Guest (Pengunjung)</h4>
+                <div style="background: rgba(168, 85, 247, 0.05); padding: 20px; border-radius: 12px; margin-bottom: 20px; border: 1px solid rgba(168, 85, 247, 0.2);">
+                    <ul style="margin-left: 20px;">
+                        <li style="margin-bottom: 10px;">
+                            <strong>Browse Only:</strong> Lihat lomba & peserta tanpa login (read-only)
+                        </li>
+                        <li style="margin-bottom: 10px;">
+                            <strong>Prompt Register:</strong> Harus daftar/login untuk bisa ikut lomba
+                        </li>
+                    </ul>
+                </div>
+                
+                <h3 style="color: var(--primary-color); margin: 25px 0 15px;">💡 Yang Saya Pelajari</h3>
+                <div style="background: rgba(236, 72, 153, 0.1); padding: 20px; border-radius: 12px; margin-bottom: 20px; border-left: 4px solid #ec4899;">
+                    <ul style="margin-left: 20px;">
+                        <li style="margin-bottom: 12px;">
+                            <strong>First Time Golang:</strong> Ini project Golang pertama saya. Belajar setup backend dengan 
+                            Gorilla Mux, handle HTTP requests, dan query ke database.
+                        </li>
+                        <li style="margin-bottom: 12px;">
+                            <strong>Multi-Role System:</strong> Implementasi 3 level user (Admin, User, Guest) dengan akses berbeda-beda. 
+                            Admin bisa CRUD semua data, User cuma bisa daftar lomba, Guest cuma bisa lihat.
+                        </li>
+                        <li style="margin-bottom: 12px;">
+                            <strong>Database Relations:</strong> Setup foreign keys supaya data tetap konsisten. 
+                            Misal: kalau user dihapus, registrasi lomba mereka juga ikut terhapus otomatis.
+                        </li>
+                        <li style="margin-bottom: 12px;">
+                            <strong>React + Backend Integration:</strong> Connect React frontend ke Golang backend pakai Axios. 
+                            Handle CORS, error responses, dan loading states.
+                        </li>
+                        <li style="margin-bottom: 12px;">
+                            <strong>Duplicate Prevention:</strong> User gak bisa daftar 2x ke lomba yang sama. 
+                            Pakai unique constraint di database untuk cegah duplikasi.
+                        </li>
+                    </ul>
+                </div>
+                
+                <div style="background: linear-gradient(135deg, rgba(168, 85, 247, 0.1), rgba(236, 72, 153, 0.1)); padding: 25px; border-radius: 15px; border: 2px solid var(--primary-color); margin-top: 30px;">
+                    <h4 style="color: var(--primary-color); margin-bottom: 15px;">🔗 GitHub Repository</h4>
+                    <a href="https://github.com/MRizaA/17-agustus-sadp" target="_blank" rel="noopener" style="padding: 12px 24px; background: rgba(0, 0, 0, 0.3); border: 2px solid #fff; border-radius: 25px; color: white; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; transition: all 0.3s;">
+                        <img src="assets/images/icons/github.png" alt="GitHub" style="width: 20px; height: 20px; border-radius: 50%; background: white; padding: 2px;">
+                        <strong>Lihat Source Code</strong>
+                    </a>
+                </div>
+                
+                <div style="background: rgba(59, 130, 246, 0.1); padding: 20px; border-radius: 12px; border-left: 4px solid #3b82f6; margin-top: 25px;">
+                    <h4 style="color: #3b82f6; margin-bottom: 10px;">💭 Refleksi</h4>
+                    <p style="margin-bottom: 10px;">
+                        Project ini dibuat dalam waktu terbatas sebagai fresh graduate yang baru pertama kali pakai Golang. 
+                        Meskipun tidak lolos ke tahap interview, saya belajar banyak tentang bagaimana membangun aplikasi 
+                        fullstack dari nol dengan teknologi baru.
+                    </p>
+                    <p style="font-style: italic; opacity: 0.9;">
+                        "Technical test bukan cuma tentang hasil akhir, tapi juga tentang kemampuan belajar cepat dan 
+                        problem-solving. Project ini bukti bahwa saya bisa handle teknologi baru dan bikin aplikasi yang 
+                        functional dalam waktu singkat."
+                    </p>
+                </div>
+            </div>`,
+            en: `<h2 style="font-size: 28px; margin-bottom: 10px; background: linear-gradient(45deg, var(--primary-color), var(--secondary-color)); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+                    17th August Competition Management System 🇮🇩
+                </h2>
+
+                <div style="display: flex; gap: 20px; margin-bottom: 25px; flex-wrap: wrap; opacity: 0.9;">
+                    <span style="display: flex; align-items: center; gap: 8px;">🎯 <strong>Type:</strong> Technical Test</span>
+                    <span style="display: flex; align-items: center; gap: 8px;">🏢 <strong>For:</strong> PT Sinar Alam Duta Perdana</span>
+                    <span style="display: flex; align-items: center; gap: 8px;">💻 <strong>Stack:</strong> Golang, React.js, MySQL</span>
+                    <span style="display: flex; align-items: center; gap: 8px;">📅 <strong>Year:</strong> 2025</span>
+                </div>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 15px; margin-bottom: 25px;">
+                    <div style="background: rgba(168, 85, 247, 0.1); border: 2px solid var(--primary-color); border-radius: 15px; padding: 8px;">
+                        <img src="assets/images/projects/sadp/login.png" alt="Login Page" style="display: block; width: 100%; height: 220px; border-radius: 10px; object-fit: cover;">
+                        <p style="text-align: center; padding: 10px; opacity: 0.8; font-size: 14px;">Login Page</p>
+                    </div>
+                    <div style="background: rgba(168, 85, 247, 0.1); border: 2px solid var(--primary-color); border-radius: 15px; padding: 8px;">
+                        <img src="assets/images/projects/sadp/admin.png" alt="Admin Panel" style="display: block; width: 100%; height: 220px; border-radius: 10px; object-fit: cover;">
+                        <p style="text-align: center; padding: 10px; opacity: 0.8; font-size: 14px;">Admin - Manage Users</p>
+                    </div>
+                    <div style="background: rgba(168, 85, 247, 0.1); border: 2px solid var(--primary-color); border-radius: 15px; padding: 8px;">
+                        <img src="assets/images/projects/sadp/peserta.png" alt="User View" style="display: block; width: 100%; height: 220px; border-radius: 10px; object-fit: cover;">
+                        <p style="text-align: center; padding: 10px; opacity: 0.8; font-size: 14px;">User - View & Register Competitions</p>
+                    </div>
+                    <div style="background: rgba(168, 85, 247, 0.1); border: 2px solid var(--primary-color); border-radius: 15px; padding: 8px;">
+                        <img src="assets/images/projects/sadp/guest.png" alt="Guest View" style="display: block; width: 100%; height: 220px; border-radius: 10px; object-fit: cover;">
+                        <p style="text-align: center; padding: 10px; opacity: 0.8; font-size: 14px;">Guest - View & Register as Participant</p>
+                    </div>
+                </div>
+
+                <div style="line-height: 1.8;">
+                    <h3 style="color: var(--primary-color); margin: 25px 0 15px;">📖 Background</h3>
+                    <p style="margin-bottom: 15px;">
+                        This application was created as a technical test when applying for a Fullstack Developer 
+                        position at PT Sinar Alam Duta Perdana.
+                    </p>
+                    <p style="margin-bottom: 15px;">
+                        The given task was to build a web application within a limited timeframe.
+                        Although I didn't advance to the interview stage, this became a valuable experience as my first time 
+                        building a fullstack application with Golang.
+                    </p>
+                    
+                    <h3 style="color: var(--primary-color); margin: 25px 0 15px;">🛠️ Technologies Used</h3>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 12px; margin-bottom: 25px;">
+                        <div style="background: linear-gradient(135deg, rgba(0, 173, 216, 0.1), rgba(0, 173, 216, 0.05)); padding: 15px; border-left: 4px solid #00ADD8; border-radius: 8px;">
+                            <strong style="color: #00ADD8;">🔷 Golang + Gorilla Mux</strong>
+                            <p style="margin-top: 8px; opacity: 0.9; font-size: 14px;">
+                                Backend API with Gorilla Mux for routing. Direct MySQL queries for data fetching and updates.
+                            </p>
+                        </div>
+                        <div style="background: linear-gradient(135deg, rgba(97, 218, 251, 0.1), rgba(97, 218, 251, 0.05)); padding: 15px; border-left: 4px solid #61DAFB; border-radius: 8px;">
+                            <strong style="color: #61DAFB;">⚛️ React.js</strong>
+                            <p style="margin-top: 8px; opacity: 0.9; font-size: 14px;">
+                                Frontend with React hooks for state management. Axios for backend integration.
+                            </p>
+                        </div>
+                        <div style="background: linear-gradient(135deg, rgba(0, 117, 143, 0.1), rgba(0, 117, 143, 0.05)); padding: 15px; border-left: 4px solid #00758F; border-radius: 8px;">
+                            <strong style="color: #00758F;">🐘 MySQL</strong>
+                            <p style="margin-top: 8px; opacity: 0.9; font-size: 14px;">
+                                Database with 3 tables (users, competitions, participants). Table relationships to maintain data consistency.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <h3 style="color: var(--primary-color); margin: 25px 0 15px;">✨ Application Features</h3>
+                    
+                    <h4 style="color: var(--secondary-color); margin: 20px 0 10px; font-size: 18px;">👨‍💼 Admin</h4>
+                    <div style="background: rgba(168, 85, 247, 0.05); padding: 20px; border-radius: 12px; margin-bottom: 20px; border: 1px solid rgba(168, 85, 247, 0.2);">
+                        <ul style="margin-left: 20px;">
+                            <li style="margin-bottom: 10px;">
+                                <strong>Manage Users:</strong> Create, edit, delete users (admin & participants)
+                            </li>
+                            <li style="margin-bottom: 10px;">
+                                <strong>Manage Competitions:</strong> Create new competition types (Tug of War, Sack Race, etc.)
+                            </li>
+                            <li style="margin-bottom: 10px;">
+                                <strong>Manage Participants:</strong> Register users to competitions, view & delete registrations
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <h4 style="color: var(--secondary-color); margin: 20px 0 10px; font-size: 18px;">👤 User (Participant)</h4>
+                    <div style="background: rgba(168, 85, 247, 0.05); padding: 20px; border-radius: 12px; margin-bottom: 20px; border: 1px solid rgba(168, 85, 247, 0.2);">
+                        <ul style="margin-left: 20px;">
+                            <li style="margin-bottom: 10px;">
+                                <strong>View Competitions:</strong> Browse available competitions
+                            </li>
+                            <li style="margin-bottom: 10px;">
+                                <strong>Register for Competitions:</strong> Self-register to chosen competitions (automatically uses logged-in user ID)
+                            </li>
+                            <li style="margin-bottom: 10px;">
+                                <strong>View Participants:</strong> Check who's registered for specific competitions
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <h4 style="color: var(--secondary-color); margin: 20px 0 10px; font-size: 18px;">🌐 Guest (Visitor)</h4>
+                    <div style="background: rgba(168, 85, 247, 0.05); padding: 20px; border-radius: 12px; margin-bottom: 20px; border: 1px solid rgba(168, 85, 247, 0.2);">
+                        <ul style="margin-left: 20px;">
+                            <li style="margin-bottom: 10px;">
+                                <strong>Browse Only:</strong> View competitions & participants without login (read-only)
+                            </li>
+                            <li style="margin-bottom: 10px;">
+                                <strong>Registration Prompt:</strong> Must register/login to participate in competitions
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <h3 style="color: var(--primary-color); margin: 25px 0 15px;">💡 What I Learned</h3>
+                    <div style="background: rgba(236, 72, 153, 0.1); padding: 20px; border-radius: 12px; margin-bottom: 20px; border-left: 4px solid #ec4899;">
+                        <ul style="margin-left: 20px;">
+                            <li style="margin-bottom: 12px;">
+                                <strong>First Time with Golang:</strong> This was my first Golang project. Learned to set up a backend 
+                                with Gorilla Mux, handle HTTP requests, and query databases.
+                            </li>
+                            <li style="margin-bottom: 12px;">
+                                <strong>Multi-Role System:</strong> Implemented 3 user levels (Admin, User, Guest) with different access rights. 
+                                Admins can CRUD all data, Users can only register for competitions, Guests can only view.
+                            </li>
+                            <li style="margin-bottom: 12px;">
+                                <strong>Database Relations:</strong> Set up foreign keys to maintain data consistency. 
+                                For example: when a user is deleted, their competition registrations are automatically removed.
+                            </li>
+                            <li style="margin-bottom: 12px;">
+                                <strong>React + Backend Integration:</strong> Connected React frontend to Golang backend using Axios. 
+                                Handled CORS, error responses, and loading states.
+                            </li>
+                            <li style="margin-bottom: 12px;">
+                                <strong>Duplicate Prevention:</strong> Users cannot register twice for the same competition. 
+                                Used unique constraints in the database to prevent duplication.
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div style="background: linear-gradient(135deg, rgba(168, 85, 247, 0.1), rgba(236, 72, 153, 0.1)); padding: 25px; border-radius: 15px; border: 2px solid var(--primary-color); margin-top: 30px;">
+                        <h4 style="color: var(--primary-color); margin-bottom: 15px;">🔗 GitHub Repository</h4>
+                        <a href="https://github.com/MRizaA/17-agustus-sadp" target="_blank" rel="noopener" style="padding: 12px 24px; background: rgba(0, 0, 0, 0.3); border: 2px solid #fff; border-radius: 25px; color: white; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; transition: all 0.3s;">
+                            <img src="assets/images/icons/github.png" alt="GitHub" style="width: 20px; height: 20px; border-radius: 50%; background: white; padding: 2px;">
+                            <strong>View Source Code</strong>
+                        </a>
+                    </div>
+                    
+                    <div style="background: rgba(59, 130, 246, 0.1); padding: 20px; border-radius: 12px; border-left: 4px solid #3b82f6; margin-top: 25px;">
+                        <h4 style="color: #3b82f6; margin-bottom: 10px;">💭 Reflection</h4>
+                        <p style="margin-bottom: 10px;">
+                            This project was created under time constraints as a fresh graduate using Golang for the first time. 
+                            Although I didn't advance to the interview stage, I learned a lot about building fullstack 
+                            applications from scratch with new technologies.
+                        </p>
+                        <p style="font-style: italic; opacity: 0.9;">
+                            "Technical tests aren't just about the final result, but also about the ability to learn quickly and 
+                            problem-solve. This project proves that I can handle new technologies and build functional applications 
+                            in a short time frame."
+                        </p>
+                    </div>
+                </div>`
+        }
+    },
+
+    {
+    id: "sadp-poster-17agustus",
+    type: "project",
+    
+    title: {
+        id: "Poster Lomba 17 Agustus - PT Sinar Alam",
+        en: "17th August Competition Poster - PT Sinar Alam"
+    },
+    subtitle: {
+        id: "Design Test | Canva | PT Sinar Alam Duta Perdana | 2025",
+        en: "Design Test | Canva | PT Sinar Alam Duta Perdana | 2025"
+    },
+    
+    description: {
+        id: "Poster event digital dengan tema kemerdekaan Indonesia - dibuat sebagai design test",
+        en: "Digital event poster with Indonesian independence theme - created as design test"
+    },
+    
+    tags: ["Graphic Design", "Canva", "Event Poster", "Visual Communication"],
+    
+    
+    content: {
+        id: `<h2 style="font-size: 28px; margin-bottom: 10px; background: linear-gradient(45deg, var(--primary-color), var(--secondary-color)); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+                Poster Lomba 17 Agustus 🎨
+            </h2>
+
+            <div style="display: flex; gap: 20px; margin-bottom: 25px; flex-wrap: wrap; opacity: 0.9;">
+                <span style="display: flex; align-items: center; gap: 8px;">🎯 <strong>Tipe:</strong> Design Test</span>
+                <span style="display: flex; align-items: center; gap: 8px;">🏢 <strong>Untuk:</strong> PT Sinar Alam Group</span>
+                <span style="display: flex; align-items: center; gap: 8px;">🎨 <strong>Tool:</strong> Canva (Free)</span>
+                <span style="display: flex; align-items: center; gap: 8px;">📅 <strong>Tahun:</strong> 2025</span>
+            </div>
+
+            <div style="display: inline-block; background: rgba(168, 85, 247, 0.1); border: 2px solid var(--primary-color); border-radius: 15px; padding: 8px; margin-bottom: 25px; width: 100%; max-width: 700px;">
+                <img src="assets/images/projects/sadp/poster.jpg" alt="Poster Final" style="display: block; width: 100%; border-radius: 10px; object-fit: contain;">
+                <p style="text-align: center; padding: 10px; opacity: 0.8; font-size: 14px;">Poster Lomba 17 Agustus - Final Design</p>
+            </div>
+
+            <div style="line-height: 1.8;">
+                <h3 style="color: var(--primary-color); margin: 25px 0 15px;">📖 Latar Belakang</h3>
+                <p style="margin-bottom: 15px;">
+                    Poster ini adalah bagian kedua dari technical test untuk posisi Fullstack Developer di PT Sinar Alam Duta Perdana. 
+                    Selain coding, test juga mengevaluasi kemampuan design visual dan komunikasi grafis.
+                </p>
+                <p style="margin-bottom: 15px;">
+                    <strong>Brief:</strong> Buat poster acara 17 Agustus internal perusahaan dengan logo PT Sinar Alam Group, 
+                    tema merah-putih, informasi event lengkap, dan visual yang menarik untuk karyawan.
+                </p>
+                
+                <h3 style="color: var(--primary-color); margin: 25px 0 15px;">📝 Apa yang Harus Ada</h3>
+                <div style="background: rgba(59, 130, 246, 0.1); padding: 20px; border-radius: 12px; margin-bottom: 20px; border-left: 4px solid #3b82f6;">
+                    <strong>Informasi Event:</strong>
+                    <ul style="margin: 10px 0 0 20px;">
+                        <li>Tanggal: 17 Agustus 2025, 08.00 WIB</li>
+                        <li>Lokasi: Lapangan Kantor PT Sinar Alam Group</li>
+                        <li>Lomba: Tarik Tambang, Balap Karung, Makan Kerupuk, dll</li>
+                        <li>Dress Code: Merah-Putih atau Pakaian Adat</li>
+                    </ul>
+                    
+                    <strong style="display: block; margin-top: 15px;">Design Requirements:</strong>
+                    <ul style="margin: 10px 0 0 20px;">
+                        <li>Logo PT Sinar Alam Group</li>
+                        <li>Warna merah-putih dominan</li>
+                        <li>Layout mudah dibaca</li>
+                    </ul>
+                </div>
+                
+                <h3 style="color: var(--primary-color); margin: 25px 0 15px;">🎨 Proses Design</h3>
+                
+                <div style="background: rgba(168, 85, 247, 0.05); padding: 15px; border-radius: 12px; margin-bottom: 15px;">
+                    <strong>1. Cari Referensi</strong>
+                    <p style="margin-top: 8px;">
+                        Lihat beberapa poster 17 Agustus yang sudah ada untuk inspirasi layout dan komposisi.
+                    </p>
+                </div>
+                
+                <div style="background: rgba(168, 85, 247, 0.05); padding: 15px; border-radius: 12px; margin-bottom: 15px;">
+                    <strong>2. Pilih Elemen dari Canva</strong>
+                    <p style="margin-top: 8px;">
+                        Pakai elemen gratis dari library Canva:
+                    </p>
+                    <ul style="margin: 8px 0 0 20px; font-size: 14px;">
+                        <li>Ilustrasi anak-anak bermain (tarik tambang, balap karung)</li>
+                        <li>Ornamen tradisional: awan mega mendung, peta Indonesia</li>
+                        <li>Bangunan khas Indonesia: rumah adat, menara</li>
+                    </ul>
+                </div>
+                
+                <div style="background: rgba(168, 85, 247, 0.05); padding: 15px; border-radius: 12px; margin-bottom: 20px;">
+                    <strong>3. Susun & Edit</strong>
+                    <p style="margin-top: 8px;">
+                        Atur posisi elemen, sesuaikan warna, tambahkan teks informasi event, 
+                        dan logo PT Sinar Alam Group.
+                    </p>
+                </div>
+                
+                <h3 style="color: var(--primary-color); margin: 25px 0 15px;">🎨 Elemen Design</h3>
+                <div style="display: grid; gap: 12px; margin-bottom: 20px;">
+                    <div style="background: linear-gradient(135deg, rgba(239, 68, 68, 0.1), rgba(239, 68, 68, 0.05)); padding: 15px; border-left: 4px solid #ef4444; border-radius: 8px;">
+                        <strong style="color: #ef4444;">🔴 Warna</strong>
+                        <p style="margin-top: 8px; opacity: 0.9; font-size: 14px;">
+                            Merah-putih untuk tema kemerdekaan, gold/kuning untuk accent agar lebih festive
+                        </p>
+                    </div>
+                    <div style="background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(139, 92, 246, 0.05)); padding: 15px; border-left: 4px solid #8b5cf6; border-radius: 8px;">
+                        <strong style="color: #8b5cf6;">🎭 Ilustrasi</strong>
+                        <p style="margin-top: 8px; opacity: 0.9; font-size: 14px;">
+                            Anak-anak sedang tarik tambang (dari Canva). Background: awan mega mendung, 
+                            peta Indonesia, bangunan khas Kalimantan
+                        </p>
+                    </div>
+                    <div style="background: linear-gradient(135deg, rgba(245, 158, 11, 0.1), rgba(245, 158, 11, 0.05)); padding: 15px; border-left: 4px solid #f59e0b; border-radius: 8px;">
+                        <strong style="color: #f59e0b;">✍️ Tipografi</strong>
+                        <p style="margin-top: 8px; opacity: 0.9; font-size: 14px;">
+                            Font besar & menarik untuk judul "Lomba 17 Agustus". Banner kuning untuk subtitle. 
+                            Font jelas untuk info detail.
+                        </p>
+                    </div>
+                </div>
+                
+                <h3 style="color: var(--primary-color); margin: 25px 0 15px;">📐 Komposisi Layout</h3>
+                <div style="background: rgba(16, 185, 129, 0.1); padding: 20px; border-radius: 12px; margin-bottom: 20px; border-left: 4px solid #10b981;">
+                    <ul style="margin-left: 20px;">
+                        <li style="margin-bottom: 10px;">
+                            <strong>Top:</strong> Logo PT Sinar Alam Group
+                        </li>
+                        <li style="margin-bottom: 10px;">
+                            <strong>Hero:</strong> Judul besar "Lomba 17 Agustus" + subtitle dengan banner kuning
+                        </li>
+                        <li style="margin-bottom: 10px;">
+                            <strong>Center:</strong> Ilustrasi anak-anak bermain + ornamen tradisional
+                        </li>
+                        <li style="margin-bottom: 10px;">
+                            <strong>Bottom:</strong> 2 box info (Waktu & Tempat | Aneka Lomba)
+                        </li>
+                        <li style="margin-bottom: 10px;">
+                            <strong>Footer:</strong> Dress code info
+                        </li>
+                    </ul>
+                </div>
+                
+                <div style="background: linear-gradient(135deg, rgba(168, 85, 247, 0.1), rgba(236, 72, 153, 0.1)); padding: 25px; border-radius: 15px; border: 2px solid var(--primary-color); margin-top: 30px;">
+                    <h4 style="color: var(--primary-color); margin-bottom: 15px;">🔗 Lihat Design</h4>
+                    <a href="https://www.canva.com/design/DAGz71IAxDg/F41BMX4IuqqrVf6NxCMQgg/edit" target="_blank" rel="noopener" style="padding: 12px 24px; background: rgba(97, 218, 251, 0.2); border: 2px solid #61dafb; border-radius: 25px; color: white; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; transition: all 0.3s;">
+                        🎨 <strong>Buka di Canva</strong>
+                    </a>
+                </div>
+                
+                <div style="background: rgba(59, 130, 246, 0.1); padding: 20px; border-radius: 12px; border-left: 4px solid #3b82f6; margin-top: 25px;">
+                    <h4 style="color: #3b82f6; margin-bottom: 10px;">💭 Refleksi</h4>
+                    <p style="margin-bottom: 10px;">
+                        Poster ini dibuat dengan Canva gratis dalam waktu terbatas. Fokus pada komposisi yang jelas, 
+                        warna sesuai tema, dan informasi mudah dibaca. Meskipun bukan designer profesional, 
+                        ini menunjukkan bahwa developer juga bisa communicate ideas secara visual.
+                    </p>
+                    <p style="font-style: italic; opacity: 0.9;">
+                        "Kemampuan design dasar adalah value add penting untuk developer. Tidak harus perfect, 
+                        tapi bisa bikin visual yang informatif dan menarik."
+                    </p>
+                </div>
+            </div>`,
+        en: `<h2 style="font-size: 28px; margin-bottom: 10px; background: linear-gradient(45deg, var(--primary-color), var(--secondary-color)); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+                17th August Competition Poster 🎨
+            </h2>
+
+            <div style="display: flex; gap: 20px; margin-bottom: 25px; flex-wrap: wrap; opacity: 0.9;">
+                <span style="display: flex; align-items: center; gap: 8px;">🎯 <strong>Type:</strong> Design Test</span>
+                <span style="display: flex; align-items: center; gap: 8px;">🏢 <strong>For:</strong> PT Sinar Alam Group</span>
+                <span style="display: flex; align-items: center; gap: 8px;">🎨 <strong>Tool:</strong> Canva (Free)</span>
+                <span style="display: flex; align-items: center; gap: 8px;">📅 <strong>Year:</strong> 2025</span>
+            </div>
+
+            <div style="display: inline-block; background: rgba(168, 85, 247, 0.1); border: 2px solid var(--primary-color); border-radius: 15px; padding: 8px; margin-bottom: 25px; width: 100%; max-width: 700px;">
+                <img src="assets/images/projects/sadp/poster.jpg" alt="Final Poster" style="display: block; width: 100%; border-radius: 10px; object-fit: contain;">
+                <p style="text-align: center; padding: 10px; opacity: 0.8; font-size: 14px;">17th August Competition Poster - Final Design</p>
+            </div>
+
+            <div style="line-height: 1.8;">
+                <h3 style="color: var(--primary-color); margin: 25px 0 15px;">📖 Background</h3>
+                <p style="margin-bottom: 15px;">
+                    This poster was the second part of the technical test for a Fullstack Developer position at PT Sinar Alam Duta Perdana. 
+                    Beyond coding, the test also evaluated visual design skills and graphic communication abilities.
+                </p>
+                <p style="margin-bottom: 15px;">
+                    <strong>Brief:</strong> Create a poster for the company's internal 17th August event featuring PT Sinar Alam Group's logo, 
+                    red-and-white theme, complete event information, and visually appealing design for employees.
+                </p>
+                
+                <h3 style="color: var(--primary-color); margin: 25px 0 15px;">📝 Required Elements</h3>
+                <div style="background: rgba(59, 130, 246, 0.1); padding: 20px; border-radius: 12px; margin-bottom: 20px; border-left: 4px solid #3b82f6;">
+                    <strong>Event Information:</strong>
+                    <ul style="margin: 10px 0 0 20px;">
+                        <li>Date: August 17, 2025, 08:00 AM</li>
+                        <li>Location: PT Sinar Alam Group Office Field</li>
+                        <li>Competitions: Tug of War, Sack Race, Cracker Eating, etc.</li>
+                        <li>Dress Code: Red-White or Traditional Attire</li>
+                    </ul>
+                    
+                    <strong style="display: block; margin-top: 15px;">Design Requirements:</strong>
+                    <ul style="margin: 10px 0 0 20px;">
+                        <li>PT Sinar Alam Group logo</li>
+                        <li>Dominant red-and-white colors</li>
+                        <li>Easy-to-read layout</li>
+                    </ul>
+                </div>
+                
+                <h3 style="color: var(--primary-color); margin: 25px 0 15px;">🎨 Design Process</h3>
+                
+                <div style="background: rgba(168, 85, 247, 0.05); padding: 15px; border-radius: 12px; margin-bottom: 15px;">
+                    <strong>1. Reference Research</strong>
+                    <p style="margin-top: 8px;">
+                        Reviewed existing 17th August posters for layout and composition inspiration.
+                    </p>
+                </div>
+                
+                <div style="background: rgba(168, 85, 247, 0.05); padding: 15px; border-radius: 12px; margin-bottom: 15px;">
+                    <strong>2. Select Elements from Canva</strong>
+                    <p style="margin-top: 8px;">
+                        Used free elements from Canva's library:
+                    </p>
+                    <ul style="margin: 8px 0 0 20px; font-size: 14px;">
+                        <li>Illustrations of children playing (tug of war, sack race)</li>
+                        <li>Traditional ornaments: mega mendung clouds, Indonesia map</li>
+                        <li>Indonesian iconic buildings: traditional houses, towers</li>
+                    </ul>
+                </div>
+                
+                <div style="background: rgba(168, 85, 247, 0.05); padding: 15px; border-radius: 12px; margin-bottom: 20px;">
+                    <strong>3. Arrange & Edit</strong>
+                    <p style="margin-top: 8px;">
+                        Positioned elements, adjusted colors, added event information text, 
+                        and incorporated PT Sinar Alam Group logo.
+                    </p>
+                </div>
+                
+                <h3 style="color: var(--primary-color); margin: 25px 0 15px;">🎨 Design Elements</h3>
+                <div style="display: grid; gap: 12px; margin-bottom: 20px;">
+                    <div style="background: linear-gradient(135deg, rgba(239, 68, 68, 0.1), rgba(239, 68, 68, 0.05)); padding: 15px; border-left: 4px solid #ef4444; border-radius: 8px;">
+                        <strong style="color: #ef4444;">🔴 Colors</strong>
+                        <p style="margin-top: 8px; opacity: 0.9; font-size: 14px;">
+                            Red-and-white for independence theme, gold/yellow accents for a more festive feel
+                        </p>
+                    </div>
+                    <div style="background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(139, 92, 246, 0.05)); padding: 15px; border-left: 4px solid #8b5cf6; border-radius: 8px;">
+                        <strong style="color: #8b5cf6;">🎭 Illustrations</strong>
+                        <p style="margin-top: 8px; opacity: 0.9; font-size: 14px;">
+                            Children playing tug of war (from Canva). Background: mega mendung clouds, 
+                            Indonesia map, Kalimantan traditional buildings
+                        </p>
+                    </div>
+                    <div style="background: linear-gradient(135deg, rgba(245, 158, 11, 0.1), rgba(245, 158, 11, 0.05)); padding: 15px; border-left: 4px solid #f59e0b; border-radius: 8px;">
+                        <strong style="color: #f59e0b;">✍️ Typography</strong>
+                        <p style="margin-top: 8px; opacity: 0.9; font-size: 14px;">
+                            Large, eye-catching font for "17th August Competition" title. Yellow banner for subtitle. 
+                            Clear fonts for detailed information.
+                        </p>
+                    </div>
+                </div>
+                
+                <h3 style="color: var(--primary-color); margin: 25px 0 15px;">📐 Layout Composition</h3>
+                <div style="background: rgba(16, 185, 129, 0.1); padding: 20px; border-radius: 12px; margin-bottom: 20px; border-left: 4px solid #10b981;">
+                    <ul style="margin-left: 20px;">
+                        <li style="margin-bottom: 10px;">
+                            <strong>Top:</strong> PT Sinar Alam Group logo
+                        </li>
+                        <li style="margin-bottom: 10px;">
+                            <strong>Hero:</strong> Large "17th August Competition" title + subtitle with yellow banner
+                        </li>
+                        <li style="margin-bottom: 10px;">
+                            <strong>Center:</strong> Illustration of children playing + traditional ornaments
+                        </li>
+                        <li style="margin-bottom: 10px;">
+                            <strong>Bottom:</strong> 2 info boxes (Time & Place | Various Competitions)
+                        </li>
+                        <li style="margin-bottom: 10px;">
+                            <strong>Footer:</strong> Dress code information
+                        </li>
+                    </ul>
+                </div>
+                
+                <div style="background: linear-gradient(135deg, rgba(168, 85, 247, 0.1), rgba(236, 72, 153, 0.1)); padding: 25px; border-radius: 15px; border: 2px solid var(--primary-color); margin-top: 30px;">
+                    <h4 style="color: var(--primary-color); margin-bottom: 15px;">🔗 View Design</h4>
+                    <a href="https://www.canva.com/design/DAGz71IAxDg/F41BMX4IuqqrVf6NxCMQgg/edit" target="_blank" rel="noopener" style="padding: 12px 24px; background: rgba(97, 218, 251, 0.2); border: 2px solid #61dafb; border-radius: 25px; color: white; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; transition: all 0.3s;">
+                        🎨 <strong>Open in Canva</strong>
+                    </a>
+                </div>
+                
+                <div style="background: rgba(59, 130, 246, 0.1); padding: 20px; border-radius: 12px; border-left: 4px solid #3b82f6; margin-top: 25px;">
+                    <h4 style="color: #3b82f6; margin-bottom: 10px;">💭 Reflection</h4>
+                    <p style="margin-bottom: 10px;">
+                        This poster was created using free Canva tools within a limited timeframe. The focus was on clear composition, 
+                        theme-appropriate colors, and easy-to-read information. Though not a professional designer, 
+                        this demonstrates that developers can also communicate ideas visually.
+                    </p>
+                    <p style="font-style: italic; opacity: 0.9;">
+                        "Basic design skills are an important value-add for developers. It doesn't have to be perfect, 
+                        but being able to create informative and appealing visuals matters."
+                    </p>
+                </div>
+            </div>`
+    }
+    },
+
+    // Blender 3D House
+    {
+        id: "blender-3d-house",
+        type: "project",
+        
+        title: {
+            id: "Model Rumah 3D",
+            en: "3D House Model"
+        },
+        subtitle: {
+            id: "Project Kampus | Blender 3D | Politeknik Hasnur",
+            en: "Campus Project | Blender 3D | Politeknik Hasnur"
+        },
+        
+        description: {
+            id: "Model 3D rumah isometric dengan environment - dibuat saat kuliah",
+            en: "Isometric 3D house model with environment - created during college"
+        },
+        
+        tags: ["Blender", "3D Modeling", "House Model"],
+        
+        content: {
+            id: `
+                <h2 style="font-size: 28px; margin-bottom: 10px; background: linear-gradient(45deg, var(--primary-color), var(--secondary-color)); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+                    Model Rumah 3D 🏠
+                </h2>
+
+                <div style="display: flex; gap: 20px; margin-bottom: 25px; flex-wrap: wrap; opacity: 0.9;">
+                    <span>🎓 Project Kampus</span>
+                    <span>🏫 Politeknik Hasnur</span>
+                    <span>🎨 Blender 3D</span>
+                </div>
+
+                <div style="display: inline-block; background: rgba(168, 85, 247, 0.1); border: 2px solid var(--primary-color); border-radius: 15px; padding: 8px; margin-bottom: 25px; width: 100%; max-width: 700px;">
+                    <img src="assets/images/projects/3d/rumah 3d.png" alt="Rumah 3D" style="display: block; width: 100%; border-radius: 10px; object-fit: contain;">
+                    <p style="text-align: center; padding: 10px; opacity: 0.8; font-size: 14px;">Model Rumah 3D</p>
+                </div>
+
+                <div style="line-height: 1.8;">
+                    <p style="margin-bottom: 15px;">
+                        Model rumah 3D dengan Blender. Ini adalah salah satu project selama masa kuliah, dibuat sesuai 
+                        gambar yang diberikan sebagai contoh. Project ini memberi saya pengalaman dalam menggunakan 
+                        tools 3D modeling untuk pertama kalinya.
+                    </p>
+                    <p style="margin-bottom: 20px;">
+                        Stylenya dibuat seperti miniatur atau diorama dengan bentuk-bentuk sederhana dan warna cerah. 
+                        Hasil akhirnya cukup memuaskan untuk level pemula.
+                    </p>
+
+                    <h3 style="color: var(--primary-color); margin: 25px 0 15px;">🛠️ Tools yang Digunakan</h3>
+                    <div style="background: rgba(168, 85, 247, 0.05); padding: 20px; border-radius: 12px; margin-bottom: 20px; border: 1px solid rgba(168, 85, 247, 0.2);">
+                        <strong style="display: block; margin-bottom: 10px;">Blender 3D</strong>
+                        <p style="font-size: 14px; opacity: 0.9;">
+                            Software gratis dan open-source untuk 3D modeling, animation, dan rendering. 
+                            Digunakan untuk membuat model rumah, pohon, props, atur cahaya, dan render hasil akhir.
+                        </p>
+                    </div>
+
+                    <h3 style="color: var(--primary-color); margin: 25px 0 15px;">💡 Yang Dipelajari</h3>
+                    <div style="background: rgba(236, 72, 153, 0.1); padding: 20px; border-radius: 12px; margin-bottom: 20px; border-left: 4px solid #ec4899;">
+                        <ul style="margin-left: 20px;">
+                            <li style="margin-bottom: 10px;">Dasar-dasar 3D modeling dengan Blender</li>
+                            <li style="margin-bottom: 10px;">Menyusun multiple objects menjadi satu scene</li>
+                            <li style="margin-bottom: 10px;">Mengatur lighting dan camera angle</li>
+                            <li style="margin-bottom: 10px;">Render hasil akhir dengan quality yang baik</li>
+                        </ul>
+                    </div>
+
+                    <div style="background: rgba(59, 130, 246, 0.1); padding: 20px; border-radius: 12px; border-left: 4px solid #3b82f6; margin-top: 25px;">
+                        <p style="font-style: italic; opacity: 0.9;">
+                            "Project 3D pertama yang cukup kompleks. Banyak belajar tentang patience dan detail. 
+                            Every small piece contributes to the whole picture."
+                        </p>
+                    </div>
+                </div>
+            `,
+            en: `
+                <h2 style="font-size: 28px; margin-bottom: 10px; background: linear-gradient(45deg, var(--primary-color), var(--secondary-color)); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+                    3D House Model 🏠
+                </h2>
+
+                <div style="display: flex; gap: 20px; margin-bottom: 25px; flex-wrap: wrap; opacity: 0.9;">
+                    <span>🎓 Campus Project</span>
+                    <span>🏫 Politeknik Hasnur</span>
+                    <span>🎨 Blender 3D</span>
+                </div>
+
+                <div style="display: inline-block; background: rgba(168, 85, 247, 0.1); border: 2px solid var(--primary-color); border-radius: 15px; padding: 8px; margin-bottom: 25px; width: 100%; max-width: 700px;">
+                    <img src="assets/images/projects/3d/rumah 3d.png" alt="3D House" style="display: block; width: 100%; border-radius: 10px; object-fit: contain;">
+                    <p style="text-align: center; padding: 10px; opacity: 0.8; font-size: 14px;">3D House Model</p>
+                </div>
+
+                <div style="line-height: 1.8;">
+                    <p style="margin-bottom: 15px;">
+                        3D house model created with Blender. This was one of my projects during college, based on 
+                        a reference image provided as an example. This project gave me hands-on experience using 
+                        3D modeling tools for the first time.
+                    </p>
+                    <p style="margin-bottom: 20px;">
+                        The style is designed like a miniature or diorama with simple shapes and bright colors. 
+                        The final result was quite satisfying for a beginner level.
+                    </p>
+
+                    <h3 style="color: var(--primary-color); margin: 25px 0 15px;">🛠️ Tools Used</h3>
+                    <div style="background: rgba(168, 85, 247, 0.05); padding: 20px; border-radius: 12px; margin-bottom: 20px; border: 1px solid rgba(168, 85, 247, 0.2);">
+                        <strong style="display: block; margin-bottom: 10px;">Blender 3D</strong>
+                        <p style="font-size: 14px; opacity: 0.9;">
+                            Free and open-source software for 3D modeling, animation, and rendering. 
+                            Used to create house models, trees, props, set lighting, and render final results.
+                        </p>
+                    </div>
+
+                    <h3 style="color: var(--primary-color); margin: 25px 0 15px;">💡 What I Learned</h3>
+                    <div style="background: rgba(236, 72, 153, 0.1); padding: 20px; border-radius: 12px; margin-bottom: 20px; border-left: 4px solid #ec4899;">
+                        <ul style="margin-left: 20px;">
+                            <li style="margin-bottom: 10px;">Basic 3D modeling with Blender</li>
+                            <li style="margin-bottom: 10px;">Composing multiple objects into one scene</li>
+                            <li style="margin-bottom: 10px;">Setting up lighting and camera angles</li>
+                            <li style="margin-bottom: 10px;">Rendering final results with good quality</li>
+                        </ul>
+                    </div>
+
+                    <div style="background: rgba(59, 130, 246, 0.1); padding: 20px; border-radius: 12px; border-left: 4px solid #3b82f6; margin-top: 25px;">
+                        <p style="font-style: italic; opacity: 0.9;">
+                            "First complex 3D project. Learned a lot about patience and detail. 
+                            Every small piece contributes to the whole picture."
+                        </p>
+                    </div>
+                </div>
+            `
+        }
+    },
+
+    // Logo Cabe Hiyung
+    {
+        id: "logo-cabe-hiyung",
+        type: "project",
+        
+        title: {
+            id: "Logo Cabe Hiyung",
+            en: "Cabe Hiyung Logo"
+        },
+        subtitle: {
+            id: "Project Kampus | Adobe Illustrator | Politeknik Hasnur",
+            en: "Campus Project | Adobe Illustrator | Politeknik Hasnur"
+        },
+        
+        description: {
+            id: "Logo design dengan filosofi dan color palette - project belajar desain grafis",
+            en: "Logo design with philosophy and color palette - graphic design learning project"
+        },
+        
+        tags: ["Logo Design", "Adobe Illustrator", "Graphic Design", "Branding"],
+        
+        content: {
+            id: `
+                <h2 style="font-size: 28px; margin-bottom: 10px; background: linear-gradient(45deg, var(--primary-color), var(--secondary-color)); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+                    Logo Cabe Hiyung 🌶️
+                </h2>
+
+                <div style="display: flex; gap: 20px; margin-bottom: 25px; flex-wrap: wrap; opacity: 0.9;">
+                    <span>🎓 Project Kampus</span>
+                    <span>🏫 Politeknik Hasnur</span>
+                    <span>🎨 Adobe Illustrator</span>
+                </div>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 15px; margin-bottom: 25px;">
+                    <div style="background: rgba(168, 85, 247, 0.1); border: 2px solid var(--primary-color); border-radius: 15px; padding: 8px;">
+                        <img src="assets/images/projects/logo/hiyung1.png" alt="Logo Cabe Hiyung" style="display: block; width: 100%; height: 280px; border-radius: 10px; object-fit: contain; background: white;">
+                        <p style="text-align: center; padding: 10px; opacity: 0.8; font-size: 14px;">Logo Final Design</p>
+                    </div>
+                    <div style="background: rgba(168, 85, 247, 0.1); border: 2px solid var(--primary-color); border-radius: 15px; padding: 8px;">
+                        <img src="assets/images/projects/logo/hiyung2.png" alt="Filosofi Logo" style="display: block; width: 100%; height: 280px; border-radius: 10px; object-fit: contain; background: white;">
+                        <p style="text-align: center; padding: 10px; opacity: 0.8; font-size: 14px;">Filosofi Logo</p>
+                    </div>
+                    <div style="background: rgba(168, 85, 247, 0.1); border: 2px solid var(--primary-color); border-radius: 15px; padding: 8px;">
+                        <img src="assets/images/projects/logo/hiyung3.png" alt="Color Palette" style="display: block; width: 100%; height: 280px; border-radius: 10px; object-fit: contain; background: white;">
+                        <p style="text-align: center; padding: 10px; opacity: 0.8; font-size: 14px;">Color Palette</p>
+                    </div>
+                </div>
+
+                <div style="line-height: 1.8;">
+                    <p style="margin-bottom: 15px;">
+                        Logo "Cabe Hiyung" dibuat sebagai project belajar desain grafis di kampus. Logonya menggabungkan 
+                        huruf "H" dengan bentuk cabai, terinspirasi dari logo Hasnur Centre dengan menambahkan unsur 
+                        cabai yang mencerminkan produk cabai hiyung berkualitas.
+                    </p>
+
+                    <h3 style="color: var(--primary-color); margin: 25px 0 15px;">🎨 Filosofi Design</h3>
+                    <div style="background: rgba(168, 85, 247, 0.05); padding: 20px; border-radius: 12px; margin-bottom: 20px; border: 1px solid rgba(168, 85, 247, 0.2);">
+                        <div style="margin-bottom: 15px;">
+                            <strong style="display: block; margin-bottom: 8px; color: var(--secondary-color);">Huruf "H"</strong>
+                            <p style="font-size: 14px; opacity: 0.9;">
+                                Melambangkan "Hiyung" dan "Hasnur", mengambil inspirasi dari bentuk logo Hasnur Centre
+                            </p>
+                        </div>
+                        <div>
+                            <strong style="display: block; margin-bottom: 8px; color: var(--secondary-color);">Cabai</strong>
+                            <p style="font-size: 14px; opacity: 0.9;">
+                                Melambangkan produk cabai berkualitas dengan bentuk yang segar dan menarik
+                            </p>
+                        </div>
+                    </div>
+
+                    <h3 style="color: var(--primary-color); margin: 25px 0 15px;">🎨 Color Palette</h3>
+                    <div style="background: rgba(168, 85, 247, 0.05); padding: 20px; border-radius: 12px; margin-bottom: 20px; border: 1px solid rgba(168, 85, 247, 0.2);">
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; margin-bottom: 15px;">
+                            <div style="text-align: center;">
+                                <div style="background: #326900; height: 80px; border-radius: 8px; margin-bottom: 8px;"></div>
+                                <strong style="font-size: 14px;">#326900</strong>
+                                <p style="font-size: 12px; opacity: 0.8; margin-top: 4px;">Hijau Tua</p>
+                            </div>
+                            <div style="text-align: center;">
+                                <div style="background: #00731D; height: 80px; border-radius: 8px; margin-bottom: 8px;"></div>
+                                <strong style="font-size: 14px;">#00731D</strong>
+                                <p style="font-size: 12px; opacity: 0.8; margin-top: 4px;">Hijau</p>
+                            </div>
+                            <div style="text-align: center;">
+                                <div style="background: #942100; height: 80px; border-radius: 8px; margin-bottom: 8px;"></div>
+                                <strong style="font-size: 14px;">#942100</strong>
+                                <p style="font-size: 12px; opacity: 0.8; margin-top: 4px;">Merah Tua</p>
+                            </div>
+                            <div style="text-align: center;">
+                                <div style="background: #FF1700; height: 80px; border-radius: 8px; margin-bottom: 8px;"></div>
+                                <strong style="font-size: 14px;">#FF1700</strong>
+                                <p style="font-size: 12px; opacity: 0.8; margin-top: 4px;">Merah</p>
+                            </div>
+                        </div>
+                        <p style="font-size: 14px; opacity: 0.9;">
+                            Warna merah dan hijau dipilih untuk merepresentasikan warna alami cabai segar. 
+                            Kombinasi ini menciptakan visual yang kuat dan mudah dikenali.
+                        </p>
+                    </div>
+
+                    <h3 style="color: var(--primary-color); margin: 25px 0 15px;">🛠️ Tools yang Digunakan</h3>
+                    <div style="background: rgba(168, 85, 247, 0.05); padding: 20px; border-radius: 12px; margin-bottom: 20px; border: 1px solid rgba(168, 85, 247, 0.2);">
+                        <strong style="display: block; margin-bottom: 10px;">Adobe Illustrator</strong>
+                        <p style="font-size: 14px; opacity: 0.9;">
+                            Software desain grafis vector-based untuk membuat logo, ilustrasi, dan typography. 
+                            Digunakan untuk membuat bentuk logo, mengatur warna, dan export dalam berbagai format.
+                        </p>
+                    </div>
+
+                    <h3 style="color: var(--primary-color); margin: 25px 0 15px;">💡 Yang Dipelajari</h3>
+                    <div style="background: rgba(236, 72, 153, 0.1); padding: 20px; border-radius: 12px; margin-bottom: 20px; border-left: 4px solid #ec4899;">
+                        <ul style="margin-left: 20px;">
+                            <li style="margin-bottom: 10px;">Dasar-dasar logo design dan branding</li>
+                            <li style="margin-bottom: 10px;">Menggunakan tools vector di Adobe Illustrator</li>
+                            <li style="margin-bottom: 10px;">Memilih color palette yang tepat</li>
+                            <li style="margin-bottom: 10px;">Membuat filosofi dan konsep di balik design</li>
+                        </ul>
+                    </div>
+
+                    <div style="background: rgba(59, 130, 246, 0.1); padding: 20px; border-radius: 12px; border-left: 4px solid #3b82f6; margin-top: 25px;">
+                        <p style="font-style: italic; opacity: 0.9;">
+                            "Project ini mengajarkan pentingnya makna di balik design. Logo bukan hanya soal bentuk yang 
+                            bagus, tapi juga cerita dan filosofi yang ingin disampaikan."
+                        </p>
+                    </div>
+                </div>
+            `,
+            en: `
+                <h2 style="font-size: 28px; margin-bottom: 10px; background: linear-gradient(45deg, var(--primary-color), var(--secondary-color)); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+                    Cabe Hiyung Logo 🌶️
+                </h2>
+
+                <div style="display: flex; gap: 20px; margin-bottom: 25px; flex-wrap: wrap; opacity: 0.9;">
+                    <span>🎓 Campus Project</span>
+                    <span>🏫 Politeknik Hasnur</span>
+                    <span>🎨 Adobe Illustrator</span>
+                </div>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 15px; margin-bottom: 25px;">
+                    <div style="background: rgba(168, 85, 247, 0.1); border: 2px solid var(--primary-color); border-radius: 15px; padding: 8px;">
+                        <img src="assets/images/projects/logo/hiyung1.png" alt="Cabe Hiyung Logo" style="display: block; width: 100%; height: 280px; border-radius: 10px; object-fit: contain; background: white;">
+                        <p style="text-align: center; padding: 10px; opacity: 0.8; font-size: 14px;">Final Logo Design</p>
+                    </div>
+                    <div style="background: rgba(168, 85, 247, 0.1); border: 2px solid var(--primary-color); border-radius: 15px; padding: 8px;">
+                        <img src="assets/images/projects/logo/hiyung2.png" alt="Logo Philosophy" style="display: block; width: 100%; height: 280px; border-radius: 10px; object-fit: contain; background: white;">
+                        <p style="text-align: center; padding: 10px; opacity: 0.8; font-size: 14px;">Logo Philosophy</p>
+                    </div>
+                    <div style="background: rgba(168, 85, 247, 0.1); border: 2px solid var(--primary-color); border-radius: 15px; padding: 8px;">
+                        <img src="assets/images/projects/logo/hiyung3.png" alt="Color Palette" style="display: block; width: 100%; height: 280px; border-radius: 10px; object-fit: contain; background: white;">
+                        <p style="text-align: center; padding: 10px; opacity: 0.8; font-size: 14px;">Color Palette</p>
+                    </div>
+                </div>
+
+                <div style="line-height: 1.8;">
+                    <p style="margin-bottom: 15px;">
+                        "Cabe Hiyung" logo was created as a graphic design learning project at campus. The logo combines 
+                        the letter "H" with a chili pepper shape, inspired by the Hasnur Centre logo while incorporating 
+                        the chili element to reflect the quality cabe hiyung products.
+                    </p>
+
+                    <h3 style="color: var(--primary-color); margin: 25px 0 15px;">🎨 Design Philosophy</h3>
+                    <div style="background: rgba(168, 85, 247, 0.05); padding: 20px; border-radius: 12px; margin-bottom: 20px; border: 1px solid rgba(168, 85, 247, 0.2);">
+                        <div style="margin-bottom: 15px;">
+                            <strong style="display: block; margin-bottom: 8px; color: var(--secondary-color);">Letter "H"</strong>
+                            <p style="font-size: 14px; opacity: 0.9;">
+                                Represents "Hiyung" and "Hasnur", drawing inspiration from the Hasnur Centre logo shape
+                            </p>
+                        </div>
+                        <div>
+                            <strong style="display: block; margin-bottom: 8px; color: var(--secondary-color);">Chili Pepper</strong>
+                            <p style="font-size: 14px; opacity: 0.9;">
+                                Symbolizes quality chili products with a fresh and appealing shape
+                            </p>
+                        </div>
+                    </div>
+
+                    <h3 style="color: var(--primary-color); margin: 25px 0 15px;">🎨 Color Palette</h3>
+                    <div style="background: rgba(168, 85, 247, 0.05); padding: 20px; border-radius: 12px; margin-bottom: 20px; border: 1px solid rgba(168, 85, 247, 0.2);">
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; margin-bottom: 15px;">
+                            <div style="text-align: center;">
+                                <div style="background: #326900; height: 80px; border-radius: 8px; margin-bottom: 8px;"></div>
+                                <strong style="font-size: 14px;">#326900</strong>
+                                <p style="font-size: 12px; opacity: 0.8; margin-top: 4px;">Dark Green</p>
+                            </div>
+                            <div style="text-align: center;">
+                                <div style="background: #00731D; height: 80px; border-radius: 8px; margin-bottom: 8px;"></div>
+                                <strong style="font-size: 14px;">#00731D</strong>
+                                <p style="font-size: 12px; opacity: 0.8; margin-top: 4px;">Green</p>
+                            </div>
+                            <div style="text-align: center;">
+                                <div style="background: #942100; height: 80px; border-radius: 8px; margin-bottom: 8px;"></div>
+                                <strong style="font-size: 14px;">#942100</strong>
+                                <p style="font-size: 12px; opacity: 0.8; margin-top: 4px;">Dark Red</p>
+                            </div>
+                            <div style="text-align: center;">
+                                <div style="background: #FF1700; height: 80px; border-radius: 8px; margin-bottom: 8px;"></div>
+                                <strong style="font-size: 14px;">#FF1700</strong>
+                                <p style="font-size: 12px; opacity: 0.8; margin-top: 4px;">Red</p>
+                            </div>
+                        </div>
+                        <p style="font-size: 14px; opacity: 0.9;">
+                            Red and green colors chosen to represent the natural colors of fresh chilies. 
+                            This combination creates strong and easily recognizable visuals.
+                        </p>
+                    </div>
+
+                    <h3 style="color: var(--primary-color); margin: 25px 0 15px;">🛠️ Tools Used</h3>
+                    <div style="background: rgba(168, 85, 247, 0.05); padding: 20px; border-radius: 12px; margin-bottom: 20px; border: 1px solid rgba(168, 85, 247, 0.2);">
+                        <strong style="display: block; margin-bottom: 10px;">Adobe Illustrator</strong>
+                        <p style="font-size: 14px; opacity: 0.9;">
+                            Vector-based graphic design software for creating logos, illustrations, and typography. 
+                            Used to create logo shapes, arrange colors, and export in various formats.
+                        </p>
+                    </div>
+
+                    <h3 style="color: var(--primary-color); margin: 25px 0 15px;">💡 What I Learned</h3>
+                    <div style="background: rgba(236, 72, 153, 0.1); padding: 20px; border-radius: 12px; margin-bottom: 20px; border-left: 4px solid #ec4899;">
+                        <ul style="margin-left: 20px;">
+                            <li style="margin-bottom: 10px;">Basics of logo design and branding</li>
+                            <li style="margin-bottom: 10px;">Using vector tools in Adobe Illustrator</li>
+                            <li style="margin-bottom: 10px;">Choosing the right color palette</li>
+                            <li style="margin-bottom: 10px;">Creating philosophy and concept behind design</li>
+                        </ul>
+                    </div>
+
+                    <div style="background: rgba(59, 130, 246, 0.1); padding: 20px; border-radius: 12px; border-left: 4px solid #3b82f6; margin-top: 25px;">
+                        <p style="font-style: italic; opacity: 0.9;">
+                            "This project taught me the importance of meaning behind design. A logo isn't just about 
+                            looking good, but also the story and philosophy it conveys."
+                        </p>
+                    </div>
+                </div>
+            `
+        }
+    }
 
 
 // TEMPLATE UNTUK MENAMBAH EXPERIENCE BARU:
