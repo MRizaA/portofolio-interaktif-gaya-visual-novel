@@ -46,10 +46,14 @@ const profileData = {
             label: "LinkedIn: Muhammad Riza Aditya",
             url: "https://id.linkedin.com/in/muhammad-riza-aditya-0a6294301"
         },
+        // {
+        //     icon: "📍",
+        //     label: "Location: Danda Jaya, Rantau Badauh, Barito Kuala",
+        //     url: "https://maps.google.com/?q=-3.101331, 114.655527" //yang mau silaturahmi aja
+        // }
         {
             icon: "📍",
-            label: "Location: Danda Jaya, Rantau Badauh, Barito Kuala",
-            url: "https://maps.google.com/?q=-3.101331, 114.655527"
+            label: "Location: Barito Kuala, Kalimantan Selatan, Indonesia",
         }
         // Tambah contact lainnya di sini
         // {

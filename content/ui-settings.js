@@ -204,39 +204,6 @@ function applySettings(settings) {
     updateLanguage();
 }
 
-// function applyLayout(layout) {
-//     const gameScreen = document.querySelector('.game-screen');
-//     const dialogueArea = document.querySelector('.dialogue-area');
-//     const characterArea = document.querySelector('.character-area');
-    
-//     if (!gameScreen || !dialogueArea || !characterArea) return;
-    
-//     // Reset
-//     gameScreen.style.flexDirection = 'column';
-//     dialogueArea.style.position = 'absolute';
-//     dialogueArea.style.width = '';
-//     dialogueArea.style.height = '';
-//     dialogueArea.style.bottom = '';
-//     dialogueArea.style.right = '';
-//     dialogueArea.style.left = '';
-//     characterArea.style.flex = '';
-    
-//     switch(layout.dialoguePosition) {
-//         case 'right':
-//             gameScreen.style.flexDirection = 'row';
-//             dialogueArea.style.position = 'relative';
-//             dialogueArea.style.width = '40%';
-//             dialogueArea.style.height = 'auto';
-//             characterArea.style.flex = '1';
-//             break;
-//         default: // bottom
-//             dialogueArea.style.bottom = '0';
-//             dialogueArea.style.left = '0';
-//             dialogueArea.style.right = '0';
-//             break;
-//     }
-// }
-
 function applyLayout(layout) {
     const gameScreen = document.querySelector('.game-screen');
     const dialogueArea = document.querySelector('.dialogue-area');
@@ -255,26 +222,7 @@ function applyLayout(layout) {
     
     if (isMobile) {
         if (isMobileLandscape) {
-            // LANDSCAPE MODE: Side by Side
-
-            // gameScreen.style.flexDirection = 'row';
-            // dialogueArea.style.position = 'relative';
-            // dialogueArea.style.width = '60%';
-            // dialogueArea.style.height = '100%';
-            // dialogueArea.style.maxHeight = '100%';
-            // dialogueArea.style.overflowY = 'auto';
-            // dialogueArea.style.bottom = 'auto';
-            // dialogueArea.style.right = 'auto';
-            // dialogueArea.style.left = 'auto';
-            // dialogueArea.style.borderTop = 'none';
-            // dialogueArea.style.borderLeft = '3px solid var(--primary-color)';
-            // characterArea.style.flex = '1';
-            // characterArea.style.width = '40%';
-            // characterArea.style.minHeight = '100%';
-            // characterArea.style.maxHeight = '100%';
-
-
-            // LANDSCAPE MODE: Side by Side (Improved)
+            // LANDSCAPE MODE: Side by Side 
             gameScreen.style.flexDirection = 'row';
             gameScreen.style.height = 'auto';
             gameScreen.style.maxHeight = 'none';
@@ -304,20 +252,23 @@ function applyLayout(layout) {
         } else {
             // PORTRAIT MODE: Vertical Stack
             gameScreen.style.flexDirection = 'column';
+
             dialogueArea.style.position = 'relative';
             dialogueArea.style.width = '100%';
             dialogueArea.style.height = 'auto';
-            dialogueArea.style.maxHeight = '50vh';
-            dialogueArea.style.overflowY = 'auto';
+            dialogueArea.style.maxHeight = 'none';
+            dialogueArea.style.overflowY = 'visible';
             dialogueArea.style.bottom = 'auto';
             dialogueArea.style.right = 'auto';
             dialogueArea.style.left = 'auto';
             dialogueArea.style.borderLeft = 'none';
             dialogueArea.style.borderTop = '3px solid var(--primary-color)';
+
             characterArea.style.flex = '1';
             characterArea.style.width = '100%';
             characterArea.style.minHeight = '40vh';
-            characterArea.style.maxHeight = '50vh';
+            characterArea.style.maxHeight = 'none';
+
         }
         return; // Exit early, ignore layout setting on mobile
     }

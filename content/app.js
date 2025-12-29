@@ -24,7 +24,7 @@ window.onload = function() {
         music.src = audioConfig.background.main;
         music.volume = settings.volume / 100;
         
-        // Coba autoplay (akan di-block)
+        // Coba autoplay
         music.play().then(() => {
             console.log('Autoplay success!');
             config.musicEnabled = true;
@@ -36,10 +36,12 @@ window.onload = function() {
             settings.musicEnabled = false;
             saveSettings(settings);
         });
-        
-        // Update UI setelah detect
+        // Update UI
         setTimeout(() => updateAudioUI(), 500);
     }
+
+    // URL Routing check
+    checkURLParams();
     
     const firstDialogue = Object.keys(dialogues)[0];
     setTimeout(() => handleChoice(firstDialogue), 1000);
@@ -52,6 +54,74 @@ window.onload = function() {
     });
 };
 
+// URL ROUTING 
+function updateURL(modal = null, type = null, id = null) {
+    const params = new URLSearchParams(window.location.search);
+    
+    if (modal) {
+        params.set('modal', modal);
+    }
+    if (type && type !== 'all') {
+        params.set('type', type);
+    } else {
+        params.delete('type');
+    }
+    
+    let newURL = window.location.pathname;
+    const paramString = params.toString();
+    
+    if (paramString) {
+        newURL += '?' + paramString;
+    }
+    
+    if (id) {
+        newURL += '#' + id;
+    }
+    
+    window.history.pushState({}, '', newURL);
+}
+
+function checkURLParams() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const hash = window.location.hash.substring(1);
+    
+    const modal = urlParams.get('modal');
+    const type = urlParams.get('type');
+    const id = urlParams.get('id') || hash;
+    
+    console.log('Checking URL params:', { modal, type, id }); // Debug log
+    
+    if (modal || id) {
+        if (modal === 'profile') {
+            console.log('Opening profile modal'); // Debug
+            showModal('profile');
+        } 
+        else if (modal === 'experience' || modal === 'projects') {
+            console.log('Opening experience modal'); // Debug
+            showModal('experience');
+            
+            if (type && type !== 'all') {
+                config.currentFilter = type;
+                setTimeout(() => {
+                    document.querySelectorAll('.nav-btn').forEach(b => {
+                        b.classList.remove('active');
+                        const onclick = b.getAttribute('onclick');
+                        if (onclick && onclick.includes(`'${type}'`)) {
+                            b.classList.add('active');
+                        }
+                    });
+                    renderExperienceCards();
+                }, 200);
+            }
+            
+            if (id) {
+                setTimeout(() => {
+                    showExperienceDetail(id);
+                }, 400);
+            }
+        }
+    }
+}
 
 // PARTICLES - dengan dynamic color
 function createParticles() {
@@ -294,9 +364,11 @@ function filterExperience(type) {
     document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
     event.target.classList.add('active');
     renderExperienceCards();
+    
+    // Update URL dengan type
+    updateURL('experience', type);
 }
 
-// FIXED: Detail page dengan full HTML, tanpa template
 function showExperienceDetail(id) {
     const item = experienceData.find(e => e.id === id);
     if (!item) return;
@@ -307,22 +379,32 @@ function showExperienceDetail(id) {
     const page = document.getElementById('detailPage');
     const content = typeof item.content === 'object' ? item.content[config.currentLanguage] : item.content;
     
-    // Render full HTML content dari experiences.js
     document.getElementById('detailContent').innerHTML = content;
     
     page.style.display = 'block';
+    
+    // Update URL dengan ID
+    updateURL('experience', config.currentFilter, id);
 }
 
 function showExperienceList() {
     document.getElementById('experienceGrid').style.display = 'grid';
     document.querySelector('.experience-nav').style.display = 'flex';
     document.getElementById('detailPage').style.display = 'none';
+    
+    // Clear ID dari URL
+    updateURL('experience', config.currentFilter);
 }
 
+
 // MODAL
+
 function showModal(type) {
     const modal = document.getElementById(type + 'Modal');
     modal.style.display = 'block';
+    
+    // Update URL
+    updateURL(type);
     
     if (type === 'experience') {
         renderExperienceCards();
@@ -332,11 +414,16 @@ function showModal(type) {
     if (type === 'settings') renderSettingsOptions();
 }
 
+
 function closeModal(type) {
     document.getElementById(type + 'Modal').style.display = 'none';
+    
+    // Clear URL
+    window.history.pushState({}, '', window.location.pathname);
 }
 
-// PROFILE - FIXED: Icon GitHub dengan background putih
+
+// PROFILE
 function loadProfile() {
     document.querySelector('.profile-info h2').textContent = profileData.name;
     
@@ -373,7 +460,7 @@ function loadProfile() {
     }).join('');
 }
 
-// LANGUAGE - FIXED: Label bahasa lebih jelas
+// LANGUAGE
 function toggleLanguage() {
     config.currentLanguage = config.currentLanguage === 'en' ? 'id' : 'en';
     updateLanguage();

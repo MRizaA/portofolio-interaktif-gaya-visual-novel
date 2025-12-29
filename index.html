@@ -231,6 +231,7 @@
             border-top: 3px solid var(--primary-color);
             padding: 20px;
             min-height: 200px;
+            padding-bottom: 40px;
         }
         
         .speaker-name {
@@ -632,10 +633,25 @@
         }
 
 
-
-
         /* RESPONSIVE DESIGN - TABLET & MOBILE */
         @media (max-width: 768px) {
+
+            body {
+                overflow-y: auto;
+                height: auto;
+                min-height: 100vh;
+            }
+
+            .game-container {
+                height: auto;
+                min-height: 100vh;
+            }
+
+            .game-ui {
+                height: auto;
+                min-height: 100vh;
+            }
+
             .top-bar {
                 flex-direction: column;
                 gap: 10px;
@@ -663,10 +679,9 @@
             }
             
             .dialogue-area {
-                /* min-height: 180px;
-                padding: 15px; */
                 height: 100%;
                 width: auto;
+                padding-bottom: 40px;
             }
             
             .speaker-name {
