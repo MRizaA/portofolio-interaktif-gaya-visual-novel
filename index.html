@@ -1,55 +1,60 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Portfolio Muhammad Riza Aditya | Junior Software Developer</title>
+    <title>Portfolio Muhammad Riza Aditya</title>
 
-    <meta name="description" content="Portfolio Muhammad Riza Aditya, Fresh Graduate D3 Teknik Informatika Politeknik Hasnur (IPK 3.55) dengan pengalaman magang di Digitaliz dan fokus pada web development.">
-    <meta name="keywords" content="Muhammad Riza Aditya, Portfolio, Junior Software Developer, Web Developer, Fresh Graduate, Teknik Informatika, Politeknik Hasnur, Digitaliz">
+    <meta name="description" content="Portfolio Muhammad Riza Aditya - Fresh graduate D3 Teknik Informatika Politeknik Hasnur (IPK 3.55) dengan pengalaman magang di Digitaliz. Lihat proyek, sertifikasi, dan pengalaman kerja saya.">
+    
+    <meta name="keywords" content="Muhammad Riza Aditya, Portfolio, Web Developer, Fresh Graduate, Teknik Informatika, Politeknik Hasnur, Barito Kuala, Digitaliz, Junior Software Developer">
 
     <meta name="author" content="Muhammad Riza Aditya">
-    <link rel="canonical" href="https://mrizaa.github.io">
+    <link rel="canonical" href="https://mrizaa.github.io/portofolio-interaktif-gaya-visual-novel/">
 
     <!-- Open Graph / Facebook / WhatsApp -->
-    <meta property="og:title" content="Portfolio Muhammad Riza Aditya | Junior Software Developer">
-    <meta property="og:description" content="Fresh Graduate D3 Teknik Informatika dengan pengalaman magang di Digitaliz dan passion di web development.">
+    <meta property="og:title" content="Portfolio Muhammad Riza Aditya | Fresh Graduate D3 Teknik Informatika">
+    <meta property="og:description" content="Fresh graduate D3 Teknik Informatika Politeknik Hasnur (IPK 3.55) dengan pengalaman magang di Digitaliz dan passion dalam coding dan web development.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://mrizaa.github.io">
+    <meta property="og:url" content="https://mrizaa.github.io/portofolio-interaktif-gaya-visual-novel/">
     <meta property="og:image" content="https://mrizaa.github.io/portofolio-interaktif-gaya-visual-novel/assets/characters/developer/riza1.jpg">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
+    <meta property="og:image:secure_url" content="https://mrizaa.github.io/portofolio-interaktif-gaya-visual-novel/assets/characters/developer/riza1.jpg">
     <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="800">
+    <meta property="og:image:height" content="1200">
+    <meta property="og:image:alt" content="Muhammad Riza Aditya - Junior Software Developer">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Portfolio Muhammad Riza Aditya">
-    <meta name="twitter:description" content="Junior Software Developer | Fresh Graduate D3 Teknik Informatika">
+    <meta name="twitter:description" content="Fresh Graduate D3 Teknik Informatika dengan pengalaman magang di Digitaliz">
     <meta name="twitter:image" content="https://mrizaa.github.io/portofolio-interaktif-gaya-visual-novel/assets/characters/developer/riza1.jpg">
+    <meta name="twitter:image:alt" content="Muhammad Riza Aditya - Junior Software Developer">
 
     <!-- Structured Data: Person -->
     <script type="application/ld+json">
     {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Muhammad Riza Aditya",
-    "jobTitle": "Junior Software Developer",
-    "alumniOf": {
-        "@type": "CollegeOrUniversity",
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Muhammad Riza Aditya",
+      "jobTitle": "Junior Software Developer",
+      "description": "Fresh graduate D3 Teknik Informatika Politeknik Hasnur (IPK 3.55) dengan pengalaman magang di Digitaliz",
+      "alumniOf": {
+        "@type": "EducationalOrganization",
         "name": "Politeknik Hasnur"
-    },
-    "url": "https://mrizaa.github.io",
-    "sameAs": [
-        "https://github.com/MRizaA",
-        "https://linkedin.com/in/muhammad-riza-aditya-0a6294301"
-    ],
-    "image": {
+      },
+      "url": "https://mrizaa.github.io/portofolio-interaktif-gaya-visual-novel/",
+      "image": {
         "@type": "ImageObject",
         "url": "https://mrizaa.github.io/portofolio-interaktif-gaya-visual-novel/assets/characters/developer/riza1.jpg",
-        "width": 1200,
-        "height": 630
-    },
-    "description": "Fresh Graduate D3 Teknik Informatika dengan IPK 3.55 dan pengalaman magang di Digitaliz."
+        "width": 800,
+        "height": 1200
+      },
+      "sameAs": [
+        "https://github.com/MRizaA",
+        "https://linkedin.com/in/muhammad-riza-aditya-0a6294301"
+      ]
     }
     </script>
 
@@ -653,38 +658,16 @@
 
         /* RESPONSIVE DESIGN - TABLET & MOBILE */
         @media (max-width: 768px) {
-
             body {
-                overflow-y: auto;
+                overflow-y: auto; /* Bisa scroll */
                 height: auto;
                 min-height: 100vh;
             }
-
-            .game-screen {
-                flex-direction: column;
-            }
-
-            .character-area {
-                min-height: 45vh;
-                align-items: center;
-            }
-
-            .character {
-                width: 100%;
-                height: 100%;
-                background-position: center;
-                background-size: contain;
-            }
-
-            .dialogue-area {
-                position: relative;
-                min-height: auto;
-            }
-
 
             .game-container {
                 height: auto;
                 min-height: 100vh;
+                overflow: visible; /* Biar bisa scroll semua */
             }
 
             .game-ui {
@@ -692,10 +675,71 @@
                 min-height: 100vh;
             }
 
+            .game-screen {
+                flex-direction: column;
+                height: auto;
+                min-height: calc(100vh - 80px); /* Minus top-bar */
+            }
+
+            /* CHARACTER AREA - BISA DI SCROLL */
+            .character-area {
+                flex: 0 0 auto; /* Tidak flex, fixed size */
+                height: 45vh; /* Lebih kecil dari sebelumnya */
+                width: 100%;
+                display: flex;
+                align-items: flex-end;
+                justify-content: center;
+                overflow: visible;
+                position: relative;
+            }
+
+            .character {
+                width: 100%;
+                height: 100%;
+                max-width: 100%;
+                max-height: 100%;
+                background-size: contain;
+                background-position: center bottom;
+                background-repeat: no-repeat;
+            }
+
+            /* DIALOGUE AREA - LEBIH LEBAR, AUTO HEIGHT */
+            .dialogue-area {
+                position: relative;
+                width: 100%;
+                height: auto;
+                min-height: auto; /* Hapus min-height fixed */
+                max-height: none; /* Bisa expand sesuai konten */
+                overflow: visible; /* Tidak perlu scroll internal */
+                padding: 15px;
+                padding-bottom: 40px; /* PADDING BAWAH UNTUK TOMBOL */
+                flex: 1; /* Ambil sisa ruang */
+            }
+
+            .dialogue-text {
+                font-size: 14px;
+                min-height: auto; /* Sesuai konten */
+                margin-bottom: 20px;
+            }
+
+            .dialogue-choices {
+                margin-bottom: 20px; /* Space tambahan untuk tombol terakhir */
+            }
+
+            .choice-btn {
+                min-width: 100%;
+                font-size: 13px;
+                padding: 10px 15px;
+                margin-bottom: 10px; /* Gap antar tombol */
+            }
+
             .top-bar {
                 flex-direction: column;
                 gap: 10px;
                 padding: 10px;
+                position: sticky; /* Tetap di atas saat scroll */
+                top: 0;
+                z-index: 20;
             }
             
             .title {
@@ -712,31 +756,8 @@
                 padding: 6px 12px;
             }
             
-            .character { 
-                width: 100%;
-                height: 100%;
-                background-size: contain;
-            }
-            
-            .dialogue-area {
-                height: 100%;
-                width: auto;
-                padding-bottom: 40px;
-            }
-            
             .speaker-name {
                 font-size: 16px;
-            }
-            
-            .dialogue-text {
-                font-size: 14px;
-                min-height: 60px;
-            }
-            
-            .choice-btn {
-                min-width: 100%;
-                font-size: 13px;
-                padding: 10px 15px;
             }
             
             .modal-content { 
@@ -870,9 +891,59 @@
                 padding: 10px 20px;
             }
         }
-        
-        /* RESPONSIVE DESIGN - SMALL MOBILE */
+
+        /* LANDSCAPE MOBILE - SIDE BY SIDE */
+        @media (max-width: 768px) and (orientation: landscape) {
+            body {
+                overflow: hidden; /* Di landscape tidak perlu scroll */
+            }
+
+            .game-container {
+                height: 100vh;
+                overflow: hidden;
+            }
+
+            .game-ui {
+                height: 100%;
+            }
+
+            .game-screen {
+                flex-direction: row;
+                min-height: 100%;
+                height: 100%;
+            }
+
+            .character-area {
+                flex: 1;
+                height: 100%;
+                width: auto;
+                min-height: 100%;
+                max-height: 100%;
+            }
+
+            .dialogue-area {
+                width: 55%; /* Lebih lebar dari 40% */
+                height: 100%;
+                min-height: 100%;
+                max-height: 100%;
+                overflow-y: auto; /* Scroll di landscape */
+                border-top: none;
+                border-left: 3px solid var(--primary-color);
+                padding-bottom: 40px; /* Padding bawah tetap ada */
+            }
+        }
+
+        /* RESPONSIVE DESIGN - SMALL MOBILE (< 480px) */
         @media (max-width: 480px) {
+            .character-area {
+                height: 40vh; /* Lebih kecil lagi untuk HP kecil */
+            }
+
+            .dialogue-area {
+                padding: 12px;
+                padding-bottom: 50px; /* Extra padding untuk HP kecil */
+            }
+
             .title {
                 font-size: 18px;
             }
@@ -882,11 +953,6 @@
                 padding: 5px 10px;
             }
             
-            .dialogue-area {
-                min-height: 160px;
-                padding: 12px;
-            }
-            
             .speaker-name {
                 font-size: 14px;
                 margin-bottom: 8px;
@@ -894,13 +960,13 @@
             
             .dialogue-text {
                 font-size: 13px;
-                min-height: 50px;
                 margin-bottom: 15px;
             }
             
             .choice-btn {
                 font-size: 12px;
                 padding: 8px 12px;
+                margin-bottom: 8px;
             }
             
             .profile-image {
@@ -933,6 +999,22 @@
             .nav-btn {
                 font-size: 11px;
                 padding: 6px 12px;
+            }
+        }
+
+        /* VERY SMALL MOBILE (< 360px) */
+        @media (max-width: 360px) {
+            .character-area {
+                height: 35vh; /* Lebih kecil lagi */
+            }
+
+            .dialogue-area {
+                padding-bottom: 60px; /* Extra extra padding */
+            }
+
+            .choice-btn {
+                font-size: 11px;
+                padding: 7px 10px;
             }
         }
 

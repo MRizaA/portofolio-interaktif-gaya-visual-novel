@@ -211,74 +211,18 @@ function applyLayout(layout) {
     
     if (!gameScreen || !dialogueArea || !characterArea) return;
     
-    //IMPROVED MOBILE DETECTION
+    // Deteksi mobile
     const width = window.innerWidth;
     const height = window.innerHeight;
+    const isMobile = width <= 768;
+    const isLandscape = width > height;
     
-    // Mobile jika width atau height tidak terlalu besar
-    const isMobilePortrait = width <= 768 && height > width;
-    const isMobileLandscape = height <= 512 && width > height;
-    const isMobile = isMobilePortrait || isMobileLandscape;
-    
-    if (isMobile) {
-        if (isMobileLandscape) {
-            // LANDSCAPE MODE: Side by Side 
-            gameScreen.style.flexDirection = 'row';
-            gameScreen.style.height = 'auto';
-            gameScreen.style.maxHeight = 'none';
-            gameScreen.style.overflowY = 'auto'; 
-            gameScreen.style.alignItems = 'stretch';
-
-            dialogueArea.style.position = 'relative';
-            dialogueArea.style.width = '60%';
-            dialogueArea.style.height = 'auto'; 
-            dialogueArea.style.maxHeight = '90vh'; 
-            dialogueArea.style.overflowY = 'auto'; 
-            dialogueArea.style.bottom = 'auto';
-            dialogueArea.style.right = 'auto';
-            dialogueArea.style.left = 'auto';
-            dialogueArea.style.borderTop = 'none';
-            dialogueArea.style.borderLeft = '3px solid var(--primary-color)';
-            dialogueArea.style.padding = '1rem';
-
-            characterArea.style.flex = '1';
-            characterArea.style.width = '40%';
-            characterArea.style.minHeight = 'auto';
-            characterArea.style.maxHeight = 'none';
-            characterArea.style.display = 'flex';
-            characterArea.style.justifyContent = 'center';
-            characterArea.style.alignItems = 'center';
-
-        } else {
-            // PORTRAIT MODE: Vertical Stack
-            gameScreen.style.flexDirection = 'column';
-
-            dialogueArea.style.position = 'relative';
-            dialogueArea.style.width = '100%';
-            dialogueArea.style.height = 'auto';
-            dialogueArea.style.maxHeight = 'none';
-            dialogueArea.style.overflowY = 'visible';
-            dialogueArea.style.bottom = 'auto';
-            dialogueArea.style.right = 'auto';
-            dialogueArea.style.left = 'auto';
-            dialogueArea.style.borderLeft = 'none';
-            dialogueArea.style.borderTop = '3px solid var(--primary-color)';
-
-            characterArea.style.flex = '1';
-            characterArea.style.width = '100%';
-            characterArea.style.minHeight = '40vh';
-            characterArea.style.maxHeight = 'none';
-
-        }
-        return; // Exit early, ignore layout setting on mobile
-    }
-    
-    // DESKTOP LAYOUT - Apply user preference
-    // Reset all styles
-    gameScreen.style.flexDirection = 'column';
-    dialogueArea.style.position = 'absolute';
+    // Reset semua style
+    gameScreen.style.flexDirection = '';
+    dialogueArea.style.position = '';
     dialogueArea.style.width = '';
     dialogueArea.style.height = '';
+    dialogueArea.style.minHeight = '';
     dialogueArea.style.maxHeight = '';
     dialogueArea.style.overflowY = '';
     dialogueArea.style.bottom = '';
@@ -291,6 +235,13 @@ function applyLayout(layout) {
     characterArea.style.minHeight = '';
     characterArea.style.maxHeight = '';
     
+    if (isMobile) {
+        // CSS media query akan handle ini
+        // Tidak perlu override JS
+        return;
+    }
+    
+    // DESKTOP - Apply user preference
     switch(layout.dialoguePosition) {
         case 'right':
             gameScreen.style.flexDirection = 'row';
@@ -301,6 +252,7 @@ function applyLayout(layout) {
             characterArea.style.flex = '1';
             break;
         default: // bottom
+            dialogueArea.style.position = 'absolute';
             dialogueArea.style.bottom = '0';
             dialogueArea.style.left = '0';
             dialogueArea.style.right = '0';
